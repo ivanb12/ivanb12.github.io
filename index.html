@@ -2021,7 +2021,7 @@
       function showCount(value) {
         if (!Number.isSafeInteger(value) || value < 0) throw new Error('Invalid counter');
         countElement.textContent = countFormat.format(value);
-        countStatus.textContent = 'Total compartido entre todos los visitantes';
+        countStatus.textContent = 'Descargas totales';
       }
       async function loadCount() {
         try {
