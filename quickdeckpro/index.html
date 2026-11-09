@@ -1,23 +1,2100 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi primera web</title>
-  <style>
-    body {
-      background: #101018;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 100px 20px;
-    }
-    h1 { color: #00ffcc; }
-  </style>
-</head>
-<body>
-  <h1>¡Bienvenido a mi web!</h1>
-  <p>Mi primera página alojada en GitHub Pages.</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#0c0e12" />
+    <title>QuickDeck Pro v0.1.1 — Windows 11</title>
+    <meta
+      name="description"
+      content="Aplicaciones, archivos y acciones en un buscador para Windows 11. Descarga QuickDeck Pro y únete a Discord."
+    />
+    <link rel="canonical" href="https://ivanb12.github.io/quickdeckpro/" />
+    <link rel="icon" href="favicon.ico" />
+    <meta property="og:title" content="QuickDeck Pro v0.1.1" />
+    <meta property="og:description" content="Tu escritorio, a una búsqueda." />
+    <meta property="og:url" content="https://ivanb12.github.io/quickdeckpro/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://ivanb12.github.io/quickdeckpro/images/launcher.png"
+    />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0c0e12;
+        --text: #f1f3f6;
+        --muted: #929ba9;
+        --ice: #afd4ff;
+        --line: #ffffff12;
+        font-family: Inter, 'Segoe UI Variable Text', 'Segoe UI', Arial, sans-serif;
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 100px;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      button,
+      input {
+        font: inherit;
+      }
+      button,
+      a,
+      summary {
+        -webkit-tap-highlight-color: transparent;
+      }
+      button,
+      summary {
+        cursor: pointer;
+      }
+      button {
+        color: inherit;
+      }
+      a:focus-visible,
+      button:focus-visible,
+      summary:focus-visible,
+      input:focus-visible {
+        outline: 2px solid var(--ice);
+        outline-offset: 5px;
+      }
+      ::selection {
+        background: #afd4ff36;
+        color: #fff;
+      }
+      img {
+        max-width: 100%;
+      }
+      svg {
+        flex-shrink: 0;
+      }
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+      h2 {
+        font-size: clamp(30px, 3.3vw, 46px);
+        letter-spacing: -1.8px;
+        line-height: 1.12;
+        font-weight: 580;
+      }
+      h3 {
+        font-weight: 550;
+      }
+      p {
+        color: var(--muted);
+        line-height: 1.75;
+      }
+      .section-shell {
+        max-width: 1160px;
+        margin: 0 auto;
+        padding-left: 36px;
+        padding-right: 36px;
+      }
+      .eyebrow {
+        font-size: 10px;
+        letter-spacing: 2.2px;
+        font-weight: 600;
+        color: #b6c3d4;
+        margin-bottom: 18px;
+      }
+      .skip-link {
+        position: fixed;
+        top: -100px;
+        left: 20px;
+        padding: 12px 20px;
+        background: var(--ice);
+        color: #071425;
+        z-index: 100;
+      }
+      .skip-link:focus {
+        top: 10px;
+      }
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 30;
+        background: #0c0e12e8;
+        backdrop-filter: blur(18px);
+        border-bottom: 1px solid var(--line);
+      }
+      .nav-wrap {
+        height: 79px;
+        max-width: 1280px;
+        padding: 0 42px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 17px;
+        font-weight: 600;
+        letter-spacing: -0.6px;
+        white-space: nowrap;
+      }
+      .logo img {
+        display: block;
+        width: 36px;
+        height: 36px;
+        object-fit: contain;
+      }
+      .pro {
+        font-size: 7px;
+        letter-spacing: 1.2px;
+        font-weight: 500;
+        color: #bed0e6;
+        vertical-align: middle;
+        border: 1px solid #ffffff1d;
+        border-radius: 4px;
+        margin-left: 7px;
+        padding: 3px 5px;
+      }
+      .main-nav {
+        display: flex;
+        align-items: center;
+        gap: 29px;
+        margin: auto;
+      }
+      .main-nav a {
+        font-size: 12px;
+        color: #a5acb8;
+        display: inline-flex;
+        gap: 5px;
+        align-items: center;
+        transition: color 0.15s;
+      }
+      .main-nav a:hover {
+        color: #fff;
+      }
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        min-height: 44px;
+        padding: 0 20px;
+        border-radius: 9px;
+        font-size: 12px;
+        font-weight: 550;
+        white-space: nowrap;
+        transition:
+          background 0.15s,
+          transform 0.15s,
+          border-color 0.15s;
+        border: 1px solid #ffffff1d;
+      }
+      .button:hover {
+        transform: translateY(-2px);
+        background: #ffffff0e;
+      }
+      .nav-download {
+        min-height: 35px;
+        font-size: 11px;
+        padding: 0 13px;
+      }
+      .button-primary {
+        background: var(--ice);
+        color: #102035;
+        border: 1px solid #cde5ff;
+        box-shadow:
+          0 1px 0 #ffffff66 inset,
+          0 5px 25px #9fc7ff13;
+        min-height: 50px;
+        padding: 0 23px;
+        font-size: 13px;
+      }
+      .button-primary:hover {
+        background: #cee4ff;
+      }
+      .button-quiet {
+        border-color: transparent;
+        color: #abb5c5;
+        font-weight: 400;
+      }
+      .button-quiet:hover {
+        background: #ffffff05;
+        color: #fff;
+      }
+      .menu-toggle {
+        display: none;
+        border: 0;
+        background: none;
+        padding: 5px;
+      }
+      .hero {
+        text-align: center;
+        position: relative;
+        isolation: isolate;
+        padding-top: 81px;
+      }
+      .hero-halo {
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 1100px;
+        max-width: 100vw;
+        height: 950px;
+        transform: translateX(-50%);
+        z-index: -2;
+        background: radial-gradient(ellipse at 50% 53%, #31496c37, transparent 64%);
+      }
+      .release-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 10px;
+        letter-spacing: 0.1px;
+        color: #b4bfcd;
+        padding: 7px 11px;
+        border: 1px solid #b8d2f51c;
+        border-radius: 30px;
+        background: #17213138;
+      }
+      .release-pill:hover {
+        border-color: #afd4ff55;
+      }
+      .live-dot {
+        height: 5px;
+        width: 5px;
+        border-radius: 50%;
+        background: var(--ice);
+        box-shadow: 0 0 9px #afd4ff55;
+      }
+      .hero h1 {
+        margin: 27px 0 22px;
+        font-size: clamp(50px, 6.7vw, 84px);
+        font-weight: 570;
+        letter-spacing: -4.5px;
+        line-height: 1.07;
+      }
+      .hero h1 > span {
+        background: linear-gradient(100deg, #f5f8ff 5%, #a5b9d8 88%);
+        background-clip: text;
+        color: transparent;
+      }
+      .hero-description {
+        font-size: 15px;
+        line-height: 1.8;
+        color: #9aa5b5;
+      }
+      .hero-actions {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 30px;
+      }
+      .download-meta {
+        font-size: 10px;
+        letter-spacing: 0.1px;
+        display: block;
+        margin-top: 14px;
+        color: #757f8f;
+      }
+      .download-meta > span {
+        margin: 0 5px;
+      }
+      .product-stage {
+        margin: 63px auto 0;
+        max-width: 890px;
+        position: relative;
+        padding: 0 20px 18px;
+      }
+      .stage-grid {
+        position: absolute;
+        inset: 30px -85px 0;
+        z-index: -1;
+        pointer-events: none;
+        background-image:
+          linear-gradient(#b9d9ff07 1px, transparent 1px),
+          linear-gradient(90deg, #b9d9ff07 1px, transparent 1px);
+        background-size: 55px 55px;
+        mask-image: radial-gradient(ellipse, #000, transparent 68%);
+      }
+      .stage-intro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 13px;
+        font-size: 8px;
+        letter-spacing: 2px;
+        color: #8595ac;
+        margin-bottom: 22px;
+      }
+      .stage-line {
+        height: 1px;
+        width: 50px;
+        background: linear-gradient(90deg, transparent, #b8d3ff3d);
+      }
+      .stage-line:last-child {
+        transform: rotate(180deg);
+      }
+      .product-shot {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+        box-shadow:
+          0 25px 100px #0008,
+          0 0 80px #6b9af813;
+        outline: 1px solid #b8d3ff0d;
+        outline-offset: -1px;
+      }
+      .stage-caption {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 9px;
+        padding-top: 17px;
+        color: #77859b;
+      }
+      .stage-caption > span:first-child {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+      }
+      .stage-caption kbd {
+        font-size: 9px;
+        padding: 2px 5px;
+        background: #151a23;
+        border: 1px solid #ffffff14;
+        border-radius: 4px;
+        color: #afbdd1;
+      }
+      .capture-note {
+        font-size: 9px;
+        color: #687181;
+        margin-top: 0;
+      }
+      .features-section {
+        padding-top: 123px;
+        padding-bottom: 110px;
+      }
+      .section-heading {
+        text-align: center;
+        margin-bottom: 56px;
+      }
+      .section-heading > p:last-child {
+        font-size: 13px;
+        margin-top: 20px;
+      }
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0 48px;
+      }
+      .feature {
+        padding: 30px 0 29px;
+        border-top: 1px solid var(--line);
+      }
+      .feature-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--ice);
+        margin-bottom: 23px;
+      }
+      .feature-top > span {
+        font-size: 9px;
+        color: #525d70;
+        letter-spacing: 1px;
+        font-variant-numeric: tabular-nums;
+      }
+      .feature h3 {
+        font-size: 18px;
+        letter-spacing: -0.4px;
+        margin-bottom: 12px;
+      }
+      .feature p {
+        font-size: 12px;
+        max-width: 400px;
+        line-height: 1.85;
+      }
+      .feature code {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-family: 'Cascadia Code', Consolas, monospace;
+        font-size: 11px;
+        color: #b5c5db;
+        margin-top: 22px;
+      }
+      .feature code > span {
+        color: #5e789a;
+      }
+      .keyboard-section {
+        display: grid;
+        grid-template-columns: 1fr 1.45fr;
+        gap: 60px;
+        border-top: 1px solid var(--line);
+        padding-top: 65px;
+        padding-bottom: 90px;
+      }
+      .keyboard-section > div > p:last-child {
+        font-size: 12px;
+        margin-top: 20px;
+      }
+      .keyboard-steps {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+      .keyboard-steps li {
+        display: flex;
+        gap: 19px;
+        align-items: center;
+        border-bottom: 1px solid var(--line);
+        padding: 24px 0;
+      }
+      .keyboard-steps li:first-child {
+        padding-top: 9px;
+      }
+      .step-number {
+        color: #566378;
+        font-size: 10px;
+        align-self: flex-start;
+        margin-top: 4px;
+      }
+      .keyboard-steps h3 {
+        font-size: 13px;
+        margin-bottom: 7px;
+      }
+      .keyboard-steps p {
+        font-size: 11px;
+        line-height: 1.5;
+      }
+      .key-combo {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-left: auto;
+        color: #657287;
+      }
+      .key-combo kbd {
+        background: linear-gradient(#1e242e, #161b23);
+        border: 1px solid #ffffff1f;
+        border-bottom: 3px solid #07090e;
+        border-radius: 6px;
+        min-width: 28px;
+        padding: 7px;
+        font-family: inherit;
+        font-size: 10px;
+        color: #bcc8d9;
+        text-align: center;
+        box-shadow: 0 1px 0 #ffffff0c inset;
+      }
+      .key-combo > span {
+        font-size: 9px;
+      }
+      .release-section {
+        padding-top: 44px;
+        padding-bottom: 79px;
+        border-top: 1px solid var(--line);
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        gap: 70px;
+      }
+      .release-section h2 {
+        font-size: 31px;
+        letter-spacing: -1px;
+      }
+      .release-section h2 span {
+        color: #788ba5;
+        font-weight: 350;
+      }
+      .release-date {
+        font-size: 10px;
+        margin-top: 18px;
+      }
+      .release-detail {
+        padding-top: 5px;
+      }
+      .small-tag {
+        display: inline-block;
+        font-size: 8px;
+        letter-spacing: 1px;
+        color: var(--ice);
+        border: 1px solid #afd4ff20;
+        border-radius: 4px;
+        padding: 4px 6px;
+        margin-bottom: 16px;
+      }
+      .release-detail h3 {
+        font-size: 18px;
+        margin-bottom: 13px;
+        letter-spacing: -0.4px;
+      }
+      .release-detail > p {
+        font-size: 12px;
+      }
+      .release-detail .muted-small {
+        font-size: 10px;
+        opacity: 0.65;
+        margin-top: 14px;
+      }
+      .download-section {
+        padding-top: 25px;
+        padding-bottom: 80px;
+      }
+      .download-panel {
+        display: grid;
+        grid-template-columns: 1.4fr 1fr;
+        gap: 60px;
+        border: 1px solid #a7c6f01c;
+        border-radius: 19px;
+        overflow: hidden;
+        padding: 50px 49px;
+        background:
+          radial-gradient(ellipse at 0% 0%, #5673991a, transparent 60%),
+          linear-gradient(130deg, #171c25, #10131a);
+      }
+      .download-main > img {
+        display: block;
+        object-fit: contain;
+        margin-bottom: 28px;
+        width: 60px;
+        height: 60px;
+      }
+      .download-main .eyebrow {
+        font-size: 8px;
+        letter-spacing: 1.7px;
+        margin-bottom: 14px;
+      }
+      .download-main h2 {
+        font-size: 34px;
+        letter-spacing: -1.3px;
+        max-width: 340px;
+      }
+      .download-main > p:not(.eyebrow) {
+        font-size: 12px;
+        margin-top: 18px;
+      }
+      .download-main > .button {
+        margin-top: 25px;
+      }
+      .download-main .download-meta {
+        font-size: 9px;
+      }
+      .portable-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        font-size: 10px;
+        color: #a4bad7;
+        margin-top: 23px;
+      }
+      .portable-link:hover {
+        color: #fff;
+      }
+      .download-details {
+        padding-top: 17px;
+      }
+      .detail-block {
+        padding: 17px 0 22px;
+        border-bottom: 1px solid var(--line);
+      }
+      .detail-block:first-child {
+        padding-top: 0;
+      }
+      .detail-block:last-child {
+        border: 0;
+        padding-bottom: 0;
+      }
+      .detail-label {
+        font-size: 8px;
+        letter-spacing: 1.5px;
+        color: #b0bed0;
+      }
+      .detail-block p {
+        font-size: 11px;
+        line-height: 1.8;
+        margin-top: 10px;
+        color: #8e9bb0;
+      }
+      .detail-block a {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 10px;
+        color: #b6cbe8;
+        margin-top: 11px;
+      }
+      .checksum {
+        margin: 15px 1px 0;
+        border: 1px solid var(--line);
+        border-radius: 9px;
+        color: #99a8bc;
+      }
+      .checksum > summary {
+        padding: 17px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        font-size: 10px;
+      }
+      .checksum summary::-webkit-details-marker,
+      .faq-list summary::-webkit-details-marker {
+        display: none;
+      }
+      .checksum[open] > summary svg {
+        transform: rotate(180deg);
+      }
+      .checksum-body {
+        padding: 0 20px 20px;
+      }
+      .checksum-body label {
+        font-size: 10px;
+        color: #8b9bb1;
+      }
+      .hash-row {
+        display: flex;
+        margin: 10px 0;
+        gap: 6px;
+      }
+      .hash-row input {
+        min-width: 0;
+        flex: 1;
+        background: #0a0c12;
+        border: 1px solid #ffffff13;
+        border-radius: 6px;
+        padding: 13px 11px;
+        color: #becde3;
+        font-family: Consolas, monospace;
+        font-size: 11px;
+      }
+      .hash-row button {
+        border: 1px solid #ffffff16;
+        border-radius: 6px;
+        background: #1a202a;
+        width: 45px;
+        display: grid;
+        place-items: center;
+      }
+      .checksum-body p {
+        font-size: 10px;
+      }
+      .checksum-body > a {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 10px;
+        margin-top: 15px;
+        color: var(--ice);
+      }
+      .community-section {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        gap: 28px;
+        padding-top: 34px;
+        padding-bottom: 70px;
+      }
+      .community-icon {
+        width: 70px;
+        height: 70px;
+        border: 1px solid #ffffff14;
+        border-radius: 18px;
+        background: linear-gradient(145deg, #1b2331, #10151f);
+        display: grid;
+        place-items: center;
+        color: #b4cded;
+      }
+      .community-icon svg {
+        width: 31px;
+        height: 31px;
+      }
+      .community-section .eyebrow {
+        font-size: 8px;
+        letter-spacing: 1.8px;
+        margin-bottom: 13px;
+      }
+      .community-section h2 {
+        font-size: 31px;
+        letter-spacing: -1.1px;
+      }
+      .community-section p:not(.eyebrow) {
+        font-size: 11px;
+        margin-top: 13px;
+      }
+      .button-discord {
+        background: #1b2433;
+        border-color: #a4c7fc26;
+        color: #c0d8fa;
+        font-size: 11px;
+      }
+      .button-discord:hover {
+        background: #27344a;
+      }
+      .faq-section {
+        border-top: 1px solid var(--line);
+        padding-top: 62px;
+        padding-bottom: 90px;
+        display: grid;
+        grid-template-columns: 0.8fr 1.2fr;
+        gap: 60px;
+      }
+      .faq-section h2 {
+        font-size: 32px;
+        letter-spacing: -1.3px;
+      }
+      .faq-section .eyebrow {
+        font-size: 8px;
+        letter-spacing: 1.5px;
+      }
+      .faq-list details {
+        border-bottom: 1px solid var(--line);
+      }
+      .faq-list summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        list-style: none;
+        padding: 21px 0;
+        font-size: 12px;
+        font-weight: 450;
+        color: #c9d0db;
+      }
+      .faq-list details:first-child summary {
+        padding-top: 0;
+      }
+      .faq-plus {
+        font-size: 21px;
+        color: #5f7089;
+        font-weight: 300;
+        transition: transform 0.2s;
+      }
+      .faq-list details[open] .faq-plus {
+        transform: rotate(45deg);
+      }
+      .faq-list p {
+        padding: 0 22px 21px 0;
+        font-size: 11px;
+        line-height: 1.9;
+      }
+      .site-footer {
+        border-top: 1px solid var(--line);
+        padding-top: 32px;
+        padding-bottom: 30px;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 30px;
+      }
+      .site-footer .logo {
+        font-size: 14px;
+      }
+      .site-footer .logo img {
+        width: 27px;
+        height: 27px;
+      }
+      .site-footer .pro {
+        font-size: 6px;
+      }
+      .site-footer p {
+        font-size: 9px;
+        margin-top: 11px;
+        color: #657082;
+      }
+      .site-footer nav {
+        display: flex;
+        gap: 26px;
+        font-size: 10px;
+        color: #8b97a9;
+        align-items: center;
+      }
+      .site-footer nav a:hover {
+        color: #fff;
+      }
+      .site-footer > span {
+        font-size: 9px;
+        color: #556175;
+        grid-column: 1/-1;
+        border-top: 1px solid #ffffff08;
+        padding-top: 18px;
+      }
+      @media (min-width: 1000px) {
+        .hero h1,
+        .hero-description,
+        .hero-actions,
+        .release-pill {
+          animation: arrive 0.6s ease both;
+        }
+        .hero-description {
+          animation-delay: 0.08s;
+        }
+        .hero-actions {
+          animation-delay: 0.15s;
+        }
+      }
+      @keyframes arrive {
+        from {
+          opacity: 0;
+          transform: translateY(8px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @media (max-width: 900px) {
+        .nav-wrap {
+          gap: 22px;
+          padding: 0 25px;
+        }
+        .main-nav {
+          gap: 17px;
+        }
+        .hero h1 {
+          letter-spacing: -3px;
+        }
+        .section-shell {
+          padding-left: 26px;
+          padding-right: 26px;
+        }
+        .keyboard-section {
+          gap: 30px;
+          grid-template-columns: 1fr 1.4fr;
+        }
+        .key-combo {
+          gap: 3px;
+        }
+        .key-combo kbd {
+          padding: 6px;
+          font-size: 9px;
+        }
+        .keyboard-steps {
+          min-width: 0;
+        }
+        .keyboard-steps li {
+          gap: 12px;
+        }
+        .keyboard-steps p {
+          font-size: 10px;
+          max-width: 180px;
+        }
+        .release-section {
+          gap: 30px;
+        }
+        .download-panel {
+          gap: 30px;
+          padding: 36px 30px;
+        }
+        .community-section {
+          grid-template-columns: auto 1fr;
+          gap: 22px;
+        }
+        .community-section > .button {
+          grid-column: 2;
+          justify-self: start;
+          margin-top: 0;
+        }
+        .community-section p br {
+          display: none;
+        }
+        .faq-section {
+          gap: 30px;
+        }
+      }
+      @media (max-width: 640px) {
+        html {
+          scroll-padding-top: 85px;
+        }
+        .nav-wrap {
+          height: 66px;
+          padding: 0 18px;
+          gap: 12px;
+        }
+        .logo {
+          font-size: 16px;
+          gap: 7px;
+        }
+        .logo img {
+          height: 31px;
+          width: 31px;
+        }
+        .pro {
+          font-size: 6px;
+          margin-left: 5px;
+          padding: 2px 4px;
+        }
+        .nav-download {
+          margin-left: auto;
+          font-size: 10px;
+          min-height: 32px;
+          padding: 0 10px;
+          gap: 7px;
+        }
+        .menu-toggle {
+          display: block;
+        }
+        .menu-toggle svg {
+          height: 19px;
+          width: 19px;
+        }
+        .main-nav {
+          display: none;
+          position: absolute;
+          top: 66px;
+          left: 0;
+          right: 0;
+          margin: 0;
+          padding: 20px 24px;
+          background: #12161f;
+          border-bottom: 1px solid #ffffff16;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 22px;
+        }
+        .main-nav.is-open {
+          display: flex;
+        }
+        .main-nav a {
+          font-size: 13px;
+        }
+        .section-shell {
+          padding-left: 21px;
+          padding-right: 21px;
+        }
+        .hero {
+          padding-top: 51px;
+        }
+        .release-pill {
+          font-size: 9px;
+          padding: 6px 10px;
+        }
+        .hero h1 {
+          font-size: 48px;
+          letter-spacing: -2.8px;
+          line-height: 1.1;
+          margin: 26px 0 20px;
+        }
+        .hero-description {
+          font-size: 12px;
+          line-height: 1.9;
+          max-width: 330px;
+          margin: auto;
+        }
+        .desktop-break {
+          display: none;
+        }
+        .hero-actions {
+          margin-top: 27px;
+          gap: 10px;
+          flex-direction: column;
+          align-items: center;
+        }
+        .button-primary {
+          min-height: 47px;
+          font-size: 12px;
+          padding: 0 18px;
+          gap: 11px;
+        }
+        .button-quiet {
+          min-height: 34px;
+          font-size: 11px;
+        }
+        .download-meta {
+          font-size: 9px;
+          margin-top: 12px;
+        }
+        .product-stage {
+          margin-top: 39px;
+          padding: 0 0 12px;
+        }
+        .stage-intro {
+          font-size: 6px;
+          letter-spacing: 1.5px;
+          gap: 10px;
+          margin-bottom: 17px;
+        }
+        .stage-line {
+          width: 27px;
+        }
+        .stage-grid {
+          inset: 10px -21px 0;
+          background-size: 35px 35px;
+        }
+        .product-shot {
+          border-radius: 8px;
+        }
+        .stage-caption {
+          padding-top: 13px;
+          font-size: 8px;
+        }
+        .stage-caption > span:first-child {
+          gap: 4px;
+        }
+        .stage-caption kbd {
+          font-size: 8px;
+          padding: 1px 4px;
+        }
+        .stage-caption svg {
+          width: 12px;
+        }
+        .capture-note {
+          font-size: 8px;
+          line-height: 1.8;
+          padding: 0 12px;
+        }
+        .features-section {
+          padding-top: 76px;
+          padding-bottom: 54px;
+        }
+        .section-heading {
+          margin-bottom: 32px;
+        }
+        .eyebrow {
+          font-size: 8px;
+          letter-spacing: 1.5px;
+          margin-bottom: 16px;
+        }
+        .section-heading h2 {
+          font-size: 29px;
+          letter-spacing: -1.3px;
+        }
+        .section-heading > p:last-child {
+          font-size: 11px;
+          margin-top: 15px;
+        }
+        .features-grid {
+          grid-template-columns: 1fr;
+          gap: 0;
+        }
+        .feature {
+          padding: 25px 0;
+        }
+        .feature-top {
+          margin-bottom: 17px;
+        }
+        .feature-top svg {
+          width: 20px;
+        }
+        .feature h3 {
+          font-size: 17px;
+          margin-bottom: 10px;
+        }
+        .feature p {
+          font-size: 12px;
+          max-width: none;
+        }
+        .feature code {
+          margin-top: 17px;
+          font-size: 10px;
+        }
+        .keyboard-section {
+          display: block;
+          padding-top: 43px;
+          padding-bottom: 55px;
+        }
+        .keyboard-section h2 {
+          font-size: 32px;
+        }
+        .keyboard-section > div > p:last-child {
+          font-size: 11px;
+          margin-top: 16px;
+        }
+        .keyboard-steps {
+          margin-top: 30px;
+        }
+        .keyboard-steps li {
+          gap: 13px;
+          padding: 22px 0;
+        }
+        .keyboard-steps h3 {
+          font-size: 12px;
+        }
+        .keyboard-steps p {
+          font-size: 10px;
+          max-width: 160px;
+        }
+        .key-combo kbd {
+          font-size: 9px;
+          padding: 6px;
+          min-width: 25px;
+        }
+        .release-section {
+          display: block;
+          padding-top: 38px;
+          padding-bottom: 42px;
+        }
+        .release-section h2 {
+          font-size: 27px;
+        }
+        .release-date {
+          font-size: 9px;
+          margin-top: 11px;
+        }
+        .release-detail {
+          margin-top: 28px;
+        }
+        .release-detail h3 {
+          font-size: 17px;
+        }
+        .release-detail > p {
+          font-size: 11px;
+        }
+        .download-section {
+          padding-top: 13px;
+          padding-bottom: 48px;
+        }
+        .download-panel {
+          display: block;
+          padding: 30px 24px;
+          border-radius: 14px;
+        }
+        .download-main > img {
+          width: 48px;
+          height: 48px;
+          margin-bottom: 24px;
+        }
+        .download-main h2 {
+          font-size: 29px;
+          letter-spacing: -1.2px;
+        }
+        .download-main > p:not(.eyebrow) {
+          font-size: 11px;
+        }
+        .download-main > .button {
+          margin-top: 23px;
+        }
+        .download-main .download-meta {
+          font-size: 8px;
+        }
+        .portable-link {
+          font-size: 9px;
+          margin-top: 19px;
+        }
+        .download-details {
+          margin-top: 24px;
+          padding-top: 25px;
+          border-top: 1px solid var(--line);
+        }
+        .detail-block p {
+          font-size: 11px;
+        }
+        .checksum > summary {
+          font-size: 9px;
+          padding: 15px;
+        }
+        .checksum-body {
+          padding: 0 15px 16px;
+        }
+        .hash-row input {
+          font-size: 10px;
+        }
+        .community-section {
+          grid-template-columns: 45px 1fr;
+          gap: 17px;
+          padding-top: 20px;
+          padding-bottom: 49px;
+        }
+        .community-icon {
+          width: 45px;
+          height: 45px;
+          border-radius: 12px;
+          align-self: start;
+        }
+        .community-icon svg {
+          width: 22px;
+        }
+        .community-section .eyebrow {
+          font-size: 7px;
+          letter-spacing: 1px;
+          margin-bottom: 10px;
+        }
+        .community-section h2 {
+          font-size: 25px;
+          letter-spacing: -0.9px;
+        }
+        .community-section p:not(.eyebrow) {
+          font-size: 11px;
+        }
+        .community-section > .button {
+          font-size: 10px;
+          min-height: 41px;
+        }
+        .faq-section {
+          display: block;
+          padding-top: 39px;
+          padding-bottom: 49px;
+        }
+        .faq-section h2 {
+          font-size: 29px;
+        }
+        .faq-list {
+          margin-top: 32px;
+        }
+        .faq-list summary {
+          font-size: 11px;
+          gap: 15px;
+          padding: 20px 0;
+        }
+        .faq-list p {
+          font-size: 11px;
+          padding-right: 12px;
+        }
+        .site-footer {
+          padding-top: 28px;
+          padding-bottom: 24px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 25px;
+        }
+        .site-footer nav {
+          font-size: 10px;
+          gap: 24px;
+        }
+        .site-footer > span {
+          width: 100%;
+          font-size: 8px;
+          padding-top: 18px;
+        }
+        .site-footer p {
+          font-size: 9px;
+        }
+        .site-footer .logo {
+          font-size: 14px;
+        }
+      }
+      @media (max-width: 360px) {
+        .nav-download {
+          display: none;
+        }
+        .menu-toggle {
+          margin-left: auto;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        *,
+        *::before,
+        *::after {
+          animation: none !important;
+          transition: none !important;
+        }
+      }
+
+      .click-counter {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin: 24px auto 0;
+        font-size: 11px;
+        color: #929ba9;
+      }
+      .click-counter strong {
+        font-size: 19px;
+        color: #c1dcff;
+        font-weight: 550;
+        font-variant-numeric: tabular-nums;
+      }
+      .click-counter small {
+        flex-basis: 100%;
+        font-size: 9px;
+        color: #7d8b9f;
+      }
+      @media (max-width: 640px) {
+        .click-counter {
+          margin-top: 20px;
+          font-size: 10px;
+        }
+        .click-counter strong {
+          font-size: 17px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a href="#inicio" aria-label="QuickDeck Pro, inicio"
+          ><span class="logo"
+            ><img src="brand/quickdeck.png" alt="" width="36" height="36" /><span
+              >QuickDeck<span class="pro">PRO</span></span
+            ></span
+          ></a
+        >
+        <nav class="main-nav" aria-label="Navegación principal">
+          <a href="#producto">Producto</a><a href="#novedades">Novedades</a
+          ><a href="#preguntas">Preguntas</a
+          ><a href="https://discord.gg/dPwN5qaMAV" target="_blank" rel="noopener noreferrer"
+            >Discord
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="13"
+              height="13"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-arrow-right"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path></svg
+          ></a>
+        </nav>
+        <a class="button nav-download" href="#descargar"
+          >Descargar
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-arrow-down-to-line"
+            aria-hidden="true"
+          >
+            <path d="M12 17V3"></path>
+            <path d="m6 11 6 6 6-6"></path>
+            <path d="M19 21H5"></path></svg></a
+        ><button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-menu"
+            aria-hidden="true"
+          >
+            <path d="M4 5h16"></path>
+            <path d="M4 12h16"></path>
+            <path d="M4 19h16"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main id="contenido">
+      <section class="hero section-shell" id="inicio">
+        <div class="hero-halo" aria-hidden="true"></div>
+        <a href="#novedades" class="release-pill"
+          ><span class="live-dot"></span> Ya disponible: v<!-- -->0.1.1<!-- -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="13"
+            height="13"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-arrow-right"
+            aria-hidden="true"
+          >
+            <path d="M5 12h14"></path>
+            <path d="m12 5 7 7-7 7"></path></svg
+        ></a>
+        <h1>Tu escritorio,<br /><span>a una búsqueda.</span></h1>
+        <p class="hero-description">
+          Abre aplicaciones, encuentra archivos y ejecuta tus acciones<br class="desktop-break" />
+          desde una sola ventana. Diseñado para Windows 11.
+        </p>
+        <div class="hero-actions">
+          <a
+            class="button button-primary"
+            href="downloads/QuickDeck-Pro-0.1.1-Setup.exe"
+            download=""
+            ><svg width="17" height="17" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path
+                d="M1 3.2 8.4 2.2v7.2H1zm8.5-1.1L19 1v8.4H9.5zM1 10.5h7.4v7.3L1 16.8zm8.5 0H19V19l-9.5-1.1z"
+              ></path>
+            </svg>
+            Descargar para Windows
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="17"
+              height="17"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-arrow-down-to-line"
+              aria-hidden="true"
+            >
+              <path d="M12 17V3"></path>
+              <path d="m6 11 6 6 6-6"></path>
+              <path d="M19 21H5"></path></svg></a
+          ><a class="button button-quiet" href="#producto"
+            >Conoce QuickDeck
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-arrow-down"
+              aria-hidden="true"
+            >
+              <path d="M12 5v14"></path>
+              <path d="m19 12-7 7-7-7"></path></svg
+          ></a>
+        </div>
+        <p class="download-meta">
+          Windows 11 · x64 <span>·</span> v<!-- -->0.1.1<!-- -->
+          <span>·</span>
+          <!-- -->2,31 MB
+        </p>
+        <div class="click-counter" aria-live="polite">
+          <strong id="download-click-count">—</strong><span>veces descargado</span
+          ><small id="download-click-status">Cargando…</small>
+        </div>
+        <div class="product-stage">
+          <div class="stage-grid" aria-hidden="true"></div>
+          <div class="stage-intro">
+            <span class="stage-line"></span><span>UN PANEL. TUS APLICACIONES.</span
+            ><span class="stage-line"></span>
+          </div>
+          <img
+            class="product-shot"
+            src="images/launcher.png"
+            alt="Captura real del lanzador de QuickDeck: búsqueda, favoritos de aplicaciones y navegación con el teclado."
+            width="850"
+            height="580"
+            fetchpriority="high"
+          />
+          <div class="stage-caption">
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-keyboard"
+                aria-hidden="true"
+              >
+                <path d="M10 8h.01"></path>
+                <path d="M12 12h.01"></path>
+                <path d="M14 8h.01"></path>
+                <path d="M16 12h.01"></path>
+                <path d="M18 8h.01"></path>
+                <path d="M6 8h.01"></path>
+                <path d="M7 16h10"></path>
+                <path d="M8 12h.01"></path>
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+              </svg>
+              Empieza con <kbd>Alt</kbd><kbd>Espacio</kbd></span
+            ><span>Atajo configurable</span>
+          </div>
+        </div>
+        <p class="capture-note">
+          Captura real de la interfaz. Los resultados se adaptan a las aplicaciones de tu equipo.
+        </p>
+      </section>
+      <section class="features-section section-shell" id="producto">
+        <div class="section-heading">
+          <p class="eyebrow">DENTRO DE QUICKDECK</p>
+          <h2>Encuentra el siguiente paso.</h2>
+          <p>El buscador se ocupa de localizarlo.<br />Tú decides qué abrir.</p>
+        </div>
+        <div class="features-grid">
+          <article class="feature">
+            <div class="feature-top">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="23"
+                height="23"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-search"
+                aria-hidden="true"
+              >
+                <path d="m21 21-4.34-4.34"></path>
+                <circle cx="11" cy="11" r="8"></circle></svg
+              ><span>0<!-- -->1</span>
+            </div>
+            <h3>Encuentra tus aplicaciones</h3>
+            <p>
+              Busca las aplicaciones de tu equipo, abre la que necesitas y fija tus favoritas.
+              QuickDeck recuerda las que más utilizas.
+            </p>
+            <code><span>›</span>terminal</code>
+          </article>
+          <article class="feature">
+            <div class="feature-top">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="23"
+                height="23"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-folder-open"
+                aria-hidden="true"
+              >
+                <path
+                  d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2"
+                ></path></svg
+              ><span>0<!-- -->2</span>
+            </div>
+            <h3>Tus archivos, a mano</h3>
+            <p>
+              Añade las carpetas que quieras buscar. Encuentra documentos por nombre o extensión y
+              abre su ubicación en el Explorador.
+            </p>
+            <code><span>›</span>ext:pdf presupuesto</code>
+          </article>
+          <article class="feature">
+            <div class="feature-top">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="23"
+                height="23"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-earth"
+                aria-hidden="true"
+              >
+                <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"></path>
+                <path
+                  d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"
+                ></path>
+                <path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"></path>
+                <circle cx="12" cy="12" r="10"></circle></svg
+              ><span>0<!-- -->3</span>
+            </div>
+            <h3>Calcula y busca en la web</h3>
+            <p>
+              Resuelve una cuenta sin abrir otra aplicación. Usa prefijos para buscar en Google,
+              GitHub o YouTube desde tu navegador.
+            </p>
+            <code><span>›</span>15% de 250 → 37,5</code>
+          </article>
+          <article class="feature">
+            <div class="feature-top">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="23"
+                height="23"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-workflow"
+                aria-hidden="true"
+              >
+                <rect width="8" height="8" x="3" y="3" rx="2"></rect>
+                <path d="M7 11v4a2 2 0 0 0 2 2h4"></path>
+                <rect width="8" height="8" x="13" y="13" rx="2"></rect></svg
+              ><span>0<!-- -->4</span>
+            </div>
+            <h3>Prepara tu forma de trabajar</h3>
+            <p>
+              Guarda textos que repites, crea comandos propios y encadena acciones en un workflow.
+              Todo desde el mismo lanzador.
+            </p>
+            <code><span>›</span>/firma</code>
+          </article>
+        </div>
+      </section>
+      <section class="keyboard-section section-shell">
+        <div>
+          <p class="eyebrow">DEL TECLADO A LA ACCIÓN</p>
+          <h2>Abre. Escribe.<br />Continúa.</h2>
+          <p>No hace falta recorrer menús.<br />El lanzador aparece donde estás trabajando.</p>
+        </div>
+        <ol class="keyboard-steps">
+          <li>
+            <span class="step-number">01</span>
+            <div>
+              <h3>Abre el panel</h3>
+              <p>Tu atajo, incluso desde otra aplicación.</p>
+            </div>
+            <div class="key-combo"><kbd>Alt</kbd><span>+</span><kbd>Espacio</kbd></div>
+          </li>
+          <li>
+            <span class="step-number">02</span>
+            <div>
+              <h3>Encuentra y selecciona</h3>
+              <p>Escribe un nombre y navega por los resultados.</p>
+            </div>
+            <div class="key-combo"><kbd>↑</kbd><kbd>↓</kbd></div>
+          </li>
+          <li>
+            <span class="step-number">03</span>
+            <div>
+              <h3>Ejecuta la acción</h3>
+              <p>Abre el resultado. Tab muestra otras acciones.</p>
+            </div>
+            <div class="key-combo"><kbd>Enter ↵</kbd></div>
+          </li>
+        </ol>
+      </section>
+      <section class="release-section section-shell" id="novedades">
+        <div>
+          <p class="eyebrow">ÚLTIMA VERSIÓN</p>
+          <h2>QuickDeck Pro <span>0.1.1</span></h2>
+          <p class="release-date">9 de noviembre de 2026</p>
+        </div>
+        <div class="release-detail">
+          <span class="small-tag">INSTALACIÓN</span>
+          <h3>Actualizar sin empezar de cero.</h3>
+          <p>
+            El instalador actualiza una versión anterior sobre la instalación existente, sin pedir
+            desinstalarla primero. Cierra QuickDeck desde la bandeja y ejecuta el nuevo instalador
+            oficial.
+          </p>
+          <p class="muted-small">
+            Las nuevas versiones se descargan desde esta página. Tú decides cuándo instalarlas.
+          </p>
+        </div>
+      </section>
+      <section class="download-section section-shell" id="descargar">
+        <div class="download-panel">
+          <div class="download-main">
+            <img src="brand/quickdeck.png" alt="" width="64" height="64" loading="lazy" />
+            <p class="eyebrow">QUICKDECK PRO PARA WINDOWS</p>
+            <h2>Hazle sitio en tu escritorio.</h2>
+            <p>
+              Descarga la versión oficial. Instala, configura tu atajo<br class="desktop-break" />
+              y empieza a buscar.
+            </p>
+            <a
+              class="button button-primary"
+              href="downloads/QuickDeck-Pro-0.1.1-Setup.exe"
+              download=""
+              ><svg
+                width="17"
+                height="17"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M1 3.2 8.4 2.2v7.2H1zm8.5-1.1L19 1v8.4H9.5zM1 10.5h7.4v7.3L1 16.8zm8.5 0H19V19l-9.5-1.1z"
+                ></path>
+              </svg>
+              Descargar instalador
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-arrow-down-to-line"
+                aria-hidden="true"
+              >
+                <path d="M12 17V3"></path>
+                <path d="m6 11 6 6 6-6"></path>
+                <path d="M19 21H5"></path></svg></a
+            ><span class="download-meta"
+              >Versión
+              <!-- -->0.1.1<!-- -->
+              · Windows 11 x64 ·
+              <!-- -->2,31 MB</span
+            ><a class="portable-link" href="downloads/QuickDeck-Pro-0.1.1-Portable.zip" download=""
+              >También disponible en ZIP portable
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-arrow-right"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path></svg
+            ></a>
+          </div>
+          <div class="download-details">
+            <div class="detail-block">
+              <span class="detail-label">ANTES DE INSTALAR</span>
+              <p>
+                Versión inicial sin firma digital. Windows puede mostrar un aviso de editor
+                desconocido. Comprueba el archivo y su procedencia antes de instalarlo.
+              </p>
+            </div>
+            <div class="detail-block">
+              <span class="detail-label">ACTUALIZACIONES</span>
+              <p>
+                Descarga cada nueva versión desde esta página. No necesitas desinstalar una versión
+                anterior para actualizar con este instalador.
+              </p>
+            </div>
+            <div class="detail-block">
+              <span class="detail-label">LICENCIA DE USO</span>
+              <p>
+                Puedes instalar y usar las versiones oficiales. Comparte esta página; redistribuir
+                archivos requiere autorización.
+              </p>
+              <a href="legal/licencia.txt" target="_blank" rel="noopener noreferrer"
+                >Leer la licencia
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="13"
+                  height="13"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+        <details class="checksum">
+          <summary>
+            <span>Verificar descarga · SHA-256</span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-chevron-down"
+              aria-hidden="true"
+            >
+              <path d="m6 9 6 6 6-6"></path>
+            </svg>
+          </summary>
+          <div class="checksum-body">
+            <label for="installer-hash">SHA-256 del instalador v<!-- -->0.1.1</label>
+            <div class="hash-row">
+              <input
+                id="installer-hash"
+                readonly
+                value="947028d81b7b27a9ba434077b48956f7c271d74dd0b566033e0e9550c422433c"
+              /><button type="button" aria-label="Copiar SHA-256">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-copy"
+                  aria-hidden="true"
+                >
+                  <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                  <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                </svg>
+              </button>
+            </div>
+            <p aria-live="polite">
+              El hash permite comprobar que el archivo descargado coincide con el publicado.
+            </p>
+            <a href="downloads/SHA256SUMS.txt" download=""
+              >Descargar hashes del instalador y portable
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="13"
+                height="13"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-arrow-down-to-line"
+                aria-hidden="true"
+              >
+                <path d="M12 17V3"></path>
+                <path d="m6 11 6 6 6-6"></path>
+                <path d="M19 21H5"></path></svg
+            ></a>
+          </div>
+        </details>
+      </section>
+      <section class="community-section section-shell" id="comunidad">
+        <div class="community-icon">
+          <svg viewBox="0 0 24 24" width="23" height="23" fill="currentColor" aria-hidden="true">
+            <path
+              d="M20.3 4.5a19 19 0 0 0-4.7-1.4l-.6 1.2a17 17 0 0 0-5.9 0l-.6-1.2a19 19 0 0 0-4.8 1.4C.7 9 .1 13.4.5 17.7a19 19 0 0 0 5.8 3l1.2-1.9-1.8-.9.5-.4a13.5 13.5 0 0 0 11.6 0l.5.4-1.8.9 1.2 1.9a19 19 0 0 0 5.8-3c.5-5-.9-9.3-3.2-13.2ZM8.1 15.2c-1.2 0-2.1-1.1-2.1-2.4s.9-2.4 2.1-2.4 2.2 1.1 2.1 2.4c0 1.3-.9 2.4-2.1 2.4Zm7.8 0c-1.2 0-2.1-1.1-2.1-2.4s.9-2.4 2.1-2.4 2.2 1.1 2.1 2.4c0 1.3-.9 2.4-2.1 2.4Z"
+            ></path>
+          </svg>
+        </div>
+        <div>
+          <p class="eyebrow">LA COMUNIDAD, EN DISCORD</p>
+          <h2>Hablemos de QuickDeck.</h2>
+          <p>
+            Comparte cómo lo usas, propone mejoras y cuéntanos si algo falla.<br
+              class="desktop-break"
+            />
+            Un lugar para seguir construyendo la aplicación.
+          </p>
+        </div>
+        <a
+          class="button button-discord"
+          href="https://discord.gg/dPwN5qaMAV"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Entrar al servidor
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="17"
+            height="17"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-arrow-right"
+            aria-hidden="true"
+          >
+            <path d="M5 12h14"></path>
+            <path d="m12 5 7 7-7 7"></path></svg
+        ></a>
+      </section>
+      <section class="faq-section section-shell" id="preguntas">
+        <div>
+          <p class="eyebrow">LO QUE NECESITAS SABER</p>
+          <h2>Antes de empezar.</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>
+              ¿Qué necesito para instalarlo?<span class="faq-plus" aria-hidden="true">+</span>
+            </summary>
+            <p>
+              Un equipo con Windows 11 de 64 bits. QuickDeck utiliza Microsoft Edge WebView2; el
+              instalador comprueba si está disponible y puede descargarlo si falta. No necesitas
+              instalar Rust, Node.js ni herramientas de desarrollo.
+            </p>
+          </details>
+          <details>
+            <summary>
+              ¿Cómo abro y cierro el buscador?<span class="faq-plus" aria-hidden="true">+</span>
+            </summary>
+            <p>
+              El atajo inicial es Alt + Espacio. Si otra aplicación lo utiliza, puedes elegir una
+              combinación distinta en Preferencias → Atajos. Escape o un clic fuera ocultan el
+              lanzador; para cerrar QuickDeck por completo, usa Salir desde la bandeja del sistema.
+            </p>
+          </details>
+          <details>
+            <summary>¿Cómo se actualiza?<span class="faq-plus" aria-hidden="true">+</span></summary>
+            <p>
+              Descarga el instalador nuevo desde esta página, sal de QuickDeck desde la bandeja y
+              ejecútalo con la misma cuenta de Windows. El asistente actualiza una versión anterior
+              sin pedir desinstalarla primero. Las actualizaciones son manuales; todavía no hay un
+              actualizador automático.
+            </p>
+          </details>
+          <details>
+            <summary>
+              ¿Por qué Windows puede mostrar un aviso al descargarlo?<span
+                class="faq-plus"
+                aria-hidden="true"
+                >+</span
+              >
+            </summary>
+            <p>
+              Esta versión todavía no tiene firma digital. Windows o tu navegador pueden mostrar un
+              aviso de editor desconocido. Comprueba la procedencia del archivo y su SHA-256 antes
+              de instalarlo. No se ha completado una campaña de instalación y actualización en
+              equipos limpios con todas las configuraciones de Windows.
+            </p>
+          </details>
+          <details>
+            <summary>
+              ¿Puedo compartir QuickDeck con otras personas?<span
+                class="faq-plus"
+                aria-hidden="true"
+                >+</span
+              >
+            </summary>
+            <p>
+              Puedes compartir el enlace a esta página para que descarguen la versión oficial. La
+              licencia permite instalar y usar el programa para uso personal o profesional. Alojar o
+              redistribuir sus archivos, o publicar actualizaciones, requiere autorización escrita
+              del titular. Los componentes de terceros conservan sus propias licencias.
+            </p>
+          </details>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer section-shell">
+      <div>
+        <a href="#inicio" aria-label="Volver al inicio"
+          ><span class="logo"
+            ><img src="brand/quickdeck.png" alt="" width="36" height="36" /><span
+              >QuickDeck<span class="pro">PRO</span></span
+            ></span
+          ></a
+        >
+        <p>Una ventana para tus aplicaciones, archivos y acciones.</p>
+      </div>
+      <nav aria-label="Enlaces del pie">
+        <a href="legal/licencia.txt" target="_blank" rel="noopener noreferrer">Licencia</a
+        ><a href="legal/privacidad.txt" target="_blank" rel="noopener noreferrer">Privacidad</a
+        ><a href="https://discord.gg/dPwN5qaMAV" target="_blank" rel="noopener noreferrer"
+          >Discord</a
+        >
+      </nav>
+      <span>© 2026 QuickDeck Pro</span>
+    </footer>
+    <noscript
+      ><p class="section-shell">
+        Las descargas funcionan sin JavaScript. Actívalo para ver el contador global de clics.
+      </p></noscript
+    >
+    <script>
+      // Contador global de CLICS. Todo el código del cliente está en este HTML.
+      // El total compartido se guarda en el servicio online, nunca en localStorage.
+      const COUNTER_URL = 'https://quickdeck-pro.pithymandrill1.chatgpt.site/api/download-clicks';
+      const countElement = document.getElementById('download-click-count');
+      const countStatus = document.getElementById('download-click-status');
+      const countFormat = new Intl.NumberFormat('es-ES');
+      function showCount(value) {
+        if (!Number.isSafeInteger(value) || value < 0) throw new Error('Invalid counter');
+        countElement.textContent = countFormat.format(value);
+        countStatus.textContent = 'Descargas totales';
+      }
+      async function loadCount() {
+        try {
+          const response = await fetch(COUNTER_URL, {
+            cache: 'no-store',
+            credentials: 'omit',
+            signal: AbortSignal.timeout(8000),
+          });
+          if (!response.ok) throw new Error('Counter unavailable');
+          showCount((await response.json()).count);
+        } catch {
+          countStatus.textContent = 'Contador temporalmente no disponible';
+        }
+      }
+      loadCount();
+      // Solo se cuentan los enlaces al instalador y al ZIP, no el salto a la sección.
+      document
+        .querySelectorAll('a[href$="-Setup.exe"], a[href$="-Portable.zip"]')
+        .forEach((link) => {
+          link.addEventListener('click', async () => {
+            // No se cancela ni retrasa la descarga si el servicio del contador falla.
+            try {
+              const response = await fetch(COUNTER_URL, {
+                method: 'POST',
+                cache: 'no-store',
+                credentials: 'omit',
+                keepalive: true,
+              });
+              if (!response.ok) throw new Error('Counter unavailable');
+              showCount((await response.json()).count);
+            } catch {
+              countStatus.textContent = 'No se pudo registrar este clic';
+            }
+          });
+        });
+      const menuButton = document.querySelector('.menu-toggle');
+      const navigation = document.querySelector('.main-nav');
+      const closedMenuIcon = menuButton.innerHTML;
+      function closeMenu() {
+        navigation.classList.remove('is-open');
+        menuButton.setAttribute('aria-expanded', 'false');
+        menuButton.setAttribute('aria-label', 'Abrir menú');
+        menuButton.innerHTML = closedMenuIcon;
+      }
+      menuButton.addEventListener('click', () => {
+        if (navigation.classList.contains('is-open')) {
+          closeMenu();
+          return;
+        }
+        navigation.classList.add('is-open');
+        menuButton.setAttribute('aria-expanded', 'true');
+        menuButton.setAttribute('aria-label', 'Cerrar menú');
+        menuButton.innerHTML =
+          '<svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>';
+      });
+      navigation
+        .querySelectorAll('a[href^="#"]')
+        .forEach((link) => link.addEventListener('click', closeMenu));
+      document.querySelector('.checksum button').addEventListener('click', async () => {
+        const value = document.getElementById('installer-hash');
+        const status = document.querySelector('.checksum-body p');
+        try {
+          await navigator.clipboard.writeText(value.value);
+          status.textContent = 'SHA-256 copiado.';
+        } catch {
+          value.focus();
+          value.select();
+          status.textContent = 'No se pudo copiar. Selecciona el texto y cópialo manualmente.';
+        }
+      });
+      document
+        .getElementById('installer-hash')
+        .addEventListener('focus', (event) => event.target.select());
+    </script>
+  </body>
 </html>
