@@ -1,0 +1,24 @@
+PRIVACIDAD DE LA WEB DE QUICKDECK PRO
+Última revisión: 9 de noviembre de 2026.
+
+Esta página presenta QuickDeck Pro y permite descargar sus versiones oficiales.
+No hemos añadido formularios de recogida de datos, cuentas propias ni analítica
+publicitaria a la página. No se solicitan datos de pago ni correos electrónicos.
+
+El proveedor de alojamiento procesa las solicitudes necesarias para entregar
+la web y los archivos. Sus registros técnicos y políticas son independientes
+de los datos que la aplicación guarda localmente en el equipo del usuario.
+
+El enlace a Discord abre un servicio externo, sujeto a sus propias condiciones
+y política de privacidad. Visitar esta página no te une al servidor.
+
+El botón de copiar SHA-256 escribe el hash en el portapapeles solo al pulsarlo.
+La página no lee el contenido de tu portapapeles.
+
+El contador de clics consulta un servicio alojado en
+quickdeck-pro.pithymandrill1.chatgpt.site. Al pulsar un enlace de descarga se
+envía una petición para incrementar un total compartido. La base de datos del
+contador guarda únicamente ese total; no guarda nombres, cuentas, IPs ni
+identificadores de visitante. No mide personas únicas ni descargas terminadas.
+El proveedor del servicio procesa las solicitudes y sus registros técnicos
+conforme a sus propias condiciones. No se usa localStorage para simular cifras.

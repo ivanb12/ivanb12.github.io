@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ivanb12.github.io/quickdeckpro/sitemap.xml

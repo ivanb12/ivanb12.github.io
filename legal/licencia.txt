@@ -1,0 +1,46 @@
+﻿QUICKDECK PRO - LICENCIA DE USO Y DISTRIBUCIÓN
+Aplicable a las compilaciones oficiales a partir de 0.1.4, incluida la edición
+pública v0.1.1 con compilación interna 0.1.6.
+
+Copyright (c) 2026. Derechos reservados al titular de QuickDeck Pro.
+
+1. INSTALACIÓN Y USO
+Se concede a quien obtenga una copia oficial una licencia no exclusiva para
+instalar y utilizar QuickDeck Pro en equipos bajo su control, para uso personal
+o profesional. Se permiten copias de respaldo para ese uso. No se transfiere
+la titularidad del programa, su código propio ni sus recursos originales.
+
+2. PUBLICACIÓN Y ACTUALIZACIONES
+La publicación de instaladores, copias del programa y actualizaciones queda
+reservada al titular de QuickDeck Pro y a quienes este autorice expresamente
+por escrito. Los usuarios pueden instalar las actualizaciones oficiales que
+el titular publique. Esta licencia no obliga a ofrecer actualizaciones ni
+servicios de soporte.
+
+3. PROHIBICIÓN DE REDISTRIBUCIÓN SIN AUTORIZACIÓN
+Sin autorización previa y por escrito del titular, no se permite compartir,
+alojar, republicar, vender, sublicenciar ni redistribuir a terceros el
+instalador, el ejecutable, el código propio o versiones modificadas del
+programa, de forma gratuita o de pago. Tampoco se permite presentarse como
+distribuidor oficial ni publicar actualizaciones del producto en su nombre.
+Se permite compartir enlaces a los canales oficiales de descarga, sin
+republicar los archivos.
+
+4. COMPONENTES DE TERCEROS
+Esta licencia se aplica únicamente al código y recursos propios de QuickDeck
+Pro. Los componentes de terceros conservan íntegramente sus propias licencias,
+avisos y permisos, incluidos los derechos de redistribución que otorguen.
+Consulte THIRD_PARTY_NOTICES.md y el directorio licenses/. La plantilla NSIS
+de Tauri conserva su licencia en licenses/installer/LICENSE-Tauri-MIT de la
+instalación y en src-tauri/installer/LICENSE-Tauri-MIT del código fuente.
+
+5. VERSIONES ANTERIORES Y DERECHOS LEGALES
+Estas condiciones no revocan ni modifican permisos válidamente adquiridos
+bajo licencias de versiones anteriores. No limitan derechos irrenunciables
+ni excepciones reconocidas por la legislación aplicable.
+
+6. GARANTÍAS Y RESPONSABILIDAD
+El programa se facilita en su estado actual, sin garantías adicionales de
+funcionamiento ininterrumpido o adecuación a una finalidad concreta. Cualquier
+exclusión de garantía o limitación de responsabilidad se aplicará únicamente
+en la medida permitida por la legislación aplicable.
