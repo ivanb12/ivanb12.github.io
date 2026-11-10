@@ -21,7 +21,7 @@ No requiere GitHub Releases, un token de GitHub ni claves en el navegador. No us
 
 ## Versión
 
-La versión pública e interna es v1.0.0. Incorpora Gema, voz local con atajo configurable y bordes de colores. Se activa desde Preferencias → Voz y escucha al pulsar, sin escucha permanente. Requiere los componentes de voz de español de Windows y acceso al micrófono. Se mantienen Carpetas, filtros como *.exe y el actualizador firmado en Acerca de. Actualiza las instalaciones anteriores conservando sus datos.
+La versión pública es v1.0.0 y la revisión interna es 1.0.1. Incorpora Gema, voz local con atajo configurable y bordes de colores. Se activa desde Preferencias → Voz. La llamada por nombre es opcional y mantiene el micrófono escuchando localmente; también se puede usar el botón o atajo. El halo blanco reacciona al audio y el saludo inicial se puede personalizar o desactivar. Requiere los componentes de voz de español de Windows y acceso al micrófono. Se mantienen Carpetas, filtros como *.exe y el actualizador firmado en Acerca de. Actualiza las instalaciones anteriores conservando sus datos.
 
 La primera instalación de esta revisión se hace con el setup. Después puedes buscar actualizaciones en Preferencias → Acerca de, descargarlas y confirmar su instalación. La edición portable se actualiza manualmente. También puedes cerrar QuickDeck desde la bandeja y ejecutar el nuevo setup, sin desinstalar antes.
 
