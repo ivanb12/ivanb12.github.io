@@ -4,9 +4,9 @@ Destino: https://ivanb12.github.io/quickdeckpro/
 
 ## Subir a GitHub Pages
 
-1. Crea el repositorio público `ivanb12/quickdeckpro` si aún no existe.
-2. Sube **el contenido de esta carpeta**, de modo que `index.html` quede en la raíz del repositorio, junto a `brand/`, `images/`, `downloads/` y `legal/`.
-3. En Settings → Pages elige Deploy from a branch, rama `main`, carpeta `/ (root)`.
+1. Usa el repositorio público `ivanb12/ivanb12.github.io`, rama `main`.
+2. Sube **el contenido de esta carpeta dentro de `quickdeckpro/`**, de modo que quede `quickdeckpro/index.html`, junto a `brand/`, `images/`, `downloads/` y `legal/`. Conserva el resto del repositorio y las descargas anteriores.
+3. Mantén GitHub Pages sirviendo la rama `main` desde `/ (root)`; la web de QuickDeck ocupa su subcarpeta.
 4. Espera a que GitHub publique la página en la URL indicada. No necesitas npm, React ni un paso de compilación.
 
 El archivo `index.html` incluye todos los estilos y el código JavaScript del contador, menú y copia del hash. Los archivos gráficos y las descargas son recursos locales con rutas relativas, compatibles con `/quickdeckpro/`. No subas las fuentes privadas de la aplicación ni la carpeta padre de este proyecto.
@@ -21,6 +21,10 @@ No requiere GitHub Releases, un token de GitHub ni claves en el navegador. No us
 
 ## Versión
 
-La edición pública se llama v0.1.1. Sus binarios tienen compilación interna 0.1.6 para mantener el orden de actualización de las versiones de prueba 0.1.0–0.1.5. El nombre público y la ventana de la aplicación muestran v0.1.1. No se ha inventado un historial de instalaciones o de descargas previas.
+La versión pública e interna es v1.0.0. Incorpora Gema, voz local con atajo configurable y bordes de colores. Se activa desde Preferencias → Voz y escucha al pulsar, sin escucha permanente. Requiere los componentes de voz de español de Windows y acceso al micrófono. Se mantienen Carpetas, filtros como *.exe y el actualizador firmado en Acerca de. Actualiza las instalaciones anteriores conservando sus datos.
 
-Para instalar una actualización, cierra QuickDeck desde la bandeja y ejecuta el nuevo instalador. No necesitas desinstalar una versión anterior. Lee `legal/licencia.txt`; el instalador aún no está firmado digitalmente.
+La primera instalación de esta revisión se hace con el setup. Después puedes buscar actualizaciones en Preferencias → Acerca de, descargarlas y confirmar su instalación. La edición portable se actualiza manualmente. También puedes cerrar QuickDeck desde la bandeja y ejecutar el nuevo setup, sin desinstalar antes.
+
+Sube también `latest.json` y `downloads/updates/`, incluidos en esta carpeta. No borres las rutas de revisiones anteriores mientras existan clientes que puedan estar descargándolas. Publica primero el instalador y su `.sig`, y el manifiesto `latest.json` al final. El manifiesto usa la revisión interna para comparar versiones y contiene la firma del instalador.
+
+Los paquetes del actualizador llevan una firma criptográfica de QuickDeck. Esto es independiente de la firma Authenticode de Windows: el instalador todavía no tiene certificado Authenticode. Lee `legal/licencia.txt`.

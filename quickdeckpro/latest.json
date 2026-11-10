@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "publicVersion": "1.0.0",
+  "notes": "Gema: control por voz y bordes de colores.\n\n• Gema como nombre inicial, personalizable desde Preferencias → Voz.\n• Botón y atajo configurable para escuchar una orden y abrir aplicaciones reales.\n• Respuestas habladas con las voces de escritorio instaladas, velocidad, volumen y texto configurables.\n• Halo de colores en la pantalla activa, sin bloquear los clics ni quitar el foco. Se puede desactivar.\n• Reconocimiento local en español; sin escucha permanente ni grabaciones guardadas.\n• Se conservan los filtros de archivos y carpetas y el actualizador firmado de Acerca de.",
+  "pub_date": "2026-11-10T18:50:42.421Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTTENENDdnSndJS291VU5oeW1qU1J5SUNRakZpbkhLbVpmR0FRM0xTNmxMdzByUEJkUzlSRUxIenZlQkdTVWgrbFF6dzN5NnJRSk53aE00S25xanc2VStnVkVEVEc3L2dzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MzM2NTc2CWZpbGU6UXVpY2tEZWNrIFByb18xLjAuMF94NjQtc2V0dXAuZXhlCXZlcnNpb246MS4wLjAKbmw3cHFvYThaVE0xUS83QnhUUjZUaHlzRURuTzFSQ2RlTlZVMFdreWJ3OWcxblJCdFYyeE96QkZsWGZGa2gvMXFqbnAyS0lCV1BxcEt6aHA2UGlpQXc9PQo=",
+      "url": "https://ivanb12.github.io/quickdeckpro/downloads/updates/1.0.0/QuickDeck-Pro-Setup.exe"
+    }
+  }
+}
