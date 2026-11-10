@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "publicVersion": "1.0.0",
-  "notes": "Gema: control por voz y bordes de colores.\n\n• Gema como nombre inicial, personalizable desde Preferencias → Voz.\n• Botón y atajo configurable para escuchar una orden y abrir aplicaciones reales.\n• Respuestas habladas con las voces de escritorio instaladas, velocidad, volumen y texto configurables.\n• Halo de colores en la pantalla activa, sin bloquear los clics ni quitar el foco. Se puede desactivar.\n• Reconocimiento local en español; sin escucha permanente ni grabaciones guardadas.\n• Se conservan los filtros de archivos y carpetas y el actualizador firmado de Acerca de.",
+  "notes": "Gema llega en la versión 1.0.0: abre aplicaciones con la voz y muestra bordes de colores mientras escucha. Actívala en Preferencias → Voz y personaliza su nombre, voz y atajo. Se mantienen la búsqueda de carpetas, los filtros como *.exe y las actualizaciones desde Acerca de.",
   "pub_date": "2026-11-10T18:50:42.421Z",
   "platforms": {
     "windows-x86_64": {
