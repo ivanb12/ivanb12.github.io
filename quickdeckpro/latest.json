@@ -1,12 +1,12 @@
 {
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publicVersion": "1.0.0",
-  "notes": "Gema llega en la versión 1.0.0: abre aplicaciones con la voz y muestra bordes de colores mientras escucha. Actívala en Preferencias → Voz y personaliza su nombre, voz y atajo. Se mantienen la búsqueda de carpetas, los filtros como *.exe y las actualizaciones desde Acerca de.",
-  "pub_date": "2026-11-10T19:54:05.015Z",
+  "notes": "Gema llega en la versión 1.0.0: abre aplicaciones con la voz y muestra bordes de colores mientras escucha. Actívala en Preferencias → Voz y personaliza su nombre, voz y atajo. Se mantienen la búsqueda de carpetas, los filtros como *.exe y las actualizaciones desde Acerca de.\n\nRevisión 1.0.2: Gema incorpora tres voces neuronales locales, reconocimiento de español y respuestas con IA mediante Groq. Consulta el tiempo y las noticias con fuentes, recuerda datos en el equipo y muestra un halo blanco que reacciona al audio. Prepara la voz y el reconocimiento desde Preferencias → Voz. La conexión de IA es opcional y tiene una cuota gratuita compartida; el audio y los recuerdos permanecen en el PC.",
+  "pub_date": "2026-11-11T16:07:23.449Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTTENENDdnSndJS3F3TnZDeGhEczYwYzBsQzZuNVVKcjNpVUV3aXEySExmMGpmWno3bnludXFtOWFmLy9kcWwyeTg4VEZsRVZmVW9Vc05nZ3BQNmg4L2VUd2t6N3Ntc2cwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MzQwNDAzCWZpbGU6UXVpY2tEZWNrIFByb18xLjAuMV94NjQtc2V0dXAuZXhlCXZlcnNpb246MS4wLjEKb3U0dThtbjk2NVNnSkV4SmI4V2lEVjhMaVh2K0w0RDBUbDdFd1J3NjBjRnczMnoyUjRLMFhPQ0JZSGpCb2tIK1lYSDVxV0RpSUkySDRUVjFTbVJXQ0E9PQo=",
-      "url": "https://ivanb12.github.io/quickdeckpro/downloads/updates/1.0.1/QuickDeck-Pro-Setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTTENENDdnSndJS215T0pVQUszM0hLWVVXUDRwUXIvY3lKNFJCU2l3RFEyYWk2dUVUcTRVdXhaMUV0Z21Cam0rZm11RnZRaGFZYnZGcHpnQU80UnFhZmh1NWo0eWtWL0F3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NDEyOTU1CWZpbGU6UXVpY2tEZWNrIFByb18xLjAuMl94NjQtc2V0dXAuZXhlCXZlcnNpb246MS4wLjIKcjRjVzVRbDV2bXZJSlRoSUVGSG1XOXQ2TEtEaW52cVFmZDNkVjk2QW1PUEtnNGNKWUVJR1pybWFwQlIwUUJkYzlRRFRRR2lBY2h4MW1Gd3JIRVFvQlE9PQo=",
+      "url": "https://ivanb12.github.io/quickdeckpro/downloads/updates/1.0.2/QuickDeck-Pro-Setup.exe"
     }
   }
 }
