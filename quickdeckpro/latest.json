@@ -1,12 +1,12 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publicVersion": "1.0.0",
-  "notes": "Gema llega en la versión 1.0.0: abre aplicaciones con la voz y muestra bordes de colores mientras escucha. Actívala en Preferencias → Voz y personaliza su nombre, voz y atajo. Se mantienen la búsqueda de carpetas, los filtros como *.exe y las actualizaciones desde Acerca de.\n\nRevisión 1.0.2: Gema incorpora tres voces neuronales locales, reconocimiento de español y respuestas con IA mediante Groq. Consulta el tiempo y las noticias con fuentes, recuerda datos en el equipo y muestra un halo blanco que reacciona al audio. Prepara la voz y el reconocimiento desde Preferencias → Voz. La conexión de IA es opcional y tiene una cuota gratuita compartida; el audio y los recuerdos permanecen en el PC.",
-  "pub_date": "2026-11-11T16:07:23.449Z",
+  "notes": "Gema llega en la versión 1.0.0: abre aplicaciones con la voz y muestra bordes de colores mientras escucha. Actívala en Preferencias → Voz y personaliza su nombre, voz y atajo. Se mantienen la búsqueda de carpetas, los filtros como *.exe y las actualizaciones desde Acerca de.\n\nRevisión 1.0.2: Gema incorpora tres voces neuronales locales, reconocimiento de español y respuestas con IA mediante Groq. Consulta el tiempo y las noticias con fuentes, recuerda datos en el equipo y muestra un halo blanco que reacciona al audio. Prepara la voz y el reconocimiento desde Preferencias → Voz. La conexión de IA es opcional y tiene una cuota gratuita compartida; el audio y los recuerdos permanecen en el PC.\n\nRevisión 1.0.3: una conversación más fluida con Gema. Nuevo selector visual de voces con muestras, opción de voz de alta calidad y panel flotante con mensajes y control del micrófono. Las nuevas peticiones pueden interrumpir la respuesta anterior; la escucha durante la reproducción utiliza cancelación de eco de Windows y depende del dispositivo de audio. Activa el contexto temporal para enlazar preguntas, con un máximo de seis mensajes y sin compartir recuerdos guardados ni audio. Respuestas más cercanas, mejor tratamiento de errores y previsión del tiempo de hasta siete días. La IA mantiene una cuota gratuita compartida.",
+  "pub_date": "2026-11-11T17:38:24.771Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTTENENDdnSndJS215T0pVQUszM0hLWVVXUDRwUXIvY3lKNFJCU2l3RFEyYWk2dUVUcTRVdXhaMUV0Z21Cam0rZm11RnZRaGFZYnZGcHpnQU80UnFhZmh1NWo0eWtWL0F3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NDEyOTU1CWZpbGU6UXVpY2tEZWNrIFByb18xLjAuMl94NjQtc2V0dXAuZXhlCXZlcnNpb246MS4wLjIKcjRjVzVRbDV2bXZJSlRoSUVGSG1XOXQ2TEtEaW52cVFmZDNkVjk2QW1PUEtnNGNKWUVJR1pybWFwQlIwUUJkYzlRRFRRR2lBY2h4MW1Gd3JIRVFvQlE9PQo=",
-      "url": "https://ivanb12.github.io/quickdeckpro/downloads/updates/1.0.2/QuickDeck-Pro-Setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTTENENDdnSndJS3JnSHlMT2tKWlpWa0VBWUxlV2lpQmY4ZFZlbXZmcFZBdTljMm42OHE2N3V5dnR4KzBKV1MyV2phRnI2ZURUcjh5RjBWdHM3a1FLZGE5UGNwalZyY0E0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NDE4NjQ4CWZpbGU6UXVpY2tEZWNrIFByb18xLjAuM194NjQtc2V0dXAuZXhlCXZlcnNpb246MS4wLjMKR3NDWFc4RTYyQnR1R3pzYVlYY2REUHJqb0NqbitqV0FyZkYvd2xDRU84QjQ5UTc1QS80TjNYeUdqQ1h6Rk85cHFod0Zib3VpVkJudkRPMGRYRk5IRGc9PQo=",
+      "url": "https://ivanb12.github.io/quickdeckpro/downloads/updates/1.0.3/QuickDeck-Pro-Setup.exe"
     }
   }
 }

@@ -21,7 +21,7 @@ No requiere GitHub Releases, un token de GitHub ni claves en el navegador. No us
 
 ## Versión
 
-La versión pública es v1.0.0 y la revisión interna es 1.0.2. Gema incorpora voces neuronales locales Dora, Alex y Santa, reconocimiento en español y un halo blanco reactivo. Prepara la voz y el reconocimiento en Preferencias → Voz. La conexión opcional con Groq permite responder dudas; el tiempo y las noticias se consultan desde cada PC con sus fuentes. Audio y recuerdos permanecen en el equipo. No necesitas cuentas, claves propias ni voces de Windows. La IA tiene una cuota gratuita compartida. La actualización conserva los datos de instalaciones anteriores.
+La versión pública es v1.0.0 y la revisión interna es 1.0.3. Gema incorpora un selector visual para Dora, Alex y Santa, voz local de calidad alta opcional, un panel de conversación con control del micrófono y un halo blanco reactivo. Prepara la voz y el reconocimiento en Preferencias → Voz. Activa por separado el contexto temporal para enlazar preguntas; audio y recuerdos guardados permanecen en el equipo. La escucha mientras responde usa cancelación de eco de Windows y depende del dispositivo. La conexión con Groq no requiere cuentas ni claves propias de los usuarios y mantiene una cuota gratuita compartida. El tiempo y las noticias se consultan desde cada PC con sus fuentes. La actualización conserva los datos de instalaciones anteriores.
 
 La primera instalación de esta revisión se hace con el setup. Después puedes buscar actualizaciones en Preferencias → Acerca de, descargarlas y confirmar su instalación. La edición portable se actualiza manualmente. También puedes cerrar QuickDeck desde la bandeja y ejecutar el nuevo setup, sin desinstalar antes.
 
