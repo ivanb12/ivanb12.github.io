@@ -1,2 +1,2 @@
-7add771f52d4c11705c1569200ab82ae11eea01370d1f617ac57ffa701dd399c  QuickDeck-Pro-1.0.0-r1.0.12-Setup.exe
-521648b42fcb7a155cb1073a40df7b4c5e60e9e716a0ae1996ee60900e34daa0  QuickDeck-Pro-1.0.0-r1.0.12-Portable.zip
+3788263f334b903a998e429aea555d5aacd75418015685d8af3c735c381487c2  QuickDeck-Pro-1.0.0-r1.0.13-Setup.exe
+c03e4c9d1a31b53d52baaf2a519de6b58ba7dc1509d9126ee6a079da4e1e8907  QuickDeck-Pro-1.0.0-r1.0.13-Portable.zip
