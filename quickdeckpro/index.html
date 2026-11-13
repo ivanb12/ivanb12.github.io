@@ -6,33 +6,54 @@
     <meta name="theme-color" content="#0c0e12" />
     <title>QuickDeck Pro — Windows 11</title>
 
-<!-- SEO -->
-<meta name="description" content="QuickDeck Pro es un lanzador para Windows 11 que permite abrir aplicaciones, buscar archivos y ejecutar acciones desde un único buscador. ¡Descárgalo gratis!" />
-<meta name="robots" content="index, follow" />
-<meta name="theme-color" content="#111827" />
-<link rel="canonical" href="https://ivanb12.github.io/quickdeckpro/" />
-<link rel="icon" href="favicon.ico" />
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="QuickDeck Pro para Windows 11: busca aplicaciones y archivos, ejecuta acciones y conoce a Gema, tu asistente de voz personalizable con modelo local opcional. Descárgalo gratis."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#111827" />
+    <link rel="canonical" href="https://ivanb12.github.io/quickdeckpro/" />
+    <link rel="icon" href="favicon.ico" />
 
-<!-- Open Graph: Discord, WhatsApp, Facebook -->
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="QuickDeck Pro" />
-<meta property="og:title" content="QuickDeck Pro" />
-<meta property="og:description" content="Abre aplicaciones, encuentra archivos y ejecuta acciones al instante. Descubre una forma más rápida de usar Windows 11." />
-<meta property="og:url" content="https://ivanb12.github.io/quickdeckpro/" />
-<meta property="og:image" content="https://ivanb12.github.io/quickdeckpro/images/launcher.png" />
-<meta property="og:image:secure_url" content="https://ivanb12.github.io/quickdeckpro/images/launcher.png" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:image:type" content="image/png" />
-<meta property="og:image:alt" content="Vista previa de QuickDeck Pro, lanzador de aplicaciones para Windows 11" />
-<meta property="og:locale" content="es_ES" />
+    <!-- Open Graph: Discord, WhatsApp, Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="QuickDeck Pro" />
+    <meta property="og:title" content="QuickDeck Pro" />
+    <meta
+      property="og:description"
+      content="Un buscador para tu escritorio. Un asistente al que puedes hablar. Descubre QuickDeck Pro y Gema para Windows 11."
+    />
+    <meta property="og:url" content="https://ivanb12.github.io/quickdeckpro/" />
+    <meta
+      property="og:image"
+      content="https://ivanb12.github.io/quickdeckpro/images/launcher.png"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://ivanb12.github.io/quickdeckpro/images/launcher.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta
+      property="og:image:alt"
+      content="Vista previa de QuickDeck Pro, lanzador de aplicaciones para Windows 11"
+    />
+    <meta property="og:locale" content="es_ES" />
 
-<!-- Twitter / X: imagen grande -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="QuickDeck Pro" />
-<meta name="twitter:description" content="Aplicaciones, archivos y acciones en un solo buscador. Lleva tu productividad al siguiente nivel." />
-<meta name="twitter:image" content="https://ivanb12.github.io/quickdeckpro/images/launcher.png" />
-<meta name="twitter:image:alt" content="Captura de pantalla de QuickDeck Pro para Windows 11" />
+    <!-- Twitter / X: imagen grande -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="QuickDeck Pro" />
+    <meta
+      name="twitter:description"
+      content="Tu escritorio, a una búsqueda. Conoce a Gema, el asistente de voz personalizable de QuickDeck Pro."
+    />
+    <meta
+      name="twitter:image"
+      content="https://ivanb12.github.io/quickdeckpro/images/launcher.png"
+    />
+    <meta name="twitter:image:alt" content="Captura de pantalla de QuickDeck Pro para Windows 11" />
 
     <style>
       :root {
@@ -1341,6 +1362,461 @@
           font-size: 17px;
         }
       }
+
+      /* Gema: illustration and product information; no external assets or scripts. */
+      .gema-section {
+        padding-top: 60px;
+        padding-bottom: 114px;
+      }
+      .gema-intro {
+        display: grid;
+        grid-template-columns: 1fr 1.05fr;
+        gap: 70px;
+        align-items: center;
+      }
+      .gema-copy h2 {
+        font-size: clamp(40px, 4.5vw, 62px);
+        line-height: 1.06;
+        letter-spacing: -2.7px;
+        margin: 20px 0 24px;
+      }
+      .gema-copy h2 span {
+        color: var(--ice);
+      }
+      .gema-copy .eyebrow {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+      }
+      .gema-spark {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #70aaff;
+        box-shadow: 0 0 15px #3684ff65;
+      }
+      .gema-copy p:not(.eyebrow) {
+        max-width: 430px;
+        font-size: 15px;
+        line-height: 1.8;
+      }
+      .gema-copy .gema-lead {
+        color: var(--text);
+        font-size: 19px;
+        margin-bottom: 12px;
+      }
+      .gema-link {
+        margin-top: 23px;
+        padding-left: 0;
+        gap: 15px;
+      }
+      .gema-scene {
+        position: relative;
+        isolation: isolate;
+        min-width: 0;
+        height: 405px;
+        margin: 0;
+        overflow: hidden;
+        border: 1px solid #ffffff12;
+        border-radius: 24px;
+        background:
+          radial-gradient(ellipse at 47% 62%, #1c385e50, transparent 64%),
+          linear-gradient(140deg, #151c27, #10151d 65%);
+      }
+      .gema-scene-label {
+        position: absolute;
+        top: 23px;
+        left: 25px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #a3afc0;
+        font-size: 11px;
+      }
+      .gema-scene-label span {
+        width: 5px;
+        height: 5px;
+        background: #7295bf;
+        border-radius: 50%;
+      }
+      .gema-orbit {
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        border: 1px solid #8bb8ff0b;
+        border-radius: 50%;
+        left: 50%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        box-shadow:
+          0 0 0 54px #8bb8ff03,
+          0 0 0 108px #8bb8ff02;
+        z-index: -1;
+      }
+      .gema-bubble {
+        position: absolute;
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 17px 21px;
+        border: 1px solid #ffffff10;
+        box-shadow: 0 12px 30px #0002;
+      }
+      .gema-user {
+        top: 85px;
+        right: 27px;
+        background: #242f3f;
+        border-radius: 18px 18px 5px 18px;
+      }
+      .gema-answer {
+        top: 160px;
+        left: 27px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: #1a2330;
+        border-radius: 18px 18px 18px 5px;
+      }
+      .gema-answer svg {
+        color: #9ac4ff;
+      }
+      .gema-orb-wrap {
+        position: absolute;
+        left: calc(50% - 43px);
+        bottom: 70px;
+        width: 86px;
+        height: 86px;
+      }
+      .gema-orb {
+        width: 86px;
+        height: 86px;
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 11px;
+        padding-top: 25px;
+        border-radius: 50%;
+        border: 1px solid #c5e2ffb0;
+        background:
+          radial-gradient(circle at 32% 19%, #cbe3ff70, transparent 37%),
+          radial-gradient(circle at 55% 72%, #4e9bff, #3079f3 72%);
+        box-shadow:
+          inset 0 0 13px #d2eaff70,
+          0 0 0 4px #a3caff12,
+          0 15px 40px #237bff26;
+        animation: gema-hover 6s ease-in-out infinite;
+      }
+      .gema-orb i {
+        display: block;
+        width: 10px;
+        height: 21px;
+        background: #fff;
+        border-radius: 9px;
+        box-shadow: 0 0 12px #fff3;
+      }
+      .gema-orb-shadow {
+        position: absolute;
+        width: 65px;
+        height: 7px;
+        bottom: -20px;
+        left: 11px;
+        border-radius: 50%;
+        background: #3e8dff28;
+        filter: blur(7px);
+      }
+      .gema-scene-note {
+        position: absolute;
+        bottom: 22px;
+        width: 100%;
+        text-align: center;
+        color: #8e9db2;
+        font-size: 11px;
+      }
+      .gema-capabilities {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        margin-top: 56px;
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+      }
+      .gema-capabilities article {
+        padding: 32px 24px;
+        border-right: 1px solid var(--line);
+      }
+      .gema-capabilities article:first-child {
+        padding-left: 0;
+      }
+      .gema-capabilities article:last-child {
+        border-right: 0;
+        padding-right: 0;
+      }
+      .gema-feature-index {
+        color: #8a9bb4;
+        font-size: 10px;
+        letter-spacing: 1.1px;
+      }
+      .gema-capabilities h3 {
+        margin: 16px 0 12px;
+        font-size: 17px;
+        letter-spacing: -0.35px;
+      }
+      .gema-capabilities p {
+        font-size: 13px;
+        line-height: 1.85;
+      }
+      .gema-local-panel {
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+        align-items: center;
+        gap: 24px 50px;
+        margin: 38px 0 88px;
+        padding: 34px;
+        border: 1px solid #789cc526;
+        border-radius: 18px;
+        background: linear-gradient(110deg, #151f2c, #121820);
+      }
+      .gema-local-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: #a9bfdc;
+        font-size: 10px;
+        letter-spacing: 0.8px;
+      }
+      .gema-local-panel h3 {
+        margin: 14px 0 10px;
+        font-size: 21px;
+        letter-spacing: -0.6px;
+      }
+      .gema-local-panel p {
+        font-size: 13px;
+        line-height: 1.8;
+      }
+      .gema-model-facts {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+      }
+      .gema-model-facts div {
+        border-left: 1px solid #ffffff14;
+        padding-left: 24px;
+      }
+      .gema-model-facts dt {
+        font-size: 11px;
+        color: #95a5ba;
+        margin-bottom: 12px;
+      }
+      .gema-model-facts dd {
+        margin: 0;
+        font-size: 34px;
+        letter-spacing: -1px;
+      }
+      .gema-model-facts dd span {
+        font-size: 14px;
+        letter-spacing: 0;
+        color: #a9bfdc;
+      }
+      .gema-local-panel .gema-resource-note {
+        grid-column: 1/-1;
+        padding-top: 20px;
+        border-top: 1px solid var(--line);
+        color: #93a2b7;
+        font-size: 11px;
+      }
+      .gema-setup {
+        display: grid;
+        grid-template-columns: 0.8fr 1.3fr;
+        gap: 55px;
+        align-items: center;
+        scroll-margin-top: 35px;
+      }
+      .gema-setup h2 {
+        margin: 18px 0 12px;
+      }
+      .gema-setup-copy > p:not(.eyebrow) {
+        font-size: 14px;
+      }
+      .gema-setup ol {
+        list-style: none;
+        padding: 0;
+        margin: 28px 0;
+        display: grid;
+        gap: 21px;
+      }
+      .gema-setup li {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+      }
+      .gema-setup li > span {
+        flex-shrink: 0;
+        display: grid;
+        place-items: center;
+        width: 25px;
+        height: 25px;
+        border: 1px solid #9ebfe128;
+        background: #17202b;
+        border-radius: 8px;
+        color: #9ec6ff;
+        font-size: 11px;
+      }
+      .gema-setup h3 {
+        font-size: 14px;
+        margin: 2px 0 5px;
+      }
+      .gema-setup li p {
+        font-size: 12px;
+        line-height: 1.7;
+      }
+      .gema-setup .button {
+        font-size: 12px;
+      }
+      .gema-settings-shot {
+        min-width: 0;
+        margin: 0;
+      }
+      .gema-settings-shot img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 13px;
+        border: 1px solid #ffffff16;
+        box-shadow: 0 20px 65px #0004;
+      }
+      .gema-settings-shot figcaption {
+        font-size: 10px;
+        color: #8590a1;
+        text-align: center;
+        margin-top: 14px;
+      }
+      .release-detail .release-intro {
+        color: var(--text);
+        font-size: 18px;
+      }
+      .release-changes {
+        padding: 0;
+        margin: 23px 0 34px;
+        list-style: none;
+        display: grid;
+        gap: 17px;
+      }
+      .release-changes li {
+        position: relative;
+        padding-left: 17px;
+        font-size: 13px;
+        line-height: 1.85;
+        color: var(--muted);
+      }
+      .release-changes li::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 9px;
+        width: 4px;
+        height: 4px;
+        background: #8ebaff;
+        border-radius: 50%;
+      }
+      .release-changes strong {
+        color: #d9e1ec;
+        font-weight: 550;
+      }
+      @keyframes gema-hover {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-6px);
+        }
+      }
+      @media (max-width: 1000px) {
+        .gema-intro {
+          gap: 32px;
+        }
+        .gema-setup {
+          grid-template-columns: 1fr;
+          gap: 35px;
+        }
+        .gema-setup-copy {
+          max-width: 580px;
+        }
+        .gema-settings-shot {
+          max-width: 900px;
+        }
+        .gema-local-panel {
+          gap: 24px;
+          padding: 26px;
+        }
+      }
+      @media (max-width: 700px) {
+        .gema-section {
+          padding-top: 35px;
+          padding-bottom: 65px;
+        }
+        .gema-intro {
+          grid-template-columns: 1fr;
+          gap: 30px;
+        }
+        .gema-copy h2 {
+          font-size: 44px;
+          letter-spacing: -2px;
+        }
+        .gema-scene {
+          height: 370px;
+        }
+        .gema-capabilities {
+          grid-template-columns: 1fr;
+          margin-top: 34px;
+        }
+        .gema-capabilities article,
+        .gema-capabilities article:first-child,
+        .gema-capabilities article:last-child {
+          padding: 25px 0;
+          border-right: 0;
+          border-bottom: 1px solid var(--line);
+        }
+        .gema-capabilities article:last-child {
+          border-bottom: 0;
+        }
+        .gema-capabilities h3 {
+          margin-top: 12px;
+        }
+        .gema-local-panel {
+          grid-template-columns: 1fr;
+          padding: 23px;
+          margin-bottom: 60px;
+        }
+        .gema-model-facts {
+          margin-top: 6px;
+        }
+        .gema-model-facts div:first-child {
+          border-left: 0;
+          padding-left: 0;
+        }
+        .gema-model-facts dd {
+          font-size: 30px;
+        }
+        .gema-setup {
+          gap: 32px;
+        }
+        .gema-user {
+          right: 18px;
+        }
+        .gema-answer {
+          left: 18px;
+        }
+        .gema-bubble {
+          padding: 15px 17px;
+          font-size: 13px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .gema-orb {
+          animation: none;
+        }
+      }
     </style>
   </head>
   <body>
@@ -1355,7 +1831,7 @@
           ></a
         >
         <nav class="main-nav" aria-label="Navegación principal">
-          <a href="#producto">Producto</a><a href="#novedades">Novedades</a
+          <a href="#producto">Producto</a><a href="#gema">Gema</a><a href="#novedades">Novedades</a
           ><a href="#preguntas">Preguntas</a
           ><a href="https://discord.gg/dPwN5qaMAV" target="_blank" rel="noopener noreferrer"
             >Discord
@@ -1444,7 +1920,7 @@
         <div class="hero-actions">
           <a
             class="button button-primary"
-            href="downloads/QuickDeck-Pro-1.0.0-r1.0.20-Setup.exe"
+            href="downloads/QuickDeck-Pro-1.0.0-r1.0.21-Setup.exe"
             download=""
             ><svg width="17" height="17" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path
@@ -1490,7 +1966,7 @@
         <p class="download-meta">
           Windows 11 · x64 <span>·</span> v<!-- -->1.0.0<!-- -->
           <span>·</span>
-          <!-- -->4,27 MB
+          <!-- -->4,28 MB
         </p>
         <div class="click-counter" aria-live="polite">
           <strong id="download-click-count">—</strong><span>veces descargado</span
@@ -1542,6 +2018,164 @@
         <p class="capture-note">
           Captura real de la interfaz. Los resultados se adaptan a las aplicaciones de tu equipo.
         </p>
+      </section>
+
+      <section class="gema-section section-shell" id="gema" aria-labelledby="gema-heading">
+        <div class="gema-intro">
+          <div class="gema-copy">
+            <p class="eyebrow"><span class="gema-spark" aria-hidden="true"></span> CONOCE A GEMA</p>
+            <h2 id="gema-heading">También puedes<br /><span>decírselo.</span></h2>
+            <p class="gema-lead">Una voz para las pequeñas cosas de tu día.</p>
+            <p>
+              Abre una aplicación, encuentra Descargas o pregunta qué hora es. Gema reúne la
+              conversación y las acciones de QuickDeck en un asistente que puedes hacer tuyo.
+            </p>
+            <a class="button button-quiet gema-link" href="#gema-configurar"
+              >Así se configura <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <figure
+            class="gema-scene"
+            aria-label="Ejemplo ilustrado de una orden de voz para abrir Descargas"
+          >
+            <figcaption class="gema-scene-label">
+              <span aria-hidden="true"></span> Ejemplo de interacción
+            </figcaption>
+            <div class="gema-orbit" aria-hidden="true"></div>
+            <div class="gema-bubble gema-user">Ey Gema, abre Descargas.</div>
+            <div class="gema-bubble gema-answer">
+              <svg
+                width="17"
+                height="17"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                aria-hidden="true"
+              >
+                <path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v10H3z" />
+                <path d="m8 13 3 3 5-5" /></svg
+              >Carpeta abierta.
+            </div>
+            <div class="gema-orb-wrap" aria-hidden="true">
+              <div class="gema-orb"><i></i><i></i></div>
+              <span class="gema-orb-shadow"></span>
+            </div>
+            <p class="gema-scene-note">Acciones locales · Con tu permiso</p>
+          </figure>
+        </div>
+        <div class="gema-capabilities">
+          <article>
+            <span class="gema-feature-index">01 / A TU MANERA</span>
+            <h3>Su nombre. Su voz. Su color.</h3>
+            <p>
+              Elige Clara o DaveFX, ajusta cómo habla y cambia el nombre y el color de la esfera.
+              Actívala con un atajo o con la llamada por voz opcional.
+            </p>
+          </article>
+          <article>
+            <span class="gema-feature-index">02 / EN TU EQUIPO</span>
+            <h3>De decirlo a hacerlo.</h3>
+            <p>
+              Abre aplicaciones y carpetas, ajusta el volumen o crea documentos de texto. Tú
+              habilitas los controles. Las acciones de energía tienen una cuenta atrás cancelable.
+            </p>
+          </article>
+          <article>
+            <span class="gema-feature-index">03 / CON CONTEXTO</span>
+            <h3>Una conversación que continúa.</h3>
+            <p>
+              Haz preguntas relacionadas y activa, si quieres, la memoria local. Puedes revisar y
+              borrar lo guardado desde sus ajustes. El tiempo y las noticias requieren permiso para
+              consultar Internet.
+            </p>
+          </article>
+        </div>
+        <div class="gema-local-panel">
+          <div>
+            <span class="gema-local-chip"
+              ><svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                aria-hidden="true"
+              >
+                <rect x="3" y="4" width="18" height="13" rx="2" />
+                <path d="M8 21h8m-4-4v4" />
+              </svg>
+              MODELO LOCAL OPCIONAL</span
+            >
+            <h3>La conversación puede quedarse en tu PC.</h3>
+            <p>
+              Descarga Qwen desde los ajustes y conversa sin la cuota de un servicio de IA. Las
+              órdenes de Windows se ejecutan con las funciones nativas de QuickDeck.
+            </p>
+          </div>
+          <dl class="gema-model-facts">
+            <div>
+              <dt>Descarga del modelo</dt>
+              <dd>2,52 <span>GB</span></dd>
+            </div>
+            <div>
+              <dt>RAM recomendada</dt>
+              <dd>16 <span>GB</span></dd>
+            </div>
+          </dl>
+          <p class="gema-resource-note">
+            El modelo se descarga por separado. Utiliza varios GB de RAM mientras está cargado y la
+            velocidad depende del equipo. Puedes mantenerlo preparado durante 3 minutos entre
+            preguntas; esta opción viene desactivada.
+          </p>
+        </div>
+        <div class="gema-setup" id="gema-configurar">
+          <div class="gema-setup-copy">
+            <p class="eyebrow">PREPARA TU ASISTENTE</p>
+            <h2>Hazla tuya.</h2>
+            <p>Todo en Preferencias → Voz.</p>
+            <ol>
+              <li>
+                <span>1</span>
+                <div>
+                  <h3>Activa Gema</h3>
+                  <p>Prepara los componentes de reconocimiento y elige tu forma de activación.</p>
+                </div>
+              </li>
+              <li>
+                <span>2</span>
+                <div>
+                  <h3>Escucha y elige</h3>
+                  <p>Prueba las voces, ajusta su estilo y personaliza la esfera.</p>
+                </div>
+              </li>
+              <li>
+                <span>3</span>
+                <div>
+                  <h3>Decide qué puede hacer</h3>
+                  <p>
+                    Configura el motor de conversación, la memoria, el control del PC y las fuentes
+                    web.
+                  </p>
+                </div>
+              </li>
+            </ol>
+            <a class="button button-primary" href="#descargar"
+              >Descubrir Gema en QuickDeck <span aria-hidden="true">↓</span></a
+            >
+          </div>
+          <figure class="gema-settings-shot">
+            <img
+              src="images/gema-settings.png"
+              alt="Captura real de Preferencias de QuickDeck Pro: pestañas de Voz, perfil Clara, estilo de voz y vista lateral de Gema."
+              width="1200"
+              height="850"
+              loading="lazy"
+            />
+            <figcaption>Captura real de los ajustes de voz de QuickDeck Pro.</figcaption>
+          </figure>
+        </div>
       </section>
       <section class="features-section section-shell" id="producto">
         <div class="section-heading">
@@ -1699,15 +2333,36 @@
         <div>
           <p class="eyebrow">ÚLTIMA VERSIÓN</p>
           <h2>QuickDeck Pro <span>1.0.0</span></h2>
-          <p class="release-date">10 de noviembre de 2026</p>
+          <p class="release-date">
+            13 de noviembre de 2026 · Revisión <span data-release-revision>1.0.21</span>
+          </p>
         </div>
         <div class="release-detail">
-          <p>
-              Gema llega en la versión 1.0.0: abre aplicaciones con la voz y muestra bordes de colores
-              mientras escucha. Actívala en Preferencias → Voz y personaliza su nombre, voz y atajo.
-              Se mantienen la búsqueda de carpetas, los filtros como *.exe y las actualizaciones desde Acerca de.
-            </p>
-            <span class="small-tag">INSTALACIÓN</span>
+          <p class="release-intro">Gema y QuickDeck, más cerca de tu forma de trabajar.</p>
+          <ul class="release-changes">
+            <li>
+              <strong>Un nuevo espacio para la voz.</strong> Ajustes organizados en seis pestañas,
+              vista del asistente y pruebas, ahora sin encabezados repetidos.
+            </li>
+            <li>
+              <strong>Conversación y personalización.</strong> Voces Clara y DaveFX, nombre y esfera
+              configurables, memoria local opcional y modelo Qwen descargable.
+            </li>
+            <li>
+              <strong>Órdenes más naturales.</strong> Se amplían las formas de pedir cambios de
+              volumen y abrir carpetas. Creación de archivos de texto y rutinas con los controles
+              habilitados.
+            </li>
+            <li>
+              <strong>Información actual cuando la necesitas.</strong> Las preguntas sobre el tiempo
+              de mañana consultan la previsión si has autorizado las fuentes web.
+            </li>
+            <li>
+              <strong>Actualizaciones desde la app.</strong> Comprobación al iniciar y descarga
+              desde Acerca de, con el tamaño de la nueva versión.
+            </li>
+          </ul>
+          <span class="small-tag">INSTALACIÓN</span>
           <h3>Actualizar sin empezar de cero.</h3>
           <p>
             El instalador actualiza una versión anterior sobre la instalación existente, sin pedir
@@ -1731,7 +2386,7 @@
             </p>
             <a
               class="button button-primary"
-              href="downloads/QuickDeck-Pro-1.0.0-r1.0.20-Setup.exe"
+              href="downloads/QuickDeck-Pro-1.0.0-r1.0.21-Setup.exe"
               download=""
               ><svg
                 width="17"
@@ -1765,8 +2420,11 @@
               >Versión
               <!-- -->1.0.0<!-- -->
               · Windows 11 x64 ·
-              <!-- -->4,27 MB</span
-            ><a class="portable-link" href="downloads/QuickDeck-Pro-1.0.0-r1.0.20-Portable.zip" download=""
+              <!-- -->4,28 MB</span
+            ><a
+              class="portable-link"
+              href="downloads/QuickDeck-Pro-1.0.0-r1.0.21-Portable.zip"
+              download=""
               >También disponible en ZIP portable
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -1852,7 +2510,7 @@
               <input
                 id="installer-hash"
                 readonly
-                value="5f6bc3c6501c3ee7b2c124fbcf5b1d9549fc54fe7825ddf1ee53c7c0c9ebde3f"
+                value="987f3945925e45bde17f65cf98041ab2d6018e632bef3e293a38d805215fe9cf"
               /><button type="button" aria-label="Copiar SHA-256">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -1946,6 +2604,44 @@
         <div class="faq-list">
           <details>
             <summary>
+              ¿Gema necesita Internet?<span class="faq-plus" aria-hidden="true">+</span>
+            </summary>
+            <p>
+              La conversación con el modelo local funciona sin Internet una vez descargados los
+              componentes necesarios. El tiempo, las noticias, las descargas y las actualizaciones
+              sí necesitan conexión. Autoriza las fuentes web en Preferencias → Voz → Conversación
+              para consultar información actual; el modelo local por sí solo no tiene datos en
+              directo.
+            </p>
+          </details>
+          <details>
+            <summary>
+              ¿El asistente viene dentro del instalador?<span class="faq-plus" aria-hidden="true"
+                >+</span
+              >
+            </summary>
+            <p>
+              Gema forma parte de QuickDeck. Sus componentes de voz se preparan desde los ajustes y
+              el modelo de conversación local es una descarga opcional de 2,52 GB. Se recomiendan 16
+              GB de RAM para ese modelo; consume varios GB mientras está cargado. No necesitas
+              descargarlo para utilizar el lanzador.
+            </p>
+          </details>
+          <details>
+            <summary>
+              ¿Qué puede controlar en mi ordenador?<span class="faq-plus" aria-hidden="true"
+                >+</span
+              >
+            </summary>
+            <p>
+              Las acciones compatibles incluyen aplicaciones, carpetas, volumen, documentos de texto
+              y rutinas. Los controles adicionales se habilitan en los ajustes. Las acciones de
+              energía muestran una cuenta atrás de 20 segundos que puedes cancelar. QuickDeck debe
+              estar ejecutándose para que funcionen las rutinas programadas.
+            </p>
+          </details>
+          <details>
+            <summary>
               ¿Qué necesito para instalarlo?<span class="faq-plus" aria-hidden="true">+</span>
             </summary>
             <p>
@@ -1969,8 +2665,9 @@
             <p>
               Descarga el instalador nuevo desde esta página, sal de QuickDeck desde la bandeja y
               ejecútalo con la misma cuenta de Windows. El asistente actualiza una versión anterior
-              sin pedir desinstalarla primero. Puedes buscar actualizaciones en Preferencias → Acerca de,
-                descargarlas y confirmar su instalación desde la app. La edición portable se actualiza manualmente.
+              sin pedir desinstalarla primero. Puedes buscar actualizaciones en Preferencias →
+              Acerca de, descargarlas y confirmar su instalación desde la app. La edición portable
+              se actualiza manualmente.
             </p>
           </details>
           <details>
