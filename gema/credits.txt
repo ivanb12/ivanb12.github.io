@@ -1,0 +1,6 @@
+Gema — ivanb12
+Esfera de Gema: ilustración vectorial propia basada en la identidad de la aplicación.
+Capturas: aplicación Gema, perfiles y proyectos de ejemplo.
+Iconos de interfaz: trazados SVG locales.
+Logotipos Qwen, Mistral y OpenAI: LobeHub Icons (MIT), https://github.com/lobehub/lobe-icons . Véase assets/lobe-icons-LICENSE.
+Los nombres y logotipos pertenecen a sus titulares. Su presencia identifica modelos disponibles y no implica afiliación ni patrocinio.

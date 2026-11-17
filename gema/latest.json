@@ -1,0 +1,14 @@
+{
+  "version": "0.1.8",
+  "title": "Gema ya tiene su casa.",
+  "pub_date": "2026-11-17T09:00:00+01:00",
+  "notes": [
+    "Nueva web de Gema con descarga para Windows, historial de versiones y guía de instalación.",
+    "Buscar actualizaciones en Ajustes → Acerca de consulta la versión publicada y abre la web cuando hay una nueva.",
+    "La actualización se instala sobre Gema y conserva conversaciones, ajustes, proyectos y modelos."
+  ],
+  "platform": "windows-x86_64",
+  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.1.8_x64-setup.exe",
+  "bytes": 4435697,
+  "sha256": "1af3af646874f967d73e4b21bcbccb959c82e8b0be92bb8f4062ff85b66012e6"
+}

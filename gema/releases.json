@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "releases": [
+    {
+      "version": "0.1.8",
+      "title": "Gema ya tiene su casa.",
+      "pub_date": "2026-11-17T09:00:00+01:00",
+      "notes": [
+        "Nueva web de Gema con descarga para Windows, historial de versiones y guía de instalación.",
+        "Buscar actualizaciones en Ajustes → Acerca de consulta la versión publicada y abre la web cuando hay una nueva.",
+        "La actualización se instala sobre Gema y conserva conversaciones, ajustes, proyectos y modelos."
+      ],
+      "platform": "windows-x86_64",
+      "url": "https://ivanb12.github.io/gema/downloads/Gema_0.1.8_x64-setup.exe",
+      "bytes": 4435697,
+      "sha256": "1af3af646874f967d73e4b21bcbccb959c82e8b0be92bb8f4062ff85b66012e6"
+    },
+    {
+      "version": "0.1.7",
+      "title": "Proyectos en marcha. Un espacio más limpio.",
+      "pub_date": "2026-11-17T08:09:00+01:00",
+      "notes": [
+        "Trabajos independientes por chat, cambios de proyecto y continuidad con la ventana minimizada.",
+        "Interfaz Grafito y selector de modelos continuo con el logotipo de cada proveedor.",
+        "Recuperación de llamadas de herramientas y propuestas reales de código, con comprobación de objetivos antes de terminar."
+      ],
+      "platform": "windows-x86_64",
+      "url": "https://ivanb12.github.io/gema/downloads/Gema_0.1.7_x64-setup.exe",
+      "bytes": 4432848,
+      "sha256": "0ce49c891105a2e82dcc41365aba9aad3721de23c5eef653836e7388d0a6777e"
+    }
+  ]
+}
