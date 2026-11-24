@@ -1,8 +1,8 @@
 # Hoja de ruta de Gema
 
-Estado de las 100 ideas originales en Gema 0.2.4. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
+Estado de las 100 ideas originales en Gema 0.2.6. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
 
-19 disponibles · 42 parciales · 39 pendientes.
+20 disponibles · 43 parciales · 37 pendientes.
 
 ## Tareas y trabajo en segundo plano
 
@@ -13,7 +13,7 @@ Estado de las 100 ideas originales en Gema 0.2.4. **Disponible** indica que el f
 - **#5 Bandeja de decisiones** · Disponible · Bandeja Decisiones pendientes en Ctrl + K.
 - **#6 Cola visible** · Parcial · Muestra y cancela trabajos en cola. Falta cambiar su prioridad.
 - **#7 Reintento de un paso** · Parcial · Reanuda tareas y prepara de nuevo comprobaciones de rutina caducadas. Falta el reintento general por paso.
-- **#8 Continuar por otra vía** · Disponible · Continuar en otro chat copia la conversación hasta el mensaje elegido.
+- **#8 Continuar por otra vía** · Disponible · Retoma un mensaje como borrador, conserva el chat original y elige si quieres revertir los cambios posteriores de Gema.
 - **#9 Dependencias entre tareas** · Pendiente
 - **#10 Avisos que llevan al sitio correcto** · Parcial · La bandeja y los avisos llevan al chat. Falta navegar desde una notificación del sistema.
 
@@ -101,9 +101,9 @@ Estado de las 100 ideas originales en Gema 0.2.4. **Disponible** indica que el f
 - **#72 Panel redimensionable** · Disponible · Panel ajustable por arrastre y teclado.
 - **#73 Barra de resultados del chat** · Parcial · El panel agrupa archivos, cambios y pruebas. Falta una barra dedicada a los resultados de cada chat.
 - **#74 Búsqueda dentro del historial** · Disponible · Búsqueda de palabras y frases en los mensajes guardados.
-- **#75 Menú al seleccionar código** · Pendiente
+- **#75 Menú al seleccionar código** · Parcial · Puedes citar líneas en el chat o preparar una petición de explicación desde la selección.
 - **#76 Contexto visible en el editor** · Parcial · El editor permite mencionar archivos y carpetas. Faltan fichas independientes para retirarlos.
-- **#77 Explorador de archivos por árbol** · Pendiente
+- **#77 Explorador de archivos por árbol** · Disponible · Carpetas desplegables que se recuerdan por proyecto, filtro por ruta y paginación.
 - **#78 Dos chats lado a lado** · Pendiente
 - **#79 Atajos configurables y navegación completa con teclado** · Parcial · Atajos documentados, tecla de envío configurable y controles de teclado en los selectores. Falta configuración completa.
 - **#80 Vistas Inicio y Desarrollo** · Parcial · Chat simple y panel lateral opcional al abrir un proyecto. Faltan vistas dedicadas.
@@ -124,7 +124,7 @@ Estado de las 100 ideas originales en Gema 0.2.4. **Disponible** indica que el f
 ## Instalación, privacidad y fiabilidad
 
 - **#91 Base de datos local con migración** · Disponible · Migración de JSON a SQLite y búsqueda en el historial.
-- **#92 Actualizaciones firmadas** · Parcial · La descarga publica SHA-256. Falta firma Authenticode y verificación del publicador desde Gema.
+- **#92 Actualizaciones firmadas** · Parcial · Gema descarga la actualización y verifica tamaño y SHA-256 desde la app. Falta firma Authenticode y verificación del publicador.
 - **#93 Volver a la versión anterior** · Pendiente
 - **#94 Canal estable y beta** · Pendiente
 - **#95 Diagnóstico exportable** · Parcial · La biblioteca detecta hardware y el motor muestra su estado. Falta exportar diagnóstico con datos sensibles ocultos.

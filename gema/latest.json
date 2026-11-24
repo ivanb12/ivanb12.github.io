@@ -1,17 +1,14 @@
 {
-  "version": "0.2.4",
-  "title": "Compara pruebas y resultados de cada entrega",
+  "version": "0.2.6",
+  "title": "Retoma un mensaje y elige qué cambios conservar",
   "notes": [
-    "Compara dos ejecuciones de una rutina y distingue fallos nuevos, previos y corregidos.",
-    "Ajustes agrupados con buscador y perfiles de rendimiento para el motor local.",
-    "Guarda planes y comprobaciones en rutinas por proyecto. Cada prueba se autoriza por separado.",
-    "Consulta PR y CI desde GitHub, importa incidencias y crea borradores desde una rama publicada.",
-    "Revisa y prepara commits, exporta parches e informes y abre archivos en su editor.",
-    "El perfil local usa SQLite y conserva las tareas, propuestas y chats al actualizar."
+    "Retoma un mensaje anterior y revisa qué cambios de código de ese chat puedes revertir.",
+    "Descarga y verifica actualizaciones desde Ajustes. Abre el instalador cuando terminen los trabajos.",
+    "Explora el proyecto por carpetas, filtra por ruta y cita líneas de código en el chat."
   ],
-  "pub_date": "2026-11-24T07:09:33.441Z",
+  "pub_date": "2026-11-24T08:08:03.921Z",
   "platform": "windows-x86_64",
-  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.2.4_x64-setup.exe",
-  "bytes": 5279200,
-  "sha256": "df151c6a28cf2bb901c8eb0663249d0e185041c0a3e449bde3fae1d605057e88"
+  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.2.6_x64-setup.exe",
+  "bytes": 5316030,
+  "sha256": "e09b0853ffebd5b441b53631ff88a5e881c7c775addc663ebdbe3b98de0a3ed7"
 }
