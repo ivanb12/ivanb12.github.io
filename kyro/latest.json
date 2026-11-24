@@ -1,14 +1,13 @@
 {
-  "version": "0.3.7",
-  "title": "Qwen local y nueva interfaz",
+  "version": "0.3.8",
+  "title": "Qwen predeterminado en Imágenes",
   "notes": [
-    "La ventana de Kyro tiene una navegación más simple y un estudio de imágenes con el selector de motor a la vista.",
-    "Qwen Image 2512 permite crear y Qwen Image Edit 2511 permite editar con un motor local que se prepara desde Kyro.",
-    "Los modelos se descargan cuando los eliges. Puedes pausar las descargas y ComfyUI sigue disponible como alternativa."
+    "El estudio de imágenes empieza con Qwen local y recuerda si eliges ComfyUI.",
+    "Los selectores de formato y modelo quedan alineados en la misma fila, incluso en espacios estrechos."
   ],
-  "pub_date": "2026-11-24T22:04:50.901Z",
+  "pub_date": "2026-11-24T22:15:05.338Z",
   "platform": "windows-x86_64",
-  "bytes": 5489671,
-  "sha256": "bed7010bcea0ef8238ed4165366e07e6e2121d84e655beaffef36a53bfc7b7df",
-  "url": "https://ivanb12.github.io/kyro/downloads/Kyro_0.3.7_x64-setup.exe"
+  "bytes": 5490559,
+  "sha256": "dff0488c6bdc50b37df1b73208eec0307202fbe6a11247351d81cd769c5ad2ba",
+  "url": "https://ivanb12.github.io/kyro/downloads/Kyro_0.3.8_x64-setup.exe"
 }

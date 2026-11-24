@@ -2,6 +2,19 @@
   "schema_version": 1,
   "releases": [
     {
+      "version": "0.3.8",
+      "title": "Qwen predeterminado en Imágenes",
+      "notes": [
+        "El estudio de imágenes empieza con Qwen local y recuerda si eliges ComfyUI.",
+        "Los selectores de formato y modelo quedan alineados en la misma fila, incluso en espacios estrechos."
+      ],
+      "pub_date": "2026-11-24T22:15:05.338Z",
+      "platform": "windows-x86_64",
+      "bytes": 5490559,
+      "sha256": "dff0488c6bdc50b37df1b73208eec0307202fbe6a11247351d81cd769c5ad2ba",
+      "url": "https://ivanb12.github.io/kyro/downloads/Kyro_0.3.8_x64-setup.exe"
+    },
+    {
       "version": "0.3.7",
       "title": "Qwen local y nueva interfaz",
       "notes": [
