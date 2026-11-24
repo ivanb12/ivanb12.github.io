@@ -1,13 +1,14 @@
 {
-  "version": "0.2.7",
-  "title": "De la salida de pruebas a la línea de código",
+  "version": "0.2.10",
+  "title": "Guarda los modelos en el disco que elijas",
   "notes": [
-    "Abre desde la salida de una comprobación la línea del archivo que necesita atención.",
-    "Prepara nuevos intentos con autorización individual y conserva el resultado anterior en el chat."
+    "Cambia la carpeta de descargas de modelos desde Ajustes → Motor local y consulta el espacio libre antes de descargar.",
+    "Recupera una biblioteca anterior seleccionando su carpeta o vuelve a la ubicación predeterminada de Ollama.",
+    "El visor encuentra referencias de código y consulta importaciones directas de JavaScript y TypeScript con saltos a las líneas."
   ],
-  "pub_date": "2026-11-24T09:53:50.978Z",
+  "pub_date": "2026-11-24T13:07:27.922Z",
   "platform": "windows-x86_64",
-  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.2.7_x64-setup.exe",
-  "bytes": 5333975,
-  "sha256": "fb13deb8c280fcf7612ea482d0316106bdc820e7da1ebeaee4158ef06a5a4cfd"
+  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.2.10_x64-setup.exe",
+  "bytes": 5383182,
+  "sha256": "034dfe0cf530c4665a1faff82c78895b954598df14a6c9102e00dafd9b53e046"
 }

@@ -1,8 +1,8 @@
 # Hoja de ruta de Gema
 
-Estado de las 100 ideas originales en Gema 0.2.7. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
+Estado de las 100 ideas originales en Gema 0.2.10. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
 
-21 disponibles · 43 parciales · 36 pendientes.
+21 disponibles · 45 parciales · 34 pendientes.
 
 ## Tareas y trabajo en segundo plano
 
@@ -21,8 +21,8 @@ Estado de las 100 ideas originales en Gema 0.2.7. **Disponible** indica que el f
 
 - **#11 Índice incremental** · Disponible · Índice incremental con exclusiones por proyecto.
 - **#12 Búsqueda por símbolos** · Disponible · Busca declaraciones de funciones, clases y otros símbolos en Ctrl + K.
-- **#13 Referencias de funciones** · Pendiente
-- **#14 Mapa de dependencias** · Pendiente
+- **#13 Referencias de funciones** · Parcial · Busca el nombre completo en archivos de código y navega a sus coincidencias. Falta la resolución semántica del símbolo.
+- **#14 Mapa de dependencias** · Parcial · Consulta importaciones directas entre archivos JavaScript y TypeScript. Quedan pendientes los alias y las relaciones de varios niveles.
 - **#15 Proyectos con varias carpetas** · Pendiente
 - **#16 Búsqueda por significado opcional** · Pendiente
 - **#17 Contexto visible** · Parcial · Muestra el alcance de lectura de las revisiones, las menciones y los archivos fijados. Falta un inventario de fragmentos por petición.
@@ -101,7 +101,7 @@ Estado de las 100 ideas originales en Gema 0.2.7. **Disponible** indica que el f
 - **#72 Panel redimensionable** · Disponible · Panel ajustable por arrastre y teclado.
 - **#73 Barra de resultados del chat** · Parcial · El panel agrupa archivos, cambios y pruebas. Falta una barra dedicada a los resultados de cada chat.
 - **#74 Búsqueda dentro del historial** · Disponible · Búsqueda de palabras y frases en los mensajes guardados.
-- **#75 Menú al seleccionar código** · Parcial · Puedes citar líneas en el chat o preparar una petición de explicación desde la selección.
+- **#75 Menú al seleccionar código** · Parcial · Puedes citar o explicar la selección y buscar referencias de un nombre. Falta proponer una edición directamente sobre la selección.
 - **#76 Contexto visible en el editor** · Parcial · El editor permite mencionar archivos y carpetas. Faltan fichas independientes para retirarlos.
 - **#77 Explorador de archivos por árbol** · Disponible · Carpetas desplegables que se recuerdan por proyecto, filtro por ruta y paginación.
 - **#78 Dos chats lado a lado** · Pendiente
