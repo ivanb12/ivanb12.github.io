@@ -1,13 +1,14 @@
 {
-  "version": "0.3.9",
-  "title": "Vistas previas de archivos y diagnóstico",
+  "version": "0.4.0",
+  "title": "Resultados del chat y flujos de Git",
   "notes": [
-    "Abre imágenes, documentos Markdown y archivos JSON desde el panel de tu proyecto.",
-    "Exporta un diagnóstico del equipo y Ollama desde Ajustes, Datos y privacidad. El informe omite chats y rutas personales."
+    "La ficha de tarea y la barra del chat reúnen propuestas, comprobaciones y archivos leídos.",
+    "Quita archivos mencionados desde el compositor y escribe / para abrir herramientas y plantillas.",
+    "Git sugiere mensajes de commit y borradores de PR. Desde los comentarios y comprobaciones puedes abrir propuestas locales y resultados de CI."
   ],
-  "pub_date": "2026-11-24T22:41:13.075Z",
+  "pub_date": "2026-11-24T22:58:10.339Z",
   "platform": "windows-x86_64",
-  "bytes": 5510233,
-  "sha256": "deb465d106a72d6bee4ad8d2a66c3721f1f472a459bd60628eff90b8f7a78ca8",
-  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.3.9_x64-setup.exe"
+  "bytes": 5514634,
+  "sha256": "cc3bb70db5ce640bfa8e339a269f5aa2ea1fa454ff46baf1aeb5841e18fa743e",
+  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.4.0_x64-setup.exe"
 }

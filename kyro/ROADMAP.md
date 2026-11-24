@@ -1,12 +1,12 @@
 # Hoja de ruta de Kyro
 
-Estado de las 100 ideas originales en Kyro 0.3.9. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
+Estado de las 100 ideas originales en Kyro 0.4.0. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
 
-24 disponibles · 44 parciales · 32 pendientes.
+32 disponibles · 36 parciales · 32 pendientes.
 
 ## Tareas y trabajo en segundo plano
 
-- **#1 Ficha de tarea** · Parcial · La ficha muestra objetivo y plan. Cambios y pruebas aparecen junto al mensaje.
+- **#1 Ficha de tarea** · Disponible · Reúne objetivo, criterios, pasos, propuestas y comprobaciones con sus estados y accesos directos.
 - **#2 Criterios de aceptación** · Disponible · Objetivo y criterios editables en Preparar tarea.
 - **#3 Plan editable** · Disponible · El plan permite editar y reordenar sus pasos desde el chat.
 - **#4 Guardado por paso** · Parcial · Guarda puntos de control durante los tramos de herramientas.
@@ -50,11 +50,11 @@ Estado de las 100 ideas originales en Kyro 0.3.9. **Disponible** indica que el f
 - **#33 Inventario de copias** · Parcial · Las copias aparecen como proyectos y muestran su rama y cambios en Git. Falta un inventario general.
 - **#34 Historial de un archivo** · Disponible · Historial de un archivo desde su visor.
 - **#35 Stage selectivo** · Parcial · Prepara archivos completos. La selección de bloques existe para aplicar propuestas.
-- **#36 Vista previa de commit** · Parcial · Vista previa exacta y mensaje editable. Falta la sugerencia de mensaje.
+- **#36 Vista previa de commit** · Disponible · Muestra el diff exacto y sugiere un mensaje editable según los archivos preparados.
 - **#37 Traspaso del chat entre copias** · Pendiente
-- **#38 PR en borrador** · Parcial · Crea un borrador de PR desde una rama publicada. Título y descripción se rellenan manualmente.
-- **#39 Estado de CI** · Parcial · Lista los checks del PR. Falta abrir el resultado de cada check desde esa lista.
-- **#40 Revisión de comentarios del PR** · Parcial · Los comentarios abren el archivo local en su línea. Falta enlazar cada comentario a una propuesta.
+- **#38 PR en borrador** · Disponible · Sugiere título y descripción desde los commits y los archivos de la rama comparada. El contenido se edita y confirma antes de publicarlo.
+- **#39 Estado de CI** · Disponible · Lista las comprobaciones del PR y abre el resultado en el navegador cuando GitHub proporciona un enlace HTTPS.
+- **#40 Revisión de comentarios del PR** · Disponible · Abre el archivo local en su línea y permite vincular una propuesta del mismo archivo a cada comentario.
 
 ## Pruebas y pruebas visuales
 
@@ -74,7 +74,7 @@ Estado de las 100 ideas originales en Kyro 0.3.9. **Disponible** indica que el f
 - **#51 Reglas del proyecto** · Disponible · Importación de AGENTS.md con revisión previa en los ajustes del proyecto.
 - **#52 Reglas por carpeta** · Pendiente
 - **#53 Skills locales** · Parcial · Las rutinas manuales guardan un plan y comprobaciones del proyecto. Falta un formato de skills.
-- **#54 Selector `/`** · Parcial · El selector / abre plantillas de tarea. Falta lanzar otros tipos de flujo.
+- **#54 Selector `/`** · Disponible · Abre acciones de proyecto, biblioteca, ajustes y plantillas desde el compositor, con ratón o teclado.
 - **#55 Plantillas de tarea** · Disponible · Plantillas iniciales y personales para preparar tareas.
 - **#56 Revisor independiente** · Parcial · Las revisiones contrastan hallazgos con el código. Falta un agente aislado que revise el diff.
 - **#57 Delegación con contexto separado** · Pendiente
@@ -99,10 +99,10 @@ Estado de las 100 ideas originales en Kyro 0.3.9. **Disponible** indica que el f
 
 - **#71 Pestañas laterales persistentes** · Parcial · Fija archivos. Falta fijar diffs y pruebas y conservar sus posiciones.
 - **#72 Panel redimensionable** · Disponible · Panel ajustable por arrastre y teclado.
-- **#73 Barra de resultados del chat** · Parcial · El panel agrupa archivos, cambios y pruebas. Falta una barra dedicada a los resultados de cada chat.
+- **#73 Barra de resultados del chat** · Disponible · El chat muestra accesos directos a archivos leídos, propuestas y comprobaciones cuando hay resultados.
 - **#74 Búsqueda dentro del historial** · Disponible · Búsqueda de palabras y frases en los mensajes guardados.
 - **#75 Menú al seleccionar código** · Parcial · Puedes citar o explicar la selección y buscar referencias de un nombre. Falta proponer una edición directamente sobre la selección.
-- **#76 Contexto visible en el editor** · Parcial · El editor permite mencionar archivos y carpetas. Faltan fichas independientes para retirarlos.
+- **#76 Contexto visible en el editor** · Disponible · Cada mención de archivo o carpeta aparece como una ficha que se puede retirar antes de enviar.
 - **#77 Explorador de archivos por árbol** · Disponible · Carpetas desplegables que se recuerdan por proyecto, filtro por ruta y paginación.
 - **#78 Dos chats lado a lado** · Pendiente
 - **#79 Atajos configurables y navegación completa con teclado** · Parcial · Atajos documentados, tecla de envío configurable y controles de teclado en los selectores. Falta configuración completa.
