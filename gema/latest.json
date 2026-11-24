@@ -1,13 +1,14 @@
 {
-  "version": "0.3.6",
-  "title": "Descarga de ComfyUI corregida",
+  "version": "0.3.7",
+  "title": "Qwen local y nueva interfaz",
   "notes": [
-    "Kyro se identifica ante el servidor de descargas de ComfyUI para que acepte la solicitud del instalador.",
-    "Si la descarga falla, Imágenes muestra el enlace oficial como alternativa."
+    "La ventana de Kyro tiene una navegación más simple y un estudio de imágenes con el selector de motor a la vista.",
+    "Qwen Image 2512 permite crear y Qwen Image Edit 2511 permite editar con un motor local que se prepara desde Kyro.",
+    "Los modelos se descargan cuando los eliges. Puedes pausar las descargas y ComfyUI sigue disponible como alternativa."
   ],
-  "pub_date": "2026-11-24T21:47:33.573Z",
+  "pub_date": "2026-11-24T22:04:50.901Z",
   "platform": "windows-x86_64",
-  "bytes": 5475025,
-  "sha256": "dca506ef418178ed9cbf63db17e1609147a900b4f02eb3a112838330023fc368",
-  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.3.6_x64-setup.exe"
+  "bytes": 5489671,
+  "sha256": "bed7010bcea0ef8238ed4165366e07e6e2121d84e655beaffef36a53bfc7b7df",
+  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.3.7_x64-setup.exe"
 }
