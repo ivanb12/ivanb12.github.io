@@ -1,14 +1,13 @@
 {
-  "version": "0.3.4",
-  "title": "Imágenes listas en menos pasos",
+  "version": "0.3.5",
+  "title": "Instala el motor de imágenes desde Kyro",
   "notes": [
-    "Kyro detecta ComfyUI abierto y recuerda la conexión. El puerto personalizado queda en la configuración.",
-    "Instala o abre el motor desde el estudio. Descarga un primer modelo con progreso y cancelación.",
-    "Stable Diffusion 1.5 tiene formatos ajustados a su resolución para crear y transformar imágenes."
+    "Kyro descarga el instalador oficial de ComfyUI, comprueba su firma y abre Comfy Desktop al terminar.",
+    "El motor se instala por separado. Los modelos de imágenes se descargan cuando los eliges."
   ],
-  "pub_date": "2026-11-24T21:10:43.880Z",
+  "pub_date": "2026-11-24T21:30:17.948Z",
   "platform": "windows-x86_64",
-  "bytes": 5458271,
-  "sha256": "45d6426a3d22bdf9df7e6e6b2d2cd397cac3a47f3dbafb1556ccf93c3d4072ac",
-  "url": "https://ivanb12.github.io/kyro/downloads/Kyro_0.3.4_x64-setup.exe"
+  "bytes": 5458470,
+  "sha256": "79867416e84a7d9a4e0d0626d2f71acb503a866719c0f8bd5acea8dd43ddecff",
+  "url": "https://ivanb12.github.io/kyro/downloads/Kyro_0.3.5_x64-setup.exe"
 }

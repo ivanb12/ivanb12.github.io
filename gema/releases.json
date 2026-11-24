@@ -2,6 +2,19 @@
   "schema_version": 1,
   "releases": [
     {
+      "version": "0.3.5",
+      "title": "Instala el motor de imágenes desde Kyro",
+      "notes": [
+        "Kyro descarga el instalador oficial de ComfyUI, comprueba su firma y abre Comfy Desktop al terminar.",
+        "El motor se instala por separado. Los modelos de imágenes se descargan cuando los eliges."
+      ],
+      "pub_date": "2026-11-24T21:30:17.948Z",
+      "platform": "windows-x86_64",
+      "bytes": 5458470,
+      "sha256": "79867416e84a7d9a4e0d0626d2f71acb503a866719c0f8bd5acea8dd43ddecff",
+      "url": "https://ivanb12.github.io/gema/downloads/Gema_0.3.5_x64-setup.exe"
+    },
+    {
       "version": "0.3.4",
       "title": "Imágenes listas en menos pasos",
       "notes": [
