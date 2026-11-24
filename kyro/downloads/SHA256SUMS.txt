@@ -1,3 +1,4 @@
+45d6426a3d22bdf9df7e6e6b2d2cd397cac3a47f3dbafb1556ccf93c3d4072ac  Kyro_0.3.4_x64-setup.exe
 871e9243480d75001e126f259708afb3e01ba2b4af14d8bf46589169a067f5b8  Kyro_0.3.3_x64-setup.exe
 06a46bc8c0621d6c7d956fff78d6d0e0c724c848b97afe098fa69255f5478ac9  Kyro_0.3.2_x64-setup.exe
 cfe74cccc16fedfbebfdf7f69468899d1bc2c2d9bc1890d23d4870ced1c95df4  Kyro_0.3.1_x64-setup.exe

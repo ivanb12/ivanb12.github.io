@@ -2,6 +2,20 @@
   "schema_version": 1,
   "releases": [
     {
+      "version": "0.3.4",
+      "title": "Imágenes listas en menos pasos",
+      "notes": [
+        "Kyro detecta ComfyUI abierto y recuerda la conexión. El puerto personalizado queda en la configuración.",
+        "Instala o abre el motor desde el estudio. Descarga un primer modelo con progreso y cancelación.",
+        "Stable Diffusion 1.5 tiene formatos ajustados a su resolución para crear y transformar imágenes."
+      ],
+      "pub_date": "2026-11-24T21:10:43.880Z",
+      "platform": "windows-x86_64",
+      "bytes": 5458271,
+      "sha256": "45d6426a3d22bdf9df7e6e6b2d2cd397cac3a47f3dbafb1556ccf93c3d4072ac",
+      "url": "https://ivanb12.github.io/kyro/downloads/Kyro_0.3.4_x64-setup.exe"
+    },
+    {
       "version": "0.3.3",
       "title": "Icono de Kyro en la barra de tareas",
       "notes": [

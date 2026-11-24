@@ -1,14 +1,14 @@
 {
-  "version": "0.3.3",
-  "title": "Icono de Kyro en la barra de tareas",
+  "version": "0.3.4",
+  "title": "Imágenes listas en menos pasos",
   "notes": [
-    "Kyro asigna la K blanca y violeta como icono de su ventana en la barra de tareas de Windows.",
-    "El actualizador avisa a Windows para que vuelva a leer el icono tras reemplazar el ejecutable.",
-    "La nueva web incluye una visita interactiva, filtros de modelos y guías paso a paso."
+    "Kyro detecta ComfyUI abierto y recuerda la conexión. El puerto personalizado queda en la configuración.",
+    "Instala o abre el motor desde el estudio. Descarga un primer modelo con progreso y cancelación.",
+    "Stable Diffusion 1.5 tiene formatos ajustados a su resolución para crear y transformar imágenes."
   ],
-  "pub_date": "2026-11-24T20:44:53.814Z",
+  "pub_date": "2026-11-24T21:10:43.880Z",
   "platform": "windows-x86_64",
-  "bytes": 5430487,
-  "sha256": "871e9243480d75001e126f259708afb3e01ba2b4af14d8bf46589169a067f5b8",
-  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.3.3_x64-setup.exe"
+  "bytes": 5458271,
+  "sha256": "45d6426a3d22bdf9df7e6e6b2d2cd397cac3a47f3dbafb1556ccf93c3d4072ac",
+  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.3.4_x64-setup.exe"
 }
