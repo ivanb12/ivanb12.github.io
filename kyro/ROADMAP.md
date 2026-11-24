@@ -1,8 +1,8 @@
 # Hoja de ruta de Kyro
 
-Estado de las 100 ideas originales en Kyro 0.4.0. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
+Estado de las 100 ideas originales en Kyro 0.4.1. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
 
-32 disponibles · 36 parciales · 32 pendientes.
+34 disponibles · 34 parciales · 32 pendientes.
 
 ## Tareas y trabajo en segundo plano
 
@@ -45,9 +45,9 @@ Estado de las 100 ideas originales en Kyro 0.4.0. **Disponible** indica que el f
 
 ## Git y colaboración
 
-- **#31 Copia Git desde el chat** · Parcial · El panel Git permite crear una copia desde una rama o commit. Falta elegirla dentro de la preparación de una tarea.
+- **#31 Copia Git desde el chat** · Disponible · Al preparar una tarea puedes elegir una copia existente o crear una desde el commit actual. El plan se guarda como borrador en la copia.
 - **#32 Preparación de la copia** · Parcial · Puedes ejecutar comprobaciones autorizadas en la copia. Falta un flujo de aprovisionamiento.
-- **#33 Inventario de copias** · Parcial · Las copias aparecen como proyectos y muestran su rama y cambios en Git. Falta un inventario general.
+- **#33 Inventario de copias** · Disponible · El inventario reúne las copias registradas, muestra origen, base, rama y cambios, y permite abrirlas o revisar su ubicación.
 - **#34 Historial de un archivo** · Disponible · Historial de un archivo desde su visor.
 - **#35 Stage selectivo** · Parcial · Prepara archivos completos. La selección de bloques existe para aplicar propuestas.
 - **#36 Vista previa de commit** · Disponible · Muestra el diff exacto y sugiere un mensaje editable según los archivos preparados.
