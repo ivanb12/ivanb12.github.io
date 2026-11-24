@@ -1,8 +1,8 @@
 # Hoja de ruta de Gema
 
-Estado de las 100 ideas originales en Gema 0.2.10. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
+Estado de las 100 ideas originales en Gema 0.2.11. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
 
-21 disponibles · 45 parciales · 34 pendientes.
+22 disponibles · 46 parciales · 32 pendientes.
 
 ## Tareas y trabajo en segundo plano
 
@@ -27,14 +27,14 @@ Estado de las 100 ideas originales en Gema 0.2.10. **Disponible** indica que el 
 - **#16 Búsqueda por significado opcional** · Pendiente
 - **#17 Contexto visible** · Parcial · Muestra el alcance de lectura de las revisiones, las menciones y los archivos fijados. Falta un inventario de fragmentos por petición.
 - **#18 Resumen de chats largos** · Pendiente
-- **#19 Citas desactualizadas** · Pendiente
+- **#19 Citas desactualizadas** · Parcial · Las notas de código detectan fragmentos modificados y buscan coincidencias únicas en el mismo archivo. Falta llevar la comprobación a las citas del chat.
 - **#20 Relación entre código y pruebas** · Pendiente
 
 ## Edición y revisión
 
 - **#21 Propuestas persistentes** · Disponible · Las propuestas pendientes se recuperan del perfil tras reiniciar.
 - **#22 Diff agrupado por función** · Pendiente
-- **#23 Comentarios sobre líneas** · Pendiente
+- **#23 Comentarios sobre líneas** · Disponible · Notas locales de una línea o rango, con búsqueda, estados y cambio de vínculo.
 - **#24 Editor lateral ligero** · Pendiente
 - **#25 Cambios de nombre y eliminaciones revisables** · Pendiente
 - **#26 Comparación a tres bandas** · Pendiente
@@ -93,7 +93,7 @@ Estado de las 100 ideas originales en Gema 0.2.10. **Disponible** indica que el 
 - **#67 Recuperación tras falta de memoria** · Pendiente
 - **#68 Asignación por fase** · Pendiente
 - **#69 Historial de mediciones** · Parcial · Hay mediciones y se indica si el modelo estaba cargado. Falta comparar su historial por contexto.
-- **#70 Gestión del almacenamiento** · Parcial · Muestra almacenamiento y espacio disponible. Falta trasladar el almacén desde Gema.
+- **#70 Gestión del almacenamiento** · Parcial · Permite elegir la carpeta de descargas y consultar su espacio disponible. Falta trasladar los modelos existentes desde Gema.
 
 ## Interfaz y uso diario
 
