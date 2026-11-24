@@ -1,8 +1,8 @@
 # Hoja de ruta de Kyro
 
-Estado de las 100 ideas originales en Kyro 0.3.8. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
+Estado de las 100 ideas originales en Kyro 0.3.9. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
 
-22 disponibles · 46 parciales · 32 pendientes.
+24 disponibles · 44 parciales · 32 pendientes.
 
 ## Tareas y trabajo en segundo plano
 
@@ -119,7 +119,7 @@ Estado de las 100 ideas originales en Kyro 0.3.8. **Disponible** indica que el f
 - **#87 Automatizaciones locales optativas** · Parcial · Las rutinas se inician manualmente. Falta la programación.
 - **#88 Historial de ejecuciones programadas** · Parcial · Historial de rutinas manuales. Falta registrar ejecuciones programadas y su próxima fecha.
 - **#89 Paquetes de configuración** · Pendiente
-- **#90 Visores para salidas habituales** · Parcial · Visor numerado de archivos de texto y panel de pruebas. Faltan vistas dedicadas de imágenes, Markdown y reportes estructurados.
+- **#90 Visores para salidas habituales** · Disponible · Vista previa de PNG, JPEG y WebP con dimensiones. Markdown y JSON alternan entre vista previa y código numerado. El panel de pruebas mantiene sus resultados navegables.
 
 ## Instalación, privacidad y fiabilidad
 
@@ -127,7 +127,7 @@ Estado de las 100 ideas originales en Kyro 0.3.8. **Disponible** indica que el f
 - **#92 Actualizaciones firmadas** · Parcial · Kyro descarga la actualización y verifica tamaño y SHA-256 desde la app. Falta firma Authenticode y verificación del publicador.
 - **#93 Volver a la versión anterior** · Pendiente
 - **#94 Canal estable y beta** · Pendiente
-- **#95 Diagnóstico exportable** · Parcial · La biblioteca detecta hardware y el motor muestra su estado. Falta exportar diagnóstico con datos sensibles ocultos.
+- **#95 Diagnóstico exportable** · Disponible · Exporta versión, hardware y estado de Ollama a JSON desde Datos y privacidad. El informe omite chats, ubicaciones y nombres de proyectos o modelos.
 - **#96 Copias de seguridad configurables** · Parcial · Exporta una copia del perfil SQLite y JSON. Faltan selección de contenido y restauración guiada.
 - **#97 Protección del historial local** · Pendiente
 - **#98 Aislamiento real para ejecutar pruebas** · Pendiente
