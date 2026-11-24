@@ -1,14 +1,14 @@
 {
-  "version": "0.2.11",
-  "title": "Anota decisiones en el código",
+  "version": "0.3.0",
+  "title": "Gema pasa a llamarse Kyro",
   "notes": [
-    "Añade notas a una línea o selección, búscalas por texto o archivo y marca las que hayas resuelto.",
-    "Gema encuentra el fragmento cuando cambia de línea, avisa si el código cambió y te deja elegir un nuevo vínculo.",
-    "Las notas siguen accesibles si la carpeta del proyecto se mueve o se desconecta."
+    "Kyro estrena identidad, web y un chat personal con compositor centrado. El panel de proyectos sigue disponible.",
+    "Crea y edita imágenes en el estudio local. Requiere ComfyUI y modelos instalados en el equipo.",
+    "La actualización de Gema a Kyro conserva tu perfil y tus modelos."
   ],
-  "pub_date": "2026-11-24T13:43:28.760Z",
+  "pub_date": "2026-11-24T19:20:32.471Z",
   "platform": "windows-x86_64",
-  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.2.11_x64-setup.exe",
-  "bytes": 5419945,
-  "sha256": "ae20fa5fc26d487928e443d87fe4518a82c2c1373f496f59cb30ff67574244f6"
+  "bytes": 5521794,
+  "sha256": "33adc6eca080aa12dd10c9b07506af7519492dacb849b89ffb0ded1bf24f4dd5",
+  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.3.0_x64-setup.exe"
 }

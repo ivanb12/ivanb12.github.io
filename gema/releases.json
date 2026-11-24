@@ -2,6 +2,20 @@
   "schema_version": 1,
   "releases": [
     {
+      "version": "0.3.0",
+      "title": "Gema pasa a llamarse Kyro",
+      "notes": [
+        "Kyro estrena identidad, web y un chat personal con compositor centrado. El panel de proyectos sigue disponible.",
+        "Crea y edita imágenes en el estudio local. Requiere ComfyUI y modelos instalados en el equipo.",
+        "La actualización de Gema a Kyro conserva tu perfil y tus modelos."
+      ],
+      "pub_date": "2026-11-24T19:20:32.471Z",
+      "platform": "windows-x86_64",
+      "bytes": 5521794,
+      "sha256": "33adc6eca080aa12dd10c9b07506af7519492dacb849b89ffb0ded1bf24f4dd5",
+      "url": "https://ivanb12.github.io/gema/downloads/Gema_0.3.0_x64-setup.exe"
+    },
+    {
       "version": "0.2.11",
       "title": "Anota decisiones en el código",
       "notes": [
