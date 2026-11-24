@@ -2,6 +2,20 @@
   "schema_version": 1,
   "releases": [
     {
+      "version": "0.3.1",
+      "title": "Elige el modelo de imagen de cada trabajo",
+      "notes": [
+        "El selector de Imágenes muestra el icono, nombre y uso de cada modelo compatible de ComfyUI.",
+        "Kyro recuerda por separado qué modelo eliges para crear y para editar.",
+        "La vista previa indica el tamaño en píxeles y el formato del resultado."
+      ],
+      "pub_date": "2026-11-24T19:33:19.477Z",
+      "platform": "windows-x86_64",
+      "bytes": 5520606,
+      "sha256": "cfe74cccc16fedfbebfdf7f69468899d1bc2c2d9bc1890d23d4870ced1c95df4",
+      "url": "https://ivanb12.github.io/kyro/downloads/Kyro_0.3.1_x64-setup.exe"
+    },
+    {
       "version": "0.3.0",
       "title": "Gema pasa a llamarse Kyro",
       "notes": [
