@@ -26,7 +26,7 @@
           Menú
         </button>
         <nav id="navigation" aria-label="Navegación">
-          <a href="#funciones">Funciones</a>
+          <a href="#funciones">Explorar</a>
           <a href="#instalacion">Instalación</a>
           <a href="#versiones">Versiones</a>
         </nav>
@@ -43,12 +43,12 @@
             Kyro.
           </p>
           <div class="hero-download">
-            <a class="primary" href="downloads/Kyro_0.3.1_x64-setup.exe" download data-download
+            <a class="primary" href="downloads/Kyro_0.3.2_x64-setup.exe" download data-download
               >Descargar para Windows <span aria-hidden="true">↓</span></a
             >
             <span
-              >Windows 10 y 11 x64 · <span data-version>0.3.1</span> ·
-              <span data-size>5,5 MB</span></span
+              >Windows 10 y 11 x64 · <span data-version>0.3.2</span> ·
+              <span data-size>5,4 MB</span></span
             >
           </div>
         </div>
@@ -76,41 +76,41 @@
 
       <section class="shell section" id="funciones" aria-labelledby="features-title">
         <div class="section-heading">
-          <h2 id="features-title">Elige qué quieres hacer</h2>
-        </div>
-        <div class="feature-tabs" role="tablist" aria-label="Espacios de Kyro">
-          <button
-            type="button"
-            role="tab"
-            aria-selected="true"
-            id="tab-project"
-            aria-controls="feature-panel"
-            data-feature="project"
-          >
-            Proyectos
-          </button>
-          <button
-            type="button"
-            role="tab"
-            aria-selected="false"
-            id="tab-image"
-            aria-controls="feature-panel"
-            data-feature="image"
-            tabindex="-1"
-          >
-            Imágenes
-          </button>
-          <button
-            type="button"
-            role="tab"
-            aria-selected="false"
-            id="tab-chat"
-            aria-controls="feature-panel"
-            data-feature="chat"
-            tabindex="-1"
-          >
-            Chat
-          </button>
+          <h2 id="features-title">Por dentro de Kyro</h2>
+          <div class="feature-tabs" role="tablist" aria-label="Espacios de Kyro">
+            <button
+              type="button"
+              role="tab"
+              aria-selected="false"
+              id="tab-chat"
+              aria-controls="feature-panel"
+              data-feature="chat"
+              tabindex="-1"
+            >
+              Chat
+            </button>
+            <button
+              type="button"
+              role="tab"
+              aria-selected="true"
+              id="tab-project"
+              aria-controls="feature-panel"
+              data-feature="project"
+            >
+              Proyectos
+            </button>
+            <button
+              type="button"
+              role="tab"
+              aria-selected="false"
+              id="tab-image"
+              aria-controls="feature-panel"
+              data-feature="image"
+              tabindex="-1"
+            >
+              Imágenes
+            </button>
+          </div>
         </div>
         <div
           class="feature-panel"
@@ -122,10 +122,10 @@
           <div class="feature-copy">
             <h3>Trabaja desde una carpeta</h3>
             <p>
-              Explora archivos, abre referencias en su línea y revisa las propuestas antes de
-              aplicarlas. Puedes anotar líneas y volver a ellas desde el panel del proyecto.
+              Abre una carpeta, consulta su código y revisa cada propuesta de cambio antes de
+              aplicarla.
             </p>
-            <span class="feature-detail">Proyectos · Archivos · Notas · Cambios</span>
+            <span class="feature-detail">Archivos, notas y revisión de cambios</span>
           </div>
           <img
             src="assets/proyecto.png"
@@ -139,39 +139,52 @@
 
       <section class="shell section" id="instalacion" aria-labelledby="install-title">
         <div class="install-grid">
-          <div>
-            <h2 id="install-title">Instalar Kyro</h2>
-            <p>
-              Si ya usabas Gema, el instalador actualiza esa misma instalación y conserva tus
-              conversaciones, proyectos y preferencias.
-            </p>
-            <a class="primary" href="downloads/Kyro_0.3.1_x64-setup.exe" download data-download
+          <div class="install-card">
+            <img class="install-mark" src="assets/kyro-icon.png" alt="" width="64" height="64" />
+            <h2 id="install-title">Kyro para Windows</h2>
+            <p>Windows 10 y 11 x64 · <span data-size>5,4 MB</span></p>
+            <a class="primary" href="downloads/Kyro_0.3.2_x64-setup.exe" download data-download
               >Descargar instalador <span aria-hidden="true">↓</span></a
             >
             <a class="quiet-link" href="downloads/SHA256SUMS.txt"
               >Verificación SHA-256 <span aria-hidden="true">↗</span></a
             >
           </div>
-          <ol>
-            <li>
-              <strong>Abre el instalador</strong
-              ><span>Kyro se instala por usuario en Windows 10 y 11 x64.</span>
-            </li>
-            <li>
-              <strong>Prepara tus modelos</strong
-              ><span
-                >La biblioteca de Kyro usa Ollama para el chat. Para imágenes, abre ComfyUI y
-                selecciona un modelo instalado.</span
+          <div class="install-guide">
+            <h3>Instalación y requisitos</h3>
+            <details open>
+              <summary>¿Ya tienes Gema o Kyro?</summary>
+              <p>
+                El instalador actualiza la app en su carpeta actual y conserva tus chats, proyectos,
+                preferencias y modelos. También puedes buscar nuevas versiones en Ajustes → Acerca
+                de.
+              </p>
+            </details>
+            <details>
+              <summary>¿Qué necesito para usar el chat?</summary>
+              <p>
+                Kyro puede preparar Ollama al arrancar. Descarga un modelo en la biblioteca para
+                empezar. Cuando lo tengas, podrás conversar sin conexión.
+              </p>
+            </details>
+            <details>
+              <summary>¿Qué necesito para crear imágenes?</summary>
+              <p>
+                ComfyUI y un modelo compatible instalado. Kyro detecta Qwen Image 2512, Qwen Image
+                Edit 2511 y checkpoints base de Stable Diffusion.
+              </p>
+              <a class="quiet-link" href="https://docs.comfy.org/installation/desktop/windows"
+                >Guía de ComfyUI para Windows</a
               >
-            </li>
-            <li>
-              <strong>Actualiza desde Kyro</strong
-              ><span
-                >En Ajustes → Acerca de, pulsa Buscar actualizaciones. Tú decides cuándo
-                instalar.</span
-              >
-            </li>
-          </ol>
+            </details>
+            <details>
+              <summary>¿Dónde se guardan los modelos?</summary>
+              <p>
+                En Ajustes → Motor local puedes cambiar la carpeta de Ollama. Los modelos de imagen
+                se guardan en la instalación de ComfyUI.
+              </p>
+            </details>
+          </div>
         </div>
       </section>
 
@@ -181,19 +194,25 @@
         aria-labelledby="releases-title"
       >
         <div class="section-heading">
-          <h2 id="releases-title">Versiones</h2>
+          <h2 id="releases-title">Novedades</h2>
           <a class="quiet-link" href="ROADMAP.md">Hoja de ruta <span aria-hidden="true">↗</span></a>
         </div>
         <article class="latest-release">
           <div class="release-number">
-            <strong data-version>0.3.1</strong
-            ><time id="release-date" datetime="2026-11-24">24 nov 2026</time>
+            <strong data-version>0.3.2</strong>
+            <time id="release-date" datetime="2026-11-24">24 nov 2026</time>
           </div>
-          <div>
-            <h3 id="release-title">Elige el modelo de imagen de cada trabajo</h3>
-            <p id="release-note">El selector de Imágenes muestra el icono, nombre y uso de cada modelo compatible de ComfyUI.</p>
+          <div class="release-copy">
+            <h3 id="release-title">Imágenes con el diseño del chat</h3>
+            <ul id="release-notes">
+              <li>El estudio de imágenes tiene un compositor centrado para crear, editar y cambiar de modelo.</li>
+            </ul>
           </div>
-          <a class="quiet-link" href="downloads/Kyro_0.3.1_x64-setup.exe" download data-download
+          <a
+            class="quiet-link release-download"
+            href="downloads/Kyro_0.3.2_x64-setup.exe"
+            download
+            data-download
             >Descargar <span aria-hidden="true">↓</span></a
           >
         </article>
@@ -201,36 +220,6 @@
           <summary>Versiones anteriores</summary>
           <ul id="older-releases"></ul>
         </details>
-      </section>
-
-      <section class="shell section questions" aria-labelledby="question-title">
-        <h2 id="question-title">Preguntas frecuentes</h2>
-        <div>
-          <details>
-            <summary>¿Qué necesito para crear imágenes?</summary>
-            <p>
-              ComfyUI en tu ordenador y los pesos del modelo que quieras usar. Kyro detecta Qwen
-              Image 2512, Qwen Image Edit 2511 y checkpoints base de Stable Diffusion.
-              <a href="https://docs.comfy.org/installation/desktop/windows"
-                >Guía de ComfyUI para Windows</a
-              >
-            </p>
-          </details>
-          <details>
-            <summary>¿Dónde se guardan los modelos?</summary>
-            <p>
-              En Ajustes → Motor local puedes elegir la carpeta de los modelos de Ollama. ComfyUI
-              guarda sus propios modelos en su instalación.
-            </p>
-          </details>
-          <details>
-            <summary>¿Puedo usar Kyro sin conexión?</summary>
-            <p>
-              Una vez instalados los motores y descargados los modelos, puedes usar el chat y el
-              estudio de imágenes con los modelos locales.
-            </p>
-          </details>
-        </div>
       </section>
     </main>
     <footer class="shell footer">

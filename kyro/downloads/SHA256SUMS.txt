@@ -1,3 +1,4 @@
+06a46bc8c0621d6c7d956fff78d6d0e0c724c848b97afe098fa69255f5478ac9  Kyro_0.3.2_x64-setup.exe
 cfe74cccc16fedfbebfdf7f69468899d1bc2c2d9bc1890d23d4870ced1c95df4  Kyro_0.3.1_x64-setup.exe
 33adc6eca080aa12dd10c9b07506af7519492dacb849b89ffb0ded1bf24f4dd5  Kyro_0.3.0_x64-setup.exe
 ae20fa5fc26d487928e443d87fe4518a82c2c1373f496f59cb30ff67574244f6  Gema_0.2.11_x64-setup.exe

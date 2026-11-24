@@ -2,6 +2,20 @@
   "schema_version": 1,
   "releases": [
     {
+      "version": "0.3.2",
+      "title": "Imágenes con el diseño del chat",
+      "notes": [
+        "El estudio de imágenes tiene un compositor centrado para crear, editar y cambiar de modelo.",
+        "La K transparente de Kyro llega a la ventana, los accesos directos y el instalador.",
+        "La pantalla de actualizaciones muestra las versiones, las novedades y el avance de la descarga."
+      ],
+      "pub_date": "2026-11-24T20:27:27.143Z",
+      "platform": "windows-x86_64",
+      "bytes": 5429664,
+      "sha256": "06a46bc8c0621d6c7d956fff78d6d0e0c724c848b97afe098fa69255f5478ac9",
+      "url": "https://ivanb12.github.io/gema/downloads/Gema_0.3.2_x64-setup.exe"
+    },
+    {
       "version": "0.3.1",
       "title": "Elige el modelo de imagen de cada trabajo",
       "notes": [

@@ -10,6 +10,12 @@ if (latest) {
   const time = document.querySelector('#release-date');
   time.dateTime = latest.pub_date;
   time.textContent = formattedDate(latest.pub_date);
+  const notes = latest.notes.map((note) => {
+    const item = document.createElement('li');
+    item.textContent = note;
+    return item;
+  });
+  document.querySelector('#release-notes').replaceChildren(...notes);
 }
 for (const release of older) {
   const item = document.createElement('li');
@@ -28,24 +34,24 @@ const features = {
   project: {
     title: 'Trabaja desde una carpeta',
     detail:
-      'Explora archivos, abre referencias en su línea y revisa las propuestas antes de aplicarlas. Puedes anotar líneas y volver a ellas desde el panel del proyecto.',
-    tools: 'Proyectos · Archivos · Notas · Cambios',
+      'Abre una carpeta, consulta su código y revisa cada propuesta de cambio antes de aplicarla.',
+    tools: 'Archivos, notas y revisión de cambios',
     image: 'proyecto.png',
     alt: 'Panel del proyecto junto al chat de Kyro',
   },
   image: {
     title: 'Crea o edita una imagen',
     detail:
-      'Conecta ComfyUI, elige un modelo instalado y escribe lo que quieres crear o cambiar. Puedes seguir en el chat mientras esperas el resultado.',
-    tools: 'ComfyUI · Qwen Image · Exportación PNG',
+      'Describe la imagen, cambia de modelo desde el mismo cuadro y guarda el resultado en PNG.',
+    tools: 'Modelos de ComfyUI',
     image: 'imagenes.png',
     alt: 'Estudio de imágenes con los controles para elegir un modelo y crear una imagen',
   },
   chat: {
     title: 'Abre un chat local',
     detail:
-      'Pregunta, escribe o prepara una tarea con un modelo de Ollama. Puedes cambiar de modelo desde el propio chat y usar la biblioteca para consultar los que tienes instalados.',
-    tools: 'Ollama · Biblioteca de modelos · Historial',
+      'Escribe, consulta tus documentos o prepara una tarea. Cambia de modelo desde el propio chat.',
+    tools: 'Modelos de Ollama',
     image: 'chat.png',
     alt: 'Chat personal de Kyro con el compositor centrado',
   },
