@@ -1,107 +1,103 @@
-const metadata = window.KYRO_RELEASES?.releases ?? [];
-const [latest, ...older] = metadata;
-const oldList = document.querySelector('#older-releases');
-const formattedDate = (date) =>
-  new Intl.DateTimeFormat('es-ES', { dateStyle: 'medium', timeZone: 'Europe/Madrid' }).format(
-    new Date(date),
+const releases = window.KYRO_RELEASES?.releases ?? [];
+const [latest, ...older] = releases;
+const dateFormatter = new Intl.DateTimeFormat('es-ES', {
+  dateStyle: 'medium',
+  timeZone: 'Europe/Madrid',
+});
+const writeNotes = (list, notes) => {
+  list.replaceChildren(
+    ...notes.map((note) => {
+      const item = document.createElement('li');
+      item.textContent = note;
+      return item;
+    }),
   );
+};
 
 if (latest) {
   const time = document.querySelector('#release-date');
   time.dateTime = latest.pub_date;
-  time.textContent = formattedDate(latest.pub_date);
-  const notes = latest.notes.map((note) => {
-    const item = document.createElement('li');
-    item.textContent = note;
-    return item;
-  });
-  document.querySelector('#release-notes').replaceChildren(...notes);
-}
-for (const release of older) {
-  const item = document.createElement('li');
-  const title = document.createElement('span');
-  const link = document.createElement('a');
-  title.textContent = `${release.version} · ${release.title}`;
-  link.href = release.url;
-  link.textContent = 'Descargar';
-  link.className = 'quiet-link';
-  link.setAttribute('aria-label', `Descargar versión ${release.version}`);
-  item.append(title, link);
-  oldList.append(item);
+  time.textContent = dateFormatter.format(new Date(latest.pub_date));
+  writeNotes(document.querySelector('#release-notes'), latest.notes);
 }
 
-const features = {
-  project: {
-    title: 'Trabaja desde una carpeta',
-    detail:
-      'Abre una carpeta, consulta su código y revisa cada propuesta de cambio antes de aplicarla.',
-    tools: 'Archivos, notas y revisión de cambios',
-    image: 'proyecto.png',
-    alt: 'Panel del proyecto junto al chat de Kyro',
-  },
-  image: {
-    title: 'Crea o edita una imagen',
-    detail:
-      'Describe la imagen, cambia de modelo desde el mismo cuadro y guarda el resultado en PNG.',
-    tools: 'Modelos de ComfyUI',
-    image: 'imagenes.png',
-    alt: 'Estudio de imágenes con los controles para elegir un modelo y crear una imagen',
-  },
-  chat: {
-    title: 'Abre un chat local',
-    detail:
-      'Escribe, consulta tus documentos o prepara una tarea. Cambia de modelo desde el propio chat.',
-    tools: 'Modelos de Ollama',
-    image: 'chat.png',
-    alt: 'Chat personal de Kyro con el compositor centrado',
-  },
-};
-const tabs = [...document.querySelectorAll('[data-feature]')];
-const panel = document.querySelector('#feature-panel');
-function showFeature(button) {
-  for (const tab of tabs) {
-    const active = tab === button;
-    tab.setAttribute('aria-selected', String(active));
-    tab.tabIndex = active ? 0 : -1;
-  }
-  const feature = features[button.dataset.feature];
-  panel.setAttribute('aria-labelledby', button.id);
-  panel.querySelector('h3').textContent = feature.title;
-  panel.querySelector('p').textContent = feature.detail;
-  panel.querySelector('.feature-detail').textContent = feature.tools;
-  const image = panel.querySelector('img');
-  image.src = 'assets/' + feature.image;
-  image.alt = feature.alt;
+const earlier = document.querySelector('#older-releases');
+for (const release of older) {
+  const row = document.createElement('li');
+  const details = document.createElement('details');
+  const summary = document.createElement('summary');
+  const notes = document.createElement('ul');
+  const link = document.createElement('a');
+  summary.textContent = `${release.version} · ${release.title}`;
+  writeNotes(notes, release.notes);
+  link.href = release.url;
+  link.className = 'text-link';
+  link.textContent = 'Descargar ' + release.version;
+  details.append(summary, notes, link);
+  row.append(details);
+  earlier.append(row);
 }
-tabs.forEach((button, index) => {
-  button.addEventListener('click', () => showFeature(button));
-  button.addEventListener('keydown', (event) => {
-    const target = {
+
+const tabs = Array.from(document.querySelectorAll('.tour-tabs [role="tab"]'));
+function activateTab(active) {
+  for (const tab of tabs) {
+    const selected = tab === active;
+    tab.setAttribute('aria-selected', String(selected));
+    tab.tabIndex = selected ? 0 : -1;
+    document.getElementById(tab.getAttribute('aria-controls')).hidden = !selected;
+  }
+}
+tabs.forEach((tab, index) => {
+  tab.addEventListener('click', () => activateTab(tab));
+  tab.addEventListener('keydown', (event) => {
+    const next = {
       ArrowLeft: (index + tabs.length - 1) % tabs.length,
       ArrowRight: (index + 1) % tabs.length,
       Home: 0,
       End: tabs.length - 1,
     }[event.key];
-    if (target === undefined) return;
+    if (next === undefined) return;
     event.preventDefault();
-    tabs[target].focus();
-    showFeature(tabs[target]);
+    activateTab(tabs[next]);
+    tabs[next].focus();
   });
 });
 
+const filterGroup = document.querySelector('.model-filters');
+const filters = Array.from(filterGroup.querySelectorAll('[data-filter]'));
+const models = Array.from(document.querySelectorAll('[data-model]'));
+filterGroup.hidden = false;
+for (const button of filters) {
+  button.addEventListener('click', () => {
+    for (const filter of filters) filter.setAttribute('aria-pressed', String(filter === button));
+    const category = button.dataset.filter;
+    for (const model of models) {
+      model.hidden = category !== 'all' && !model.dataset.model.split(' ').includes(category);
+    }
+  });
+}
+
 const menu = document.querySelector('.mobile-nav');
 const navigation = document.querySelector('#navigation');
-function changeMenu(open) {
+function setMenu(open) {
   menu.setAttribute('aria-expanded', String(open));
   navigation.toggleAttribute('data-open', open);
 }
-menu.addEventListener('click', () => changeMenu(menu.getAttribute('aria-expanded') !== 'true'));
+menu.addEventListener('click', () => setMenu(menu.getAttribute('aria-expanded') !== 'true'));
 navigation.addEventListener('click', (event) => {
-  if (event.target.closest('a')) changeMenu(false);
+  if (event.target.closest('a')) setMenu(false);
 });
-navigation.addEventListener('keydown', (event) => {
+document.querySelector('.site-header').addEventListener('keydown', (event) => {
   if (event.key === 'Escape' && navigation.hasAttribute('data-open')) {
-    changeMenu(false);
+    setMenu(false);
     menu.focus();
   }
 });
+
+function openGuide(hash) {
+  if (!hash.startsWith('#guia-')) return;
+  const guide = document.getElementById(hash.slice(1));
+  if (guide instanceof HTMLDetailsElement) guide.open = true;
+}
+addEventListener('hashchange', () => openGuide(location.hash));
+openGuide(location.hash);
