@@ -1,3 +1,4 @@
+fb13deb8c280fcf7612ea482d0316106bdc820e7da1ebeaee4158ef06a5a4cfd  Gema_0.2.7_x64-setup.exe
 e09b0853ffebd5b441b53631ff88a5e881c7c775addc663ebdbe3b98de0a3ed7  Gema_0.2.6_x64-setup.exe
 df151c6a28cf2bb901c8eb0663249d0e185041c0a3e449bde3fae1d605057e88  Gema_0.2.4_x64-setup.exe
 1af3af646874f967d73e4b21bcbccb959c82e8b0be92bb8f4062ff85b66012e6  Gema_0.1.8_x64-setup.exe

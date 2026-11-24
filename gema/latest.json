@@ -1,14 +1,13 @@
 {
-  "version": "0.2.6",
-  "title": "Retoma un mensaje y elige qué cambios conservar",
+  "version": "0.2.7",
+  "title": "De la salida de pruebas a la línea de código",
   "notes": [
-    "Retoma un mensaje anterior y revisa qué cambios de código de ese chat puedes revertir.",
-    "Descarga y verifica actualizaciones desde Ajustes. Abre el instalador cuando terminen los trabajos.",
-    "Explora el proyecto por carpetas, filtra por ruta y cita líneas de código en el chat."
+    "Abre desde la salida de una comprobación la línea del archivo que necesita atención.",
+    "Prepara nuevos intentos con autorización individual y conserva el resultado anterior en el chat."
   ],
-  "pub_date": "2026-11-24T08:08:03.921Z",
+  "pub_date": "2026-11-24T09:53:50.978Z",
   "platform": "windows-x86_64",
-  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.2.6_x64-setup.exe",
-  "bytes": 5316030,
-  "sha256": "e09b0853ffebd5b441b53631ff88a5e881c7c775addc663ebdbe3b98de0a3ed7"
+  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.2.7_x64-setup.exe",
+  "bytes": 5333975,
+  "sha256": "fb13deb8c280fcf7612ea482d0316106bdc820e7da1ebeaee4158ef06a5a4cfd"
 }

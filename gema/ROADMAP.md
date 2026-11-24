@@ -1,8 +1,8 @@
 # Hoja de ruta de Gema
 
-Estado de las 100 ideas originales en Gema 0.2.6. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
+Estado de las 100 ideas originales en Gema 0.2.7. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
 
-20 disponibles · 43 parciales · 37 pendientes.
+21 disponibles · 43 parciales · 36 pendientes.
 
 ## Tareas y trabajo en segundo plano
 
@@ -12,7 +12,7 @@ Estado de las 100 ideas originales en Gema 0.2.6. **Disponible** indica que el f
 - **#4 Guardado por paso** · Parcial · Guarda puntos de control durante los tramos de herramientas.
 - **#5 Bandeja de decisiones** · Disponible · Bandeja Decisiones pendientes en Ctrl + K.
 - **#6 Cola visible** · Parcial · Muestra y cancela trabajos en cola. Falta cambiar su prioridad.
-- **#7 Reintento de un paso** · Parcial · Reanuda tareas y prepara de nuevo comprobaciones de rutina caducadas. Falta el reintento general por paso.
+- **#7 Reintento de un paso** · Parcial · Reanuda tareas y prepara un nuevo intento para pruebas fallidas o solicitudes caducadas. Falta el reintento general de cada paso de un agente.
 - **#8 Continuar por otra vía** · Disponible · Retoma un mensaje como borrador, conserva el chat original y elige si quieres revertir los cambios posteriores de Gema.
 - **#9 Dependencias entre tareas** · Pendiente
 - **#10 Avisos que llevan al sitio correcto** · Parcial · La bandeja y los avisos llevan al chat. Falta navegar desde una notificación del sistema.
@@ -61,7 +61,7 @@ Estado de las 100 ideas originales en Gema 0.2.6. **Disponible** indica que el f
 - **#41 Probar una propuesta en su copia** · Disponible · Aplica propuestas en una copia Git para ejecutar pruebas autorizadas.
 - **#42 Comandos de verificación por proyecto** · Disponible · Guarda comprobaciones con programa, argumentos y carpeta.
 - **#43 Pruebas dirigidas** · Pendiente
-- **#44 Resultados navegables** · Pendiente
+- **#44 Resultados navegables** · Disponible · Enlaza ubicaciones reconocidas en la salida de pruebas a archivos locales y a su línea.
 - **#45 Comparación antes y después** · Parcial · Compara dos ejecuciones de una rutina. Falta vincularlas automáticamente a los cambios y al commit de referencia.
 - **#46 Errores previos y nuevos** · Parcial · Distingue fallos nuevos, previos y corregidos al nivel de cada comprobación. Falta comparar fallos individuales dentro de una suite.
 - **#47 Vista web local** · Pendiente
