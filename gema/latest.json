@@ -1,14 +1,15 @@
 {
-  "version": "0.4.19",
-  "title": "Diez herramientas de proyecto",
+  "version": "0.4.20",
+  "title": "Menos memoria y nuevas herramientas de revisión",
   "notes": [
-    "Busca texto, salta a líneas o símbolos y reabre archivos recientes. Fija los proyectos que más usas.",
-    "Compara capturas, exporta el inventario y abre la vista web local desde la carpeta de trabajo.",
-    "Explora cadenas de importaciones y alias de JavaScript y TypeScript."
+    "Qwen Imágenes ofrece Ahorro de memoria y Solo CPU, con una resolución menor. Los chats pueden retomarse con contexto reducido.",
+    "Busca por significado, agrupa diferencias por función y organiza propuestas por propósito y versión.",
+    "Configura reglas por carpeta, prepara comprobaciones tras una tarea y delega un encargo en un chat independiente.",
+    "Activa el ahorro por batería y memoria o elige un modelo distinto para verificar informes de revisión."
   ],
-  "pub_date": "2026-11-25T19:37:15.044Z",
+  "pub_date": "2026-11-25T19:57:13.186Z",
   "platform": "windows-x86_64",
-  "bytes": 5650019,
-  "sha256": "0181814da79998cc7a8f073bb84cc3c03b2dfd15a3fa3fc9185574db490077d2",
-  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.4.19_x64-setup.exe"
+  "bytes": 5696712,
+  "sha256": "aa6ca93b5ac7399081f7c0def0f21872e27907b0fb13f3019c082e6e2d157b8f",
+  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.4.20_x64-setup.exe"
 }

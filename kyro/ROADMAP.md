@@ -1,8 +1,8 @@
 # Hoja de ruta de Kyro
 
-Estado de las 100 ideas originales en Kyro 0.4.19. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
+Estado de las 100 ideas originales en Kyro 0.4.20. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
 
-61 disponibles · 19 parciales · 20 pendientes.
+71 disponibles · 19 parciales · 10 pendientes.
 
 ## Tareas y trabajo en segundo plano
 
@@ -24,7 +24,7 @@ Estado de las 100 ideas originales en Kyro 0.4.19. **Disponible** indica que el 
 - **#13 Referencias de funciones** · Parcial · Busca el nombre completo en archivos de código y navega a sus coincidencias. Falta la resolución semántica del símbolo.
 - **#14 Mapa de dependencias** · Disponible · Importaciones directas e indirectas hasta cuatro niveles en JavaScript y TypeScript. Resuelve alias locales declarados en el tsconfig.json o jsconfig.json de la raíz.
 - **#15 Proyectos con varias carpetas** · Pendiente
-- **#16 Búsqueda por significado opcional** · Pendiente
+- **#16 Búsqueda por significado opcional** · Disponible · Alterna la búsqueda literal y la clasificación de fragmentos con EmbeddingGemma local. El modelo se descarga a petición y la búsqueda indica el alcance leído.
 - **#17 Contexto visible** · Disponible · Cada ejecución muestra los fragmentos de archivo enviados al modelo, con enlace a su primera línea.
 - **#18 Resumen de chats largos** · Disponible · Genera un resumen local de objetivos, decisiones y pendientes. Indica cuántos mensajes entraron en el contexto y permite copiar el resultado.
 - **#19 Citas desactualizadas** · Parcial · Las notas de código detectan fragmentos modificados y buscan coincidencias únicas en el mismo archivo. Falta llevar la comprobación a las citas del chat.
@@ -33,13 +33,13 @@ Estado de las 100 ideas originales en Kyro 0.4.19. **Disponible** indica que el 
 ## Edición y revisión
 
 - **#21 Propuestas persistentes** · Disponible · Las propuestas pendientes se recuperan del perfil tras reiniciar.
-- **#22 Diff agrupado por función** · Pendiente
+- **#22 Diff agrupado por función** · Disponible · Agrupa los bloques por declaración de función reconocible en el archivo. Los bloques que abarcan varios ámbitos aparecen aparte.
 - **#23 Comentarios sobre líneas** · Disponible · Notas locales de una línea o rango, con búsqueda, estados y cambio de vínculo.
 - **#24 Editor lateral ligero** · Disponible · Edita archivos de texto desde el panel, guarda con copia previa y puede revisar el diff antes de escribir.
 - **#25 Cambios de nombre y eliminaciones revisables** · Pendiente
 - **#26 Comparación a tres bandas** · Disponible · Compara la base de una propuesta, el contenido actual en disco y el resultado propuesto. Resalta los cambios y permite volver a leer el archivo.
-- **#27 Agrupar por propósito** · Pendiente
-- **#28 Versiones de una propuesta** · Pendiente
+- **#27 Agrupar por propósito** · Disponible · Asigna un propósito a cada cambio y revisa la tanda agrupada por ese campo.
+- **#28 Versiones de una propuesta** · Disponible · Consulta versiones del mismo archivo y ubicación de proyecto, con su chat de origen y estado.
 - **#29 Recuperación de tandas interrumpidas** · Parcial · Las tandas guardan copias y restauran cambios tras un fallo durante la aplicación. Falta recuperación específica tras un cierre durante la escritura.
 - **#30 Exportar un parche** · Disponible · Git permite exportar el diff preparado como parche.
 
@@ -72,14 +72,14 @@ Estado de las 100 ideas originales en Kyro 0.4.19. **Disponible** indica que el 
 ## Agentes y personalización
 
 - **#51 Reglas del proyecto** · Disponible · Importación de AGENTS.md con revisión previa en los ajustes del proyecto.
-- **#52 Reglas por carpeta** · Pendiente
+- **#52 Reglas por carpeta** · Disponible · Guarda reglas relativas al proyecto y aplica la más específica a las rutas que correspondan.
 - **#53 Skills locales** · Parcial · Las rutinas manuales guardan un plan y comprobaciones del proyecto. Falta un formato de skills.
 - **#54 Selector `/`** · Disponible · Abre acciones de proyecto, biblioteca, ajustes y plantillas desde el compositor, con ratón o teclado.
 - **#55 Plantillas de tarea** · Disponible · Plantillas iniciales y personales para preparar tareas.
 - **#56 Revisor independiente** · Parcial · Las revisiones contrastan hallazgos con el código. Falta un agente aislado que revise el diff.
-- **#57 Delegación con contexto separado** · Pendiente
+- **#57 Delegación con contexto separado** · Disponible · Prepara un encargo independiente para otro agente y conserva el enlace de vuelta al chat. El usuario revisa y envía el nuevo encargo.
 - **#58 Permisos por perfil** · Parcial · Programar respeta los permisos de edición y la confirmación global o por proyecto. Falta una matriz editable por agente y proyecto.
-- **#59 Hooks locales declarativos** · Pendiente
+- **#59 Hooks locales declarativos** · Disponible · Los modos Programar, Revisar y Planificar pueden preparar una comprobación guardada al completar una tarea. Cada ejecución requiere autorización.
 - **#60 Memoria con fuentes** · Disponible · Conserva notas generales y notas individuales. Una nota puede llevar de vuelta a su respuesta o a la línea del código que la originó.
 
 ## Modelos locales y rendimiento
@@ -88,10 +88,10 @@ Estado de las 100 ideas originales en Kyro 0.4.19. **Disponible** indica que el 
 - **#62 Ficha de compatibilidad** · Disponible · Los modelos instalados muestran capacidades, familia, parámetros, cuantización y contexto declarado por Ollama, junto a las pruebas locales de Kyro.
 - **#63 Comparación en la misma tarea** · Disponible · Dos modelos instalados reciben la misma pregunta y el mismo contexto de conversación. Muestra las respuestas y el tiempo, con alcance de texto.
 - **#64 Diagnóstico de lentitud** · Disponible · Cada ejecución distingue carga, procesamiento del contexto y generación según las métricas del motor.
-- **#65 Ajuste por batería y memoria** · Pendiente
+- **#65 Ajuste por batería y memoria** · Disponible · El ajuste opcional reduce el contexto y libera al terminar según batería y RAM libre.
 - **#66 Estimación antes de enviar** · Disponible · El compositor permite consultar antes de enviar el modelo elegido, su contexto y el reparto orientativo de memoria entre CPU y GPU.
-- **#67 Recuperación tras falta de memoria** · Pendiente
-- **#68 Asignación por fase** · Pendiente
+- **#67 Recuperación tras falta de memoria** · Disponible · Prepara un reintento de chat con contexto reducido. Qwen Imágenes permite reducir la resolución, leer pesos desde disco o ejecutar en CPU.
+- **#68 Asignación por fase** · Disponible · Puede usarse un modelo diferente para contrastar el informe final con los archivos, y se identifica en la respuesta.
 - **#69 Historial de mediciones** · Disponible · Guarda pruebas por modelo y permite comparar contexto, estado de carga, velocidad, primer token y memoria.
 - **#70 Gestión del almacenamiento** · Parcial · Permite elegir la carpeta de descargas y consultar su espacio disponible. Falta trasladar los modelos existentes desde Kyro.
 
@@ -134,7 +134,7 @@ Estado de las 100 ideas originales en Kyro 0.4.19. **Disponible** indica que el 
 - **#99 Instalación probada en equipos limpios** · Parcial · Instalación y actualización probadas con perfiles Windows aislados. Faltan pruebas en otros equipos Windows limpios.
 - **#100 Asistente de primer arranque** · Disponible · Comprueba equipo y motor, permite descargar o reutilizar modelos, ajusta tema y movimiento y abre chat, proyectos o imágenes. Se puede recuperar desde Ajustes.
 
-## Mejoras del historial en 0.4.19
+## Mejoras del historial en 0.4.20
 
 Además de los puntos #18 y #63, Kyro incorpora ocho mejoras de uso diario.
 
@@ -147,7 +147,7 @@ Además de los puntos #18 y #63, Kyro incorpora ocho mejoras de uso diario.
 - Recuperar los borradores de chats y proyectos tras reiniciar.
 - Consultar un historial con filtros combinables de proyecto y modo y ordenar por nombre o actividad.
 
-## Herramientas de proyectos en 0.4.19
+## Herramientas de proyectos en 0.4.20
 
 - Buscar texto en archivos con resultados que abren la línea exacta.
 - Navegar por las declaraciones de un archivo desde Símbolos.

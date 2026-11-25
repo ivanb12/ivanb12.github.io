@@ -2,6 +2,21 @@
   "schema_version": 1,
   "releases": [
     {
+      "version": "0.4.20",
+      "title": "Menos memoria y nuevas herramientas de revisión",
+      "notes": [
+        "Qwen Imágenes ofrece Ahorro de memoria y Solo CPU, con una resolución menor. Los chats pueden retomarse con contexto reducido.",
+        "Busca por significado, agrupa diferencias por función y organiza propuestas por propósito y versión.",
+        "Configura reglas por carpeta, prepara comprobaciones tras una tarea y delega un encargo en un chat independiente.",
+        "Activa el ahorro por batería y memoria o elige un modelo distinto para verificar informes de revisión."
+      ],
+      "pub_date": "2026-11-25T19:57:13.186Z",
+      "platform": "windows-x86_64",
+      "bytes": 5696712,
+      "sha256": "aa6ca93b5ac7399081f7c0def0f21872e27907b0fb13f3019c082e6e2d157b8f",
+      "url": "https://ivanb12.github.io/kyro/downloads/Kyro_0.4.20_x64-setup.exe"
+    },
+    {
       "version": "0.4.19",
       "title": "Diez herramientas de proyecto",
       "notes": [
