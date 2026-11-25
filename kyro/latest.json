@@ -1,13 +1,13 @@
 {
-  "version": "0.4.12",
-  "title": "Ficha de modelos y estimación antes de enviar",
+  "version": "0.4.13",
+  "title": "Atajos e integraciones en Ajustes",
   "notes": [
-    "Consulta las capacidades, el formato y el contexto declarado del modelo que tienes instalado.",
-    "Abre Estimar uso antes de enviar para ver la memoria prevista y su posible reparto entre RAM y VRAM."
+    "Cambia, desactiva o restaura los atajos de las acciones principales de Kyro.",
+    "Revisa y retira el acceso de GitHub por proyecto. Desde Integraciones también puedes abrir la configuración de los motores locales."
   ],
-  "pub_date": "2026-11-25T13:18:11.855Z",
+  "pub_date": "2026-11-25T14:05:14.670Z",
   "platform": "windows-x86_64",
-  "bytes": 5572678,
-  "sha256": "68aa303577a6b2cd68f460e959f017f300e28eb3d030ad408b7d9ee506e698d9",
-  "url": "https://ivanb12.github.io/kyro/downloads/Kyro_0.4.12_x64-setup.exe"
+  "bytes": 5578339,
+  "sha256": "f113bc84e4ce866608bac01e5138347c302a7112f772be4d600990cba054bdff",
+  "url": "https://ivanb12.github.io/kyro/downloads/Kyro_0.4.13_x64-setup.exe"
 }

@@ -2,6 +2,19 @@
   "schema_version": 1,
   "releases": [
     {
+      "version": "0.4.13",
+      "title": "Atajos e integraciones en Ajustes",
+      "notes": [
+        "Cambia, desactiva o restaura los atajos de las acciones principales de Kyro.",
+        "Revisa y retira el acceso de GitHub por proyecto. Desde Integraciones también puedes abrir la configuración de los motores locales."
+      ],
+      "pub_date": "2026-11-25T14:05:14.670Z",
+      "platform": "windows-x86_64",
+      "bytes": 5578339,
+      "sha256": "f113bc84e4ce866608bac01e5138347c302a7112f772be4d600990cba054bdff",
+      "url": "https://ivanb12.github.io/gema/downloads/Gema_0.4.13_x64-setup.exe"
+    },
+    {
       "version": "0.4.12",
       "title": "Ficha de modelos y estimación antes de enviar",
       "notes": [

@@ -1,8 +1,8 @@
 # Hoja de ruta de Kyro
 
-Estado de las 100 ideas originales en Kyro 0.4.12. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
+Estado de las 100 ideas originales en Kyro 0.4.13. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
 
-48 disponibles · 25 parciales · 27 pendientes.
+50 disponibles · 23 parciales · 27 pendientes.
 
 ## Tareas y trabajo en segundo plano
 
@@ -105,7 +105,7 @@ Estado de las 100 ideas originales en Kyro 0.4.12. **Disponible** indica que el 
 - **#76 Contexto visible en el editor** · Disponible · Cada mención de archivo o carpeta aparece como una ficha que se puede retirar antes de enviar.
 - **#77 Explorador de archivos por árbol** · Disponible · Carpetas desplegables que se recuerdan por proyecto, filtro por ruta y paginación.
 - **#78 Dos chats lado a lado** · Disponible · Abre una segunda conversación con su actividad en directo, filtra por chat o proyecto e intercambia ambas conservando los borradores.
-- **#79 Atajos configurables y navegación completa con teclado** · Parcial · Atajos documentados, tecla de envío configurable y controles de teclado en los selectores. Falta configuración completa.
+- **#79 Atajos configurables y navegación con teclado** · Disponible · Personaliza o desactiva los atajos de acciones principales, restaura los valores iniciales y configura la tecla de envío. Los selectores y diálogos admiten teclado.
 - **#80 Vistas Inicio y Desarrollo** · Parcial · El chat personal se abre con el compositor centrado y los proyectos mantienen el compositor al pie y el panel de trabajo opcional. Imágenes tiene su propio espacio.
 
 ## Integraciones y automatizaciones
@@ -114,7 +114,7 @@ Estado de las 100 ideas originales en Kyro 0.4.12. **Disponible** indica que el 
 - **#82 Enviar una selección desde el editor** · Pendiente
 - **#83 CLI local** · Pendiente
 - **#84 MCP de lectura** · Pendiente
-- **#85 Permisos por integración** · Parcial · Permiso revocable para GitHub por repositorio. Falta un panel común de integraciones.
+- **#85 Permisos por integración** · Disponible · Ajustes reúne las autorizaciones revocables de GitHub por proyecto y los accesos a la configuración de los motores locales.
 - **#86 Importar una incidencia** · Disponible · Importa una incidencia de GitHub como borrador de tarea editable.
 - **#87 Automatizaciones locales optativas** · Parcial · Las rutinas se inician manualmente. Falta la programación.
 - **#88 Historial de ejecuciones programadas** · Parcial · Historial de rutinas manuales. Falta registrar ejecuciones programadas y su próxima fecha.
