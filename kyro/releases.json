@@ -2,6 +2,20 @@
   "schema_version": 1,
   "releases": [
     {
+      "version": "0.4.3",
+      "title": "Editor lateral de archivos y selecciones",
+      "notes": [
+        "Edita un archivo de texto o solo las líneas seleccionadas desde el panel del proyecto.",
+        "Guarda con Ctrl+S. Con la confirmación activada, Kyro abre el diff antes de escribir.",
+        "El historial conserva la edición para deshacerla y Kyro bloquea el guardado si el archivo cambió fuera de la app."
+      ],
+      "pub_date": "2026-11-25T10:23:35.753Z",
+      "platform": "windows-x86_64",
+      "bytes": 5527152,
+      "sha256": "a8fa006eeb1418f013e05107ceb612a6fa50dc2a2b47851579f06e256002dccb",
+      "url": "https://ivanb12.github.io/kyro/downloads/Kyro_0.4.3_x64-setup.exe"
+    },
+    {
       "version": "0.4.2",
       "title": "Edición automática con opción de confirmar",
       "notes": [

@@ -1,8 +1,8 @@
 # Hoja de ruta de Kyro
 
-Estado de las 100 ideas originales en Kyro 0.4.2. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
+Estado de las 100 ideas originales en Kyro 0.4.3. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
 
-34 disponibles · 34 parciales · 32 pendientes.
+36 disponibles · 33 parciales · 31 pendientes.
 
 ## Tareas y trabajo en segundo plano
 
@@ -35,7 +35,7 @@ Estado de las 100 ideas originales en Kyro 0.4.2. **Disponible** indica que el f
 - **#21 Propuestas persistentes** · Disponible · Las propuestas pendientes se recuperan del perfil tras reiniciar.
 - **#22 Diff agrupado por función** · Pendiente
 - **#23 Comentarios sobre líneas** · Disponible · Notas locales de una línea o rango, con búsqueda, estados y cambio de vínculo.
-- **#24 Editor lateral ligero** · Pendiente
+- **#24 Editor lateral ligero** · Disponible · Edita archivos de texto desde el panel, guarda con copia previa y puede revisar el diff antes de escribir.
 - **#25 Cambios de nombre y eliminaciones revisables** · Pendiente
 - **#26 Comparación a tres bandas** · Pendiente
 - **#27 Agrupar por propósito** · Pendiente
@@ -101,7 +101,7 @@ Estado de las 100 ideas originales en Kyro 0.4.2. **Disponible** indica que el f
 - **#72 Panel redimensionable** · Disponible · Panel ajustable por arrastre y teclado.
 - **#73 Barra de resultados del chat** · Disponible · El chat muestra accesos directos a archivos leídos, propuestas y comprobaciones cuando hay resultados.
 - **#74 Búsqueda dentro del historial** · Disponible · Búsqueda de palabras y frases en los mensajes guardados.
-- **#75 Menú al seleccionar código** · Parcial · Puedes citar o explicar la selección y buscar referencias de un nombre. Falta proponer una edición directamente sobre la selección.
+- **#75 Menú al seleccionar código** · Disponible · Permite editar exactamente las líneas seleccionadas, citar, pedir una explicación, añadir notas y buscar referencias.
 - **#76 Contexto visible en el editor** · Disponible · Cada mención de archivo o carpeta aparece como una ficha que se puede retirar antes de enviar.
 - **#77 Explorador de archivos por árbol** · Disponible · Carpetas desplegables que se recuerdan por proyecto, filtro por ruta y paginación.
 - **#78 Dos chats lado a lado** · Pendiente
