@@ -1,8 +1,8 @@
 # Hoja de ruta de Kyro
 
-Estado de las 100 ideas originales en Kyro 0.4.3. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
+Estado de las 100 ideas originales en Kyro 0.4.4. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
 
-36 disponibles · 33 parciales · 31 pendientes.
+38 disponibles · 32 parciales · 30 pendientes.
 
 ## Tareas y trabajo en segundo plano
 
@@ -60,10 +60,10 @@ Estado de las 100 ideas originales en Kyro 0.4.3. **Disponible** indica que el f
 
 - **#41 Probar una propuesta en su copia** · Disponible · Aplica propuestas en una copia Git para ejecutar pruebas autorizadas.
 - **#42 Comandos de verificación por proyecto** · Disponible · Guarda comprobaciones con programa, argumentos y carpeta.
-- **#43 Pruebas dirigidas** · Pendiente
+- **#43 Pruebas dirigidas** · Disponible · Desde el visor, Kyro localiza pruebas Node por archivo y permite ejecutar una sola con autorización.
 - **#44 Resultados navegables** · Disponible · Enlaza ubicaciones reconocidas en la salida de pruebas a archivos locales y a su línea.
 - **#45 Comparación antes y después** · Parcial · Compara dos ejecuciones de una rutina. Falta vincularlas automáticamente a los cambios y al commit de referencia.
-- **#46 Errores previos y nuevos** · Parcial · Distingue fallos nuevos, previos y corregidos al nivel de cada comprobación. Falta comparar fallos individuales dentro de una suite.
+- **#46 Errores previos y nuevos** · Disponible · Compara casos individuales en las salidas TAP de Node, unittest y Cargo. Distingue fallos nuevos, persistentes y corregidos.
 - **#47 Vista web local** · Pendiente
 - **#48 Capturas comparables** · Pendiente
 - **#49 Consola del navegador** · Pendiente
