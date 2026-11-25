@@ -1,13 +1,13 @@
 {
-  "version": "0.4.4",
-  "title": "Pruebas por archivo y comparación de fallos",
+  "version": "0.4.5",
+  "title": "Prioridad en los trabajos en cola",
   "notes": [
-    "En el visor de código puedes buscar pruebas Node relacionadas y autorizar un único archivo.",
-    "La comparación de rutinas distingue qué casos de Node TAP, unittest y Cargo empezaron a fallar, siguen fallando o se corrigieron."
+    "Trabajos en curso muestra la posición de cada tarea que espera al motor local.",
+    "Puedes subir una tarea al siguiente turno mientras la actual sigue trabajando."
   ],
-  "pub_date": "2026-11-25T10:34:18.462Z",
+  "pub_date": "2026-11-25T10:44:47.231Z",
   "platform": "windows-x86_64",
-  "bytes": 5531718,
-  "sha256": "16ac43571bd48c87988ef29bba84019513d148176d3a27a6e6fb7b15fc0fce78",
-  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.4.4_x64-setup.exe"
+  "bytes": 5536752,
+  "sha256": "72fc0945567ecb1ff90f481d5b0d1d426bf9e0f1f87cc3245729ce85b5b55bc1",
+  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.4.5_x64-setup.exe"
 }

@@ -1,8 +1,8 @@
 # Hoja de ruta de Kyro
 
-Estado de las 100 ideas originales en Kyro 0.4.4. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
+Estado de las 100 ideas originales en Kyro 0.4.5. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
 
-38 disponibles · 32 parciales · 30 pendientes.
+39 disponibles · 31 parciales · 30 pendientes.
 
 ## Tareas y trabajo en segundo plano
 
@@ -11,7 +11,7 @@ Estado de las 100 ideas originales en Kyro 0.4.4. **Disponible** indica que el f
 - **#3 Plan editable** · Disponible · El plan permite editar y reordenar sus pasos desde el chat.
 - **#4 Guardado por paso** · Parcial · Guarda puntos de control durante los tramos de herramientas.
 - **#5 Bandeja de decisiones** · Disponible · Bandeja Decisiones pendientes en Ctrl + K.
-- **#6 Cola visible** · Parcial · Muestra y cancela trabajos en cola. Falta cambiar su prioridad.
+- **#6 Cola visible** · Disponible · El panel muestra el orden de espera, permite cancelar y da el siguiente turno al trabajo que priorices.
 - **#7 Reintento de un paso** · Parcial · Reanuda tareas y prepara un nuevo intento para pruebas fallidas o solicitudes caducadas. Falta el reintento general de cada paso de un agente.
 - **#8 Continuar por otra vía** · Disponible · Retoma un mensaje como borrador, conserva el chat original y elige si quieres revertir los cambios posteriores de Kyro.
 - **#9 Dependencias entre tareas** · Pendiente

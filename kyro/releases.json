@@ -2,6 +2,19 @@
   "schema_version": 1,
   "releases": [
     {
+      "version": "0.4.5",
+      "title": "Prioridad en los trabajos en cola",
+      "notes": [
+        "Trabajos en curso muestra la posición de cada tarea que espera al motor local.",
+        "Puedes subir una tarea al siguiente turno mientras la actual sigue trabajando."
+      ],
+      "pub_date": "2026-11-25T10:44:47.231Z",
+      "platform": "windows-x86_64",
+      "bytes": 5536752,
+      "sha256": "72fc0945567ecb1ff90f481d5b0d1d426bf9e0f1f87cc3245729ce85b5b55bc1",
+      "url": "https://ivanb12.github.io/kyro/downloads/Kyro_0.4.5_x64-setup.exe"
+    },
+    {
       "version": "0.4.4",
       "title": "Pruebas por archivo y comparación de fallos",
       "notes": [
