@@ -1,8 +1,8 @@
 # Hoja de ruta de Kyro
 
-Estado de las 100 ideas originales en Kyro 0.4.10. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
+Estado de las 100 ideas originales en Kyro 0.4.11. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
 
-44 disponibles · 29 parciales · 27 pendientes.
+46 disponibles · 27 parciales · 27 pendientes.
 
 ## Tareas y trabajo en segundo plano
 
@@ -25,7 +25,7 @@ Estado de las 100 ideas originales en Kyro 0.4.10. **Disponible** indica que el 
 - **#14 Mapa de dependencias** · Parcial · Consulta importaciones directas entre archivos JavaScript y TypeScript. Quedan pendientes los alias y las relaciones de varios niveles.
 - **#15 Proyectos con varias carpetas** · Pendiente
 - **#16 Búsqueda por significado opcional** · Pendiente
-- **#17 Contexto visible** · Parcial · Muestra el alcance de lectura de las revisiones, las menciones y los archivos fijados. Falta un inventario de fragmentos por petición.
+- **#17 Contexto visible** · Disponible · Cada ejecución muestra los fragmentos de archivo enviados al modelo, con enlace a su primera línea.
 - **#18 Resumen de chats largos** · Pendiente
 - **#19 Citas desactualizadas** · Parcial · Las notas de código detectan fragmentos modificados y buscan coincidencias únicas en el mismo archivo. Falta llevar la comprobación a las citas del chat.
 - **#20 Relación entre código y pruebas** · Disponible · En JavaScript y TypeScript enlaza las pruebas Node que importan el módulo y, desde una prueba, los módulos locales que importa. Distingue importaciones y coincidencias de nombre.
@@ -87,7 +87,7 @@ Estado de las 100 ideas originales en Kyro 0.4.10. **Disponible** indica que el 
 - **#61 Pruebas de capacidad por modelo** · Parcial · Prueba fija de lectura y propuesta exacta. Falta una batería de proyectos con ejecución de pruebas.
 - **#62 Ficha de compatibilidad** · Parcial · Catálogo por uso, estimaciones de memoria y medición de herramientas/código. Falta una ficha de capacidades completa.
 - **#63 Comparación en la misma tarea** · Pendiente
-- **#64 Diagnóstico de lentitud** · Parcial · Mide memoria, primer token y velocidad. Falta separar tiempos de carga, contexto y generación por tarea.
+- **#64 Diagnóstico de lentitud** · Disponible · Cada ejecución distingue carga, procesamiento del contexto y generación según las métricas del motor.
 - **#65 Ajuste por batería y memoria** · Pendiente
 - **#66 Estimación antes de enviar** · Parcial · Estima el ajuste a RAM/VRAM en biblioteca y el modelo automático previsto. Falta estimar el reparto CPU/GPU antes de cada envío.
 - **#67 Recuperación tras falta de memoria** · Pendiente

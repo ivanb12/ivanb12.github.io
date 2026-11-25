@@ -1,13 +1,13 @@
 {
-  "version": "0.4.10",
-  "title": "Historial de rendimiento por modelo",
+  "version": "0.4.11",
+  "title": "Contexto y tiempos de cada respuesta",
   "notes": [
-    "Elige el tamaño de contexto al medir un modelo desde la biblioteca.",
-    "Compara velocidad, primer token y memoria por contexto y estado de carga. Se conserva la medición anterior."
+    "Abre los detalles de una respuesta para ver qué fragmentos de archivo se enviaron al modelo.",
+    "Consulta por separado los tiempos de carga, procesamiento de contexto y generación."
   ],
-  "pub_date": "2026-11-25T12:54:26.571Z",
+  "pub_date": "2026-11-25T13:07:52.227Z",
   "platform": "windows-x86_64",
-  "bytes": 5563105,
-  "sha256": "b54ca23440af321f90799cb4129a6872a063e4fbb79eee2a77cbb9775226092b",
-  "url": "https://ivanb12.github.io/kyro/downloads/Kyro_0.4.10_x64-setup.exe"
+  "bytes": 5572029,
+  "sha256": "765ee992df00f3feb8260ca5b32ccb2bcf48c75a7cf7db5d2ad41a1712fb7411",
+  "url": "https://ivanb12.github.io/kyro/downloads/Kyro_0.4.11_x64-setup.exe"
 }
