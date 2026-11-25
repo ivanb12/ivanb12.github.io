@@ -1,8 +1,8 @@
 # Hoja de ruta de Kyro
 
-Estado de las 100 ideas originales en Kyro 0.4.15. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
+Estado de las 100 ideas originales en Kyro 0.4.16. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
 
-54 disponibles · 20 parciales · 26 pendientes.
+55 disponibles · 19 parciales · 26 pendientes.
 
 ## Tareas y trabajo en segundo plano
 
@@ -132,5 +132,5 @@ Estado de las 100 ideas originales en Kyro 0.4.15. **Disponible** indica que el 
 - **#97 Protección del historial local** · Pendiente
 - **#98 Aislamiento real para ejecutar pruebas** · Pendiente
 - **#99 Instalación probada en equipos limpios** · Parcial · Instalación y actualización probadas con perfiles Windows aislados. Faltan pruebas en otros equipos Windows limpios.
-- **#100 Asistente de primer arranque** · Parcial · Prepara Ollama automáticamente y reutiliza modelos instalados. Falta un asistente de primer arranque.
+- **#100 Asistente de primer arranque** · Disponible · Comprueba equipo y motor, permite descargar o reutilizar modelos, ajusta tema y movimiento y abre chat, proyectos o imágenes. Se puede recuperar desde Ajustes.
 

@@ -2,6 +2,20 @@
   "schema_version": 1,
   "releases": [
     {
+      "version": "0.4.16",
+      "title": "Primeros pasos de Kyro",
+      "notes": [
+        "Prepara Ollama, consulta los componentes del equipo y elige un modelo instalado o compatible.",
+        "Ajusta el tema y el movimiento y abre directamente un chat, Proyectos o Imágenes.",
+        "Vuelve al asistente desde Ajustes cuando quieras repasar la configuración."
+      ],
+      "pub_date": "2026-11-25T18:57:29.153Z",
+      "platform": "windows-x86_64",
+      "bytes": 5607819,
+      "sha256": "8b6e26e2d5abd6d101b5e42cb93e45eb042d8b9ca7b3c72ffa6eb164ee7c8de5",
+      "url": "https://ivanb12.github.io/kyro/downloads/Kyro_0.4.16_x64-setup.exe"
+    },
+    {
       "version": "0.4.15",
       "title": "Copias portátiles y configuración",
       "notes": [
