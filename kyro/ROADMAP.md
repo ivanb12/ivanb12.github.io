@@ -1,8 +1,8 @@
 # Hoja de ruta de Kyro
 
-Estado de las 100 ideas originales en Kyro 0.4.21. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
+Estado de las 100 ideas originales en Kyro 0.4.22. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
 
-71 disponibles · 19 parciales · 10 pendientes.
+76 disponibles · 19 parciales · 5 pendientes.
 
 ## Tareas y trabajo en segundo plano
 
@@ -36,7 +36,7 @@ Estado de las 100 ideas originales en Kyro 0.4.21. **Disponible** indica que el 
 - **#22 Diff agrupado por función** · Disponible · Agrupa los bloques por declaración de función reconocible en el archivo. Los bloques que abarcan varios ámbitos aparecen aparte.
 - **#23 Comentarios sobre líneas** · Disponible · Notas locales de una línea o rango, con búsqueda, estados y cambio de vínculo.
 - **#24 Editor lateral ligero** · Disponible · Edita archivos de texto desde el panel, guarda con copia previa y puede revisar el diff antes de escribir.
-- **#25 Cambios de nombre y eliminaciones revisables** · Pendiente
+- **#25 Cambios de nombre y eliminaciones revisables** · Disponible · El visor de texto permite revisar el nombre de destino o retirar un archivo. La recuperación conserva el archivo y evita sobrescribir otro.
 - **#26 Comparación a tres bandas** · Disponible · Compara la base de una propuesta, el contenido actual en disco y el resultado propuesto. Resalta los cambios y permite volver a leer el archivo.
 - **#27 Agrupar por propósito** · Disponible · Asigna un propósito a cada cambio y revisa la tanda agrupada por ese campo.
 - **#28 Versiones de una propuesta** · Disponible · Consulta versiones del mismo archivo y ubicación de proyecto, con su chat de origen y estado.
@@ -111,9 +111,9 @@ Estado de las 100 ideas originales en Kyro 0.4.21. **Disponible** indica que el 
 ## Integraciones y automatizaciones
 
 - **#81 Abrir en tu editor** · Disponible · Salto a línea en VS Code, VSCodium o Cursor si se detectan.
-- **#82 Enviar una selección desde el editor** · Pendiente
-- **#83 CLI local** · Pendiente
-- **#84 MCP de lectura** · Pendiente
+- **#82 Enviar una selección desde el editor** · Disponible · La extensión para VS Code envía las líneas guardadas para revisarlas y añadirlas al borrador del proyecto.
+- **#83 CLI local** · Disponible · `kyro-cli.exe` enumera proyectos vinculados, lista y lee sus archivos visibles y puede enviar una selección a Kyro.
+- **#84 MCP de lectura** · Disponible · `kyro-cli.exe mcp <id>` expone dos herramientas de lectura por stdio, limitadas a un único proyecto vinculado.
 - **#85 Permisos por integración** · Disponible · Ajustes reúne las autorizaciones revocables de GitHub por proyecto y los accesos a la configuración de los motores locales.
 - **#86 Importar una incidencia** · Disponible · Importa una incidencia de GitHub como borrador de tarea editable.
 - **#87 Automatizaciones locales optativas** · Parcial · Las rutinas se inician manualmente. Falta la programación.
@@ -126,7 +126,7 @@ Estado de las 100 ideas originales en Kyro 0.4.21. **Disponible** indica que el 
 - **#91 Base de datos local con migración** · Disponible · Migración de JSON a SQLite y búsqueda en el historial.
 - **#92 Actualizaciones firmadas** · Parcial · Kyro descarga la actualización y verifica tamaño y SHA-256 desde la app. Falta firma Authenticode y verificación del publicador.
 - **#93 Volver a la versión anterior** · Pendiente
-- **#94 Canal estable y beta** · Pendiente
+- **#94 Canal estable y beta** · Disponible · Ajustes permite elegir el canal. Beta incluye la versión estable si no se ha publicado una beta más reciente.
 - **#95 Diagnóstico exportable** · Disponible · Exporta versión, hardware y estado de Ollama a JSON desde Datos y privacidad. El informe omite chats, ubicaciones y nombres de proyectos o modelos.
 - **#96 Copias de seguridad configurables** · Disponible · Selección de contenido y vista previa para restaurar perfiles portátiles. Los proyectos se vinculan a sus carpetas desde Ajustes. También se puede guardar una copia SQLite del perfil.
 - **#97 Protección del historial local** · Pendiente

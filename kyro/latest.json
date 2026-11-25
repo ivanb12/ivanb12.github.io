@@ -1,15 +1,15 @@
 {
-  "version": "0.4.21",
-  "title": "Qwen Imágenes más rápido",
+  "version": "0.4.22",
+  "title": "Kyro en el editor, la terminal y tus proyectos",
   "notes": [
-    "El modo Rápida reduce Qwen Imágenes a 12 pasos y baja la resolución con los modelos que ya tienes.",
-    "Elige Equilibrada con 20 pasos o Detallada con 32. Los tres modos se pueden combinar con los ajustes de memoria.",
-    "Durante la generación, Kyro muestra los pasos reales y el tiempo aproximado que indica el motor.",
-    "Kyro indica cuándo el motor se queda sin margen de RAM, incluso si el cálculo se está haciendo en la gráfica."
+    "Envía una selección desde VS Code, revísala en Kyro y añádela al borrador del proyecto.",
+    "Consulta archivos autorizados desde la terminal o con el servidor MCP local de solo lectura.",
+    "Renombra o retira archivos de texto con confirmación. Puedes restaurarlos desde el panel de Archivos.",
+    "Elige Estable o Beta desde Ajustes. Mientras no haya una beta más reciente, ambos canales ofrecen la versión estable."
   ],
-  "pub_date": "2026-11-25T21:08:35.907Z",
+  "pub_date": "2026-11-25T21:45:48.779Z",
   "platform": "windows-x86_64",
-  "bytes": 5690498,
-  "sha256": "41ddc91dab806bea33ea6c949454ed1fa05ee567dda43433870bc676163991af",
-  "url": "https://ivanb12.github.io/kyro/downloads/Kyro_0.4.21_x64-setup.exe"
+  "bytes": 6637127,
+  "sha256": "9d572575463b486d6945336e21cc20ddeb57550ed604170f2ca678966aa0693d",
+  "url": "https://ivanb12.github.io/kyro/downloads/Kyro_0.4.22_x64-setup.exe"
 }
