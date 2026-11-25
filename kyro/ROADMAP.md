@@ -1,8 +1,8 @@
 # Hoja de ruta de Kyro
 
-Estado de las 100 ideas originales en Kyro 0.4.14. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
+Estado de las 100 ideas originales en Kyro 0.4.15. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
 
-52 disponibles · 21 parciales · 27 pendientes.
+54 disponibles · 20 parciales · 26 pendientes.
 
 ## Tareas y trabajo en segundo plano
 
@@ -118,7 +118,7 @@ Estado de las 100 ideas originales en Kyro 0.4.14. **Disponible** indica que el 
 - **#86 Importar una incidencia** · Disponible · Importa una incidencia de GitHub como borrador de tarea editable.
 - **#87 Automatizaciones locales optativas** · Parcial · Las rutinas se inician manualmente. Falta la programación.
 - **#88 Historial de ejecuciones programadas** · Parcial · Historial de rutinas manuales. Falta registrar ejecuciones programadas y su próxima fecha.
-- **#89 Paquetes de configuración** · Pendiente
+- **#89 Paquetes de configuración** · Disponible · Guarda e importa un paquete JSON con apariencia, atajos, modelos por agente y plantillas personales.
 - **#90 Visores para salidas habituales** · Disponible · Vista previa de PNG, JPEG y WebP con dimensiones. Markdown y JSON alternan entre vista previa y código numerado. El panel de pruebas mantiene sus resultados navegables.
 
 ## Instalación, privacidad y fiabilidad
@@ -128,7 +128,7 @@ Estado de las 100 ideas originales en Kyro 0.4.14. **Disponible** indica que el 
 - **#93 Volver a la versión anterior** · Pendiente
 - **#94 Canal estable y beta** · Pendiente
 - **#95 Diagnóstico exportable** · Disponible · Exporta versión, hardware y estado de Ollama a JSON desde Datos y privacidad. El informe omite chats, ubicaciones y nombres de proyectos o modelos.
-- **#96 Copias de seguridad configurables** · Parcial · Exporta una copia del perfil SQLite y JSON. Faltan selección de contenido y restauración guiada.
+- **#96 Copias de seguridad configurables** · Disponible · Selección de contenido y vista previa para restaurar perfiles portátiles. Los proyectos se vinculan a sus carpetas desde Ajustes. También se puede guardar una copia SQLite del perfil.
 - **#97 Protección del historial local** · Pendiente
 - **#98 Aislamiento real para ejecutar pruebas** · Pendiente
 - **#99 Instalación probada en equipos limpios** · Parcial · Instalación y actualización probadas con perfiles Windows aislados. Faltan pruebas en otros equipos Windows limpios.

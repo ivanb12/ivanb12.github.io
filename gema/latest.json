@@ -1,13 +1,13 @@
 {
-  "version": "0.4.14",
-  "title": "Inicio, Desarrollo y pestañas fijadas",
+  "version": "0.4.15",
+  "title": "Copias portátiles y configuración",
   "notes": [
-    "Alterna entre el chat personal y tu proyecto desde Inicio y Desarrollo, conservando los borradores.",
-    "Fija archivos, cambios y pruebas del chat y recupéralos desde el panel del proyecto."
+    "Elige qué preferencias, plantillas, proyectos y conversaciones quieres guardar en una copia portátil.",
+    "Revisa el contenido antes de restaurar y vincula las carpetas de cada proyecto en el equipo de destino."
   ],
-  "pub_date": "2026-11-25T14:19:41.674Z",
+  "pub_date": "2026-11-25T14:35:52.574Z",
   "platform": "windows-x86_64",
-  "bytes": 5578192,
-  "sha256": "17a46320dc2fa59e8aabbbdb41462d9a51c7c2477a08cb5ae3642a07b28861a8",
-  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.4.14_x64-setup.exe"
+  "bytes": 5607389,
+  "sha256": "3e610d50206fe3e2054d1b3d34dc3eedcf4bcd0bccab0ed1cd0b9921e37bf6e2",
+  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.4.15_x64-setup.exe"
 }
