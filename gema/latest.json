@@ -1,13 +1,14 @@
 {
-  "version": "0.4.7",
-  "title": "Comparación de cambios a tres bandas",
+  "version": "0.4.8",
+  "title": "Memoria del proyecto con fuentes",
   "notes": [
-    "Compara la base, el archivo en disco y la versión propuesta con las diferencias resaltadas.",
-    "Actualiza la lectura desde la comparación para detectar modificaciones externas o archivos ausentes."
+    "Guarda notas de proyecto vinculadas a respuestas o líneas de código.",
+    "Vuelve al origen de una nota desde la memoria y consulta las notas generales que ya tenías.",
+    "Cada respuesta muestra su modelo junto a Kyro, también al comparar dos conversaciones."
   ],
-  "pub_date": "2026-11-25T12:02:25.670Z",
+  "pub_date": "2026-11-25T12:21:19.222Z",
   "platform": "windows-x86_64",
-  "bytes": 5543938,
-  "sha256": "bd3fb5b67144502369090d7b7dbafedd6bb26fcbc14b748c222dd7ffbec44a46",
-  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.4.7_x64-setup.exe"
+  "bytes": 5560110,
+  "sha256": "ed0be0492d27cf713844810a93288d006255f775352283a0c41c4a2131ad6818",
+  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.4.8_x64-setup.exe"
 }
