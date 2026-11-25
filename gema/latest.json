@@ -1,16 +1,14 @@
 {
-  "version": "0.4.23",
-  "title": "Proyectos agrupados, historial protegido y pruebas aisladas",
+  "version": "0.4.24",
+  "title": "Generación de imágenes con Intel NPU",
   "notes": [
-    "Agrupa varias carpetas bajo un proyecto y cambia entre ellas desde la barra lateral.",
-    "Abre una vista web local en Kyro junto a las herramientas del navegador y su consola.",
-    "Protege el historial con tu cuenta de Windows y recupera una versión anterior compatible desde Ajustes.",
-    "Ejecuta pruebas integradas de Node en Windows Sandbox con una copia del proyecto y sin red.",
-    "Comprueba si las citas del chat siguen vigentes y prepara bloques sueltos en el índice de Git."
+    "Selecciona Intel NPU en Imágenes. Kyro detecta Intel AI Boost y descarga OpenVINO y Stable Diffusion 1.5 INT8 cuando se lo pides.",
+    "En NPU + CPU, la NPU procesa el texto y la CPU genera la imagen. Con un controlador compatible puedes elegir NPU completa.",
+    "El modelo genera imágenes locales de 512 × 512. Puedes pausarlo durante la descarga y cancelar la generación desde Kyro."
   ],
-  "pub_date": "2026-11-25T22:08:33.898Z",
+  "pub_date": "2026-11-25T22:25:41.720Z",
   "platform": "windows-x86_64",
-  "bytes": 6731096,
-  "sha256": "dff7515845db88d7c190c54759c75b2da9c4eea95b76a21c1c3893dd23513467",
-  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.4.23_x64-setup.exe"
+  "bytes": 6773094,
+  "sha256": "d653e86c8ad701c8248618b07bf30456323102ee38a7f85a665057953c3ac09c",
+  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.4.24_x64-setup.exe"
 }
