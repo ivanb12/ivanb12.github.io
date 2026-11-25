@@ -1,13 +1,13 @@
 {
-  "version": "0.4.11",
-  "title": "Contexto y tiempos de cada respuesta",
+  "version": "0.4.12",
+  "title": "Ficha de modelos y estimación antes de enviar",
   "notes": [
-    "Abre los detalles de una respuesta para ver qué fragmentos de archivo se enviaron al modelo.",
-    "Consulta por separado los tiempos de carga, procesamiento de contexto y generación."
+    "Consulta las capacidades, el formato y el contexto declarado del modelo que tienes instalado.",
+    "Abre Estimar uso antes de enviar para ver la memoria prevista y su posible reparto entre RAM y VRAM."
   ],
-  "pub_date": "2026-11-25T13:07:52.227Z",
+  "pub_date": "2026-11-25T13:18:11.855Z",
   "platform": "windows-x86_64",
-  "bytes": 5572029,
-  "sha256": "765ee992df00f3feb8260ca5b32ccb2bcf48c75a7cf7db5d2ad41a1712fb7411",
-  "url": "https://ivanb12.github.io/kyro/downloads/Kyro_0.4.11_x64-setup.exe"
+  "bytes": 5572678,
+  "sha256": "68aa303577a6b2cd68f460e959f017f300e28eb3d030ad408b7d9ee506e698d9",
+  "url": "https://ivanb12.github.io/kyro/downloads/Kyro_0.4.12_x64-setup.exe"
 }

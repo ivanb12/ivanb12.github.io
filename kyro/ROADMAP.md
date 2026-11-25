@@ -1,8 +1,8 @@
 # Hoja de ruta de Kyro
 
-Estado de las 100 ideas originales en Kyro 0.4.11. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
+Estado de las 100 ideas originales en Kyro 0.4.12. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
 
-46 disponibles · 27 parciales · 27 pendientes.
+48 disponibles · 25 parciales · 27 pendientes.
 
 ## Tareas y trabajo en segundo plano
 
@@ -85,11 +85,11 @@ Estado de las 100 ideas originales en Kyro 0.4.11. **Disponible** indica que el 
 ## Modelos locales y rendimiento
 
 - **#61 Pruebas de capacidad por modelo** · Parcial · Prueba fija de lectura y propuesta exacta. Falta una batería de proyectos con ejecución de pruebas.
-- **#62 Ficha de compatibilidad** · Parcial · Catálogo por uso, estimaciones de memoria y medición de herramientas/código. Falta una ficha de capacidades completa.
+- **#62 Ficha de compatibilidad** · Disponible · Los modelos instalados muestran capacidades, familia, parámetros, cuantización y contexto declarado por Ollama, junto a las pruebas locales de Kyro.
 - **#63 Comparación en la misma tarea** · Pendiente
 - **#64 Diagnóstico de lentitud** · Disponible · Cada ejecución distingue carga, procesamiento del contexto y generación según las métricas del motor.
 - **#65 Ajuste por batería y memoria** · Pendiente
-- **#66 Estimación antes de enviar** · Parcial · Estima el ajuste a RAM/VRAM en biblioteca y el modelo automático previsto. Falta estimar el reparto CPU/GPU antes de cada envío.
+- **#66 Estimación antes de enviar** · Disponible · El compositor permite consultar antes de enviar el modelo elegido, su contexto y el reparto orientativo de memoria entre CPU y GPU.
 - **#67 Recuperación tras falta de memoria** · Pendiente
 - **#68 Asignación por fase** · Pendiente
 - **#69 Historial de mediciones** · Disponible · Guarda pruebas por modelo y permite comparar contexto, estado de carga, velocidad, primer token y memoria.

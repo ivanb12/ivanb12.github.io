@@ -2,6 +2,19 @@
   "schema_version": 1,
   "releases": [
     {
+      "version": "0.4.12",
+      "title": "Ficha de modelos y estimación antes de enviar",
+      "notes": [
+        "Consulta las capacidades, el formato y el contexto declarado del modelo que tienes instalado.",
+        "Abre Estimar uso antes de enviar para ver la memoria prevista y su posible reparto entre RAM y VRAM."
+      ],
+      "pub_date": "2026-11-25T13:18:11.855Z",
+      "platform": "windows-x86_64",
+      "bytes": 5572678,
+      "sha256": "68aa303577a6b2cd68f460e959f017f300e28eb3d030ad408b7d9ee506e698d9",
+      "url": "https://ivanb12.github.io/kyro/downloads/Kyro_0.4.12_x64-setup.exe"
+    },
+    {
       "version": "0.4.11",
       "title": "Contexto y tiempos de cada respuesta",
       "notes": [
