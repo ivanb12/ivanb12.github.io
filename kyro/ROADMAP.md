@@ -1,8 +1,8 @@
 # Hoja de ruta de Kyro
 
-Estado de las 100 ideas originales en Kyro 0.4.18. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
+Estado de las 100 ideas originales en Kyro 0.4.19. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
 
-59 disponibles · 19 parciales · 22 pendientes.
+61 disponibles · 19 parciales · 20 pendientes.
 
 ## Tareas y trabajo en segundo plano
 
@@ -22,7 +22,7 @@ Estado de las 100 ideas originales en Kyro 0.4.18. **Disponible** indica que el 
 - **#11 Índice incremental** · Disponible · Índice incremental con exclusiones por proyecto.
 - **#12 Búsqueda por símbolos** · Disponible · Busca declaraciones de funciones, clases y otros símbolos en Ctrl + K.
 - **#13 Referencias de funciones** · Parcial · Busca el nombre completo en archivos de código y navega a sus coincidencias. Falta la resolución semántica del símbolo.
-- **#14 Mapa de dependencias** · Parcial · Consulta importaciones directas entre archivos JavaScript y TypeScript. Quedan pendientes los alias y las relaciones de varios niveles.
+- **#14 Mapa de dependencias** · Disponible · Importaciones directas e indirectas hasta cuatro niveles en JavaScript y TypeScript. Resuelve alias locales declarados en el tsconfig.json o jsconfig.json de la raíz.
 - **#15 Proyectos con varias carpetas** · Pendiente
 - **#16 Búsqueda por significado opcional** · Pendiente
 - **#17 Contexto visible** · Disponible · Cada ejecución muestra los fragmentos de archivo enviados al modelo, con enlace a su primera línea.
@@ -64,8 +64,8 @@ Estado de las 100 ideas originales en Kyro 0.4.18. **Disponible** indica que el 
 - **#44 Resultados navegables** · Disponible · Enlaza ubicaciones reconocidas en la salida de pruebas a archivos locales y a su línea.
 - **#45 Comparación antes y después** · Parcial · Compara dos ejecuciones de una rutina. Falta vincularlas automáticamente a los cambios y al commit de referencia.
 - **#46 Errores previos y nuevos** · Disponible · Compara casos individuales en las salidas TAP de Node, unittest y Cargo. Distingue fallos nuevos, persistentes y corregidos.
-- **#47 Vista web local** · Pendiente
-- **#48 Capturas comparables** · Pendiente
+- **#47 Vista web local** · Parcial · Guarda la dirección por proyecto, comprueba su puerto y abre la web local en el navegador. Queda pendiente el visor integrado.
+- **#48 Capturas comparables** · Disponible · Compara dos PNG, JPEG o WebP del proyecto en paralelo o superpuestas con un deslizador. La selección de las imágenes es manual.
 - **#49 Consola del navegador** · Pendiente
 - **#50 Informe de entrega** · Disponible · Exporta el plan, cambios y pruebas reales a Markdown.
 
@@ -134,7 +134,7 @@ Estado de las 100 ideas originales en Kyro 0.4.18. **Disponible** indica que el 
 - **#99 Instalación probada en equipos limpios** · Parcial · Instalación y actualización probadas con perfiles Windows aislados. Faltan pruebas en otros equipos Windows limpios.
 - **#100 Asistente de primer arranque** · Disponible · Comprueba equipo y motor, permite descargar o reutilizar modelos, ajusta tema y movimiento y abre chat, proyectos o imágenes. Se puede recuperar desde Ajustes.
 
-## Mejoras del historial en 0.4.18
+## Mejoras del historial en 0.4.19
 
 Además de los puntos #18 y #63, Kyro incorpora ocho mejoras de uso diario.
 
@@ -146,4 +146,17 @@ Además de los puntos #18 y #63, Kyro incorpora ocho mejoras de uso diario.
 - Exportar el texto de una conversación a Markdown con el modelo registrado.
 - Recuperar los borradores de chats y proyectos tras reiniciar.
 - Consultar un historial con filtros combinables de proyecto y modo y ordenar por nombre o actividad.
+
+## Herramientas de proyectos en 0.4.19
+
+- Buscar texto en archivos con resultados que abren la línea exacta.
+- Navegar por las declaraciones de un archivo desde Símbolos.
+- Saltar a un número de línea en el visor.
+- Reabrir archivos recientes por proyecto, en la última línea que se abrió.
+- Fijar proyectos favoritos arriba en la barra lateral.
+- Exportar a Markdown el inventario de archivos visibles.
+- Comparar capturas en paralelo o con un deslizador.
+- Comprobar y abrir la web local desde el proyecto.
+- Explorar cadenas de importaciones indirectas.
+- Resolver alias JavaScript y TypeScript declarados en la configuración de la raíz.
 

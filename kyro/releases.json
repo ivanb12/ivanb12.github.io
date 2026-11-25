@@ -2,6 +2,20 @@
   "schema_version": 1,
   "releases": [
     {
+      "version": "0.4.19",
+      "title": "Diez herramientas de proyecto",
+      "notes": [
+        "Busca texto, salta a líneas o símbolos y reabre archivos recientes. Fija los proyectos que más usas.",
+        "Compara capturas, exporta el inventario y abre la vista web local desde la carpeta de trabajo.",
+        "Explora cadenas de importaciones y alias de JavaScript y TypeScript."
+      ],
+      "pub_date": "2026-11-25T19:37:15.044Z",
+      "platform": "windows-x86_64",
+      "bytes": 5650019,
+      "sha256": "0181814da79998cc7a8f073bb84cc3c03b2dfd15a3fa3fc9185574db490077d2",
+      "url": "https://ivanb12.github.io/kyro/downloads/Kyro_0.4.19_x64-setup.exe"
+    },
+    {
       "version": "0.4.18",
       "title": "Diez mejoras para tus conversaciones",
       "notes": [
