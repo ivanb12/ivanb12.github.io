@@ -2,6 +2,22 @@
   "schema_version": 1,
   "releases": [
     {
+      "version": "0.4.23",
+      "title": "Proyectos agrupados, historial protegido y pruebas aisladas",
+      "notes": [
+        "Agrupa varias carpetas bajo un proyecto y cambia entre ellas desde la barra lateral.",
+        "Abre una vista web local en Kyro junto a las herramientas del navegador y su consola.",
+        "Protege el historial con tu cuenta de Windows y recupera una versión anterior compatible desde Ajustes.",
+        "Ejecuta pruebas integradas de Node en Windows Sandbox con una copia del proyecto y sin red.",
+        "Comprueba si las citas del chat siguen vigentes y prepara bloques sueltos en el índice de Git."
+      ],
+      "pub_date": "2026-11-25T22:08:33.898Z",
+      "platform": "windows-x86_64",
+      "bytes": 6731096,
+      "sha256": "dff7515845db88d7c190c54759c75b2da9c4eea95b76a21c1c3893dd23513467",
+      "url": "https://ivanb12.github.io/gema/downloads/Gema_0.4.23_x64-setup.exe"
+    },
+    {
       "version": "0.4.22",
       "title": "Kyro en el editor, la terminal y tus proyectos",
       "notes": [
