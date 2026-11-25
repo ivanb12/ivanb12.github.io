@@ -1,13 +1,14 @@
 {
-  "version": "0.4.1",
-  "title": "Copias Git desde la tarea",
+  "version": "0.4.2",
+  "title": "Edición automática con opción de confirmar",
   "notes": [
-    "Al preparar una tarea puedes elegir una copia Git existente o crear una desde el commit actual. El plan queda guardado en esa copia.",
-    "Copias Git reúne las copias registradas en Kyro con su origen, rama, commit base y estado de cambios."
+    "Programar guarda automáticamente cambios en los proyectos con permiso de edición y conserva una copia para deshacerlos.",
+    "Puedes pedir confirmación en todos los proyectos desde Ajustes o activarla en la configuración de una carpeta.",
+    "El chat distingue los cambios guardados de los pendientes y avisa cuando un archivo cambió antes de guardarlo."
   ],
-  "pub_date": "2026-11-24T23:07:28.017Z",
+  "pub_date": "2026-11-25T10:04:42.766Z",
   "platform": "windows-x86_64",
-  "bytes": 5522414,
-  "sha256": "cd5164cf8f382c8f6a8a683543a8fc7c37db2374e51c04e851170e754a244589",
-  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.4.1_x64-setup.exe"
+  "bytes": 5526429,
+  "sha256": "6d1c05262adfa328a878e059497c7deb493a5ff26d9fc51bdc0356cf7ddda9e5",
+  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.4.2_x64-setup.exe"
 }

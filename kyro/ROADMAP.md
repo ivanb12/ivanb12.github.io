@@ -1,6 +1,6 @@
 # Hoja de ruta de Kyro
 
-Estado de las 100 ideas originales en Kyro 0.4.1. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
+Estado de las 100 ideas originales en Kyro 0.4.2. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
 
 34 disponibles · 34 parciales · 32 pendientes.
 
@@ -78,7 +78,7 @@ Estado de las 100 ideas originales en Kyro 0.4.1. **Disponible** indica que el f
 - **#55 Plantillas de tarea** · Disponible · Plantillas iniciales y personales para preparar tareas.
 - **#56 Revisor independiente** · Parcial · Las revisiones contrastan hallazgos con el código. Falta un agente aislado que revise el diff.
 - **#57 Delegación con contexto separado** · Pendiente
-- **#58 Permisos por perfil** · Parcial · Permisos por proyecto y modos con capacidades distintas. Falta una matriz editable por agente y proyecto.
+- **#58 Permisos por perfil** · Parcial · Programar respeta los permisos de edición y la confirmación global o por proyecto. Falta una matriz editable por agente y proyecto.
 - **#59 Hooks locales declarativos** · Pendiente
 - **#60 Memoria con fuentes** · Parcial · Memoria editable por proyecto. Falta enlazar cada anotación a su fuente.
 
