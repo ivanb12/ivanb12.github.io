@@ -1,8 +1,8 @@
 # Hoja de ruta de Kyro
 
-Estado de las 100 ideas originales en Kyro 0.4.16. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
+Estado de las 100 ideas originales en Kyro 0.4.17. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
 
-55 disponibles · 19 parciales · 26 pendientes.
+57 disponibles · 19 parciales · 24 pendientes.
 
 ## Tareas y trabajo en segundo plano
 
@@ -14,7 +14,7 @@ Estado de las 100 ideas originales en Kyro 0.4.16. **Disponible** indica que el 
 - **#6 Cola visible** · Disponible · El panel muestra el orden de espera, permite cancelar y da el siguiente turno al trabajo que priorices.
 - **#7 Reintento de un paso** · Parcial · Reanuda tareas y prepara un nuevo intento para pruebas fallidas o solicitudes caducadas. Falta el reintento general de cada paso de un agente.
 - **#8 Continuar por otra vía** · Disponible · Retoma un mensaje como borrador, conserva el chat original y elige si quieres revertir los cambios posteriores de Kyro.
-- **#9 Dependencias entre tareas** · Pendiente
+- **#9 Dependencias entre tareas** · Disponible · Vincula conversaciones de un proyecto, sigue sus estados y marca su finalización. El envío y la reanudación esperan a que se completen las dependencias directas e indirectas. Los enlaces circulares se bloquean.
 - **#10 Avisos que llevan al sitio correcto** · Parcial · La bandeja y los avisos llevan al chat. Falta navegar desde una notificación del sistema.
 
 ## Comprensión del código
@@ -51,7 +51,7 @@ Estado de las 100 ideas originales en Kyro 0.4.16. **Disponible** indica que el 
 - **#34 Historial de un archivo** · Disponible · Historial de un archivo desde su visor.
 - **#35 Stage selectivo** · Parcial · Prepara archivos completos. La selección de bloques existe para aplicar propuestas.
 - **#36 Vista previa de commit** · Disponible · Muestra el diff exacto y sugiere un mensaje editable según los archivos preparados.
-- **#37 Traspaso del chat entre copias** · Pendiente
+- **#37 Traspaso del chat entre copias** · Disponible · Copia los mensajes y el plan a la carpeta original u otra copia Git registrada. El nuevo chat enlaza con su conversación de origen.
 - **#38 PR en borrador** · Disponible · Sugiere título y descripción desde los commits y los archivos de la rama comparada. El contenido se edita y confirma antes de publicarlo.
 - **#39 Estado de CI** · Disponible · Lista las comprobaciones del PR y abre el resultado en el navegador cuando GitHub proporciona un enlace HTTPS.
 - **#40 Revisión de comentarios del PR** · Disponible · Abre el archivo local en su línea y permite vincular una propuesta del mismo archivo a cada comentario.

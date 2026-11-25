@@ -1,14 +1,14 @@
 {
-  "version": "0.4.16",
-  "title": "Primeros pasos de Kyro",
+  "version": "0.4.17",
+  "title": "Dependencias y conversaciones entre copias",
   "notes": [
-    "Prepara Ollama, consulta los componentes del equipo y elige un modelo instalado o compatible.",
-    "Ajusta el tema y el movimiento y abre directamente un chat, Proyectos o Imágenes.",
-    "Vuelve al asistente desde Ajustes cuando quieras repasar la configuración."
+    "Vincula tareas del mismo proyecto y abre las conversaciones que bloquean el trabajo.",
+    "Copia mensajes y planes entre carpetas Git relacionadas y vuelve al chat de origen.",
+    "El instalador crea el acceso directo al escritorio durante la instalación, con su opción marcada desde la bienvenida."
   ],
-  "pub_date": "2026-11-25T18:57:29.153Z",
+  "pub_date": "2026-11-25T19:06:55.271Z",
   "platform": "windows-x86_64",
-  "bytes": 5607819,
-  "sha256": "8b6e26e2d5abd6d101b5e42cb93e45eb042d8b9ca7b3c72ffa6eb164ee7c8de5",
-  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.4.16_x64-setup.exe"
+  "bytes": 5614437,
+  "sha256": "c35ccacf354e56915506c4173fdc7115bbf924f3d3d4e33657d9040fa9973e93",
+  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.4.17_x64-setup.exe"
 }
