@@ -1,13 +1,13 @@
 {
-  "version": "0.4.13",
-  "title": "Atajos e integraciones en Ajustes",
+  "version": "0.4.14",
+  "title": "Inicio, Desarrollo y pestañas fijadas",
   "notes": [
-    "Cambia, desactiva o restaura los atajos de las acciones principales de Kyro.",
-    "Revisa y retira el acceso de GitHub por proyecto. Desde Integraciones también puedes abrir la configuración de los motores locales."
+    "Alterna entre el chat personal y tu proyecto desde Inicio y Desarrollo, conservando los borradores.",
+    "Fija archivos, cambios y pruebas del chat y recupéralos desde el panel del proyecto."
   ],
-  "pub_date": "2026-11-25T14:05:14.670Z",
+  "pub_date": "2026-11-25T14:19:41.674Z",
   "platform": "windows-x86_64",
-  "bytes": 5578339,
-  "sha256": "f113bc84e4ce866608bac01e5138347c302a7112f772be4d600990cba054bdff",
-  "url": "https://ivanb12.github.io/kyro/downloads/Kyro_0.4.13_x64-setup.exe"
+  "bytes": 5578192,
+  "sha256": "17a46320dc2fa59e8aabbbdb41462d9a51c7c2477a08cb5ae3642a07b28861a8",
+  "url": "https://ivanb12.github.io/kyro/downloads/Kyro_0.4.14_x64-setup.exe"
 }

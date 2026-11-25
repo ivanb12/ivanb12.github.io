@@ -1,8 +1,8 @@
 # Hoja de ruta de Kyro
 
-Estado de las 100 ideas originales en Kyro 0.4.13. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
+Estado de las 100 ideas originales en Kyro 0.4.14. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
 
-50 disponibles · 23 parciales · 27 pendientes.
+52 disponibles · 21 parciales · 27 pendientes.
 
 ## Tareas y trabajo en segundo plano
 
@@ -97,7 +97,7 @@ Estado de las 100 ideas originales en Kyro 0.4.13. **Disponible** indica que el 
 
 ## Interfaz y uso diario
 
-- **#71 Pestañas laterales persistentes** · Parcial · Fija archivos. Falta fijar diffs y pruebas y conservar sus posiciones.
+- **#71 Pestañas laterales persistentes** · Disponible · Fija archivos, propuestas y pruebas vinculadas a un chat. El panel guarda el orden por proyecto y vuelve al chat de origen cuando hace falta.
 - **#72 Panel redimensionable** · Disponible · Panel ajustable por arrastre y teclado.
 - **#73 Barra de resultados del chat** · Disponible · El chat muestra accesos directos a archivos leídos, propuestas y comprobaciones cuando hay resultados.
 - **#74 Búsqueda dentro del historial** · Disponible · Búsqueda de palabras y frases en los mensajes guardados.
@@ -106,7 +106,7 @@ Estado de las 100 ideas originales en Kyro 0.4.13. **Disponible** indica que el 
 - **#77 Explorador de archivos por árbol** · Disponible · Carpetas desplegables que se recuerdan por proyecto, filtro por ruta y paginación.
 - **#78 Dos chats lado a lado** · Disponible · Abre una segunda conversación con su actividad en directo, filtra por chat o proyecto e intercambia ambas conservando los borradores.
 - **#79 Atajos configurables y navegación con teclado** · Disponible · Personaliza o desactiva los atajos de acciones principales, restaura los valores iniciales y configura la tecla de envío. Los selectores y diálogos admiten teclado.
-- **#80 Vistas Inicio y Desarrollo** · Parcial · El chat personal se abre con el compositor centrado y los proyectos mantienen el compositor al pie y el panel de trabajo opcional. Imágenes tiene su propio espacio.
+- **#80 Vistas Inicio y Desarrollo** · Disponible · Inicio abre el chat personal. Desarrollo recupera el proyecto y la conversación al cambiar de vista, manteniendo los borradores. Imágenes tiene su propio espacio.
 
 ## Integraciones y automatizaciones
 
