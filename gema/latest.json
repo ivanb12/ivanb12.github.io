@@ -1,14 +1,13 @@
 {
-  "version": "0.4.8",
-  "title": "Memoria del proyecto con fuentes",
+  "version": "0.4.9",
+  "title": "Código y pruebas conectados",
   "notes": [
-    "Guarda notas de proyecto vinculadas a respuestas o líneas de código.",
-    "Vuelve al origen de una nota desde la memoria y consulta las notas generales que ya tenías.",
-    "Cada respuesta muestra su modelo junto a Kyro, también al comparar dos conversaciones."
+    "Localiza pruebas Node por sus importaciones, aunque el archivo tenga otro nombre.",
+    "Desde una prueba puedes saltar a los módulos que usa y autorizar la ejecución del archivo elegido."
   ],
-  "pub_date": "2026-11-25T12:21:19.222Z",
+  "pub_date": "2026-11-25T12:40:12.206Z",
   "platform": "windows-x86_64",
-  "bytes": 5560110,
-  "sha256": "ed0be0492d27cf713844810a93288d006255f775352283a0c41c4a2131ad6818",
-  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.4.8_x64-setup.exe"
+  "bytes": 5561697,
+  "sha256": "8447b5ae85dcd15abfcb6f049512bc23311510c5ca5a9ef972275a9758eb4b10",
+  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.4.9_x64-setup.exe"
 }

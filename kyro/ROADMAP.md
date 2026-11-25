@@ -1,8 +1,8 @@
 # Hoja de ruta de Kyro
 
-Estado de las 100 ideas originales en Kyro 0.4.8. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
+Estado de las 100 ideas originales en Kyro 0.4.9. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
 
-42 disponibles · 30 parciales · 28 pendientes.
+43 disponibles · 30 parciales · 27 pendientes.
 
 ## Tareas y trabajo en segundo plano
 
@@ -28,7 +28,7 @@ Estado de las 100 ideas originales en Kyro 0.4.8. **Disponible** indica que el f
 - **#17 Contexto visible** · Parcial · Muestra el alcance de lectura de las revisiones, las menciones y los archivos fijados. Falta un inventario de fragmentos por petición.
 - **#18 Resumen de chats largos** · Pendiente
 - **#19 Citas desactualizadas** · Parcial · Las notas de código detectan fragmentos modificados y buscan coincidencias únicas en el mismo archivo. Falta llevar la comprobación a las citas del chat.
-- **#20 Relación entre código y pruebas** · Pendiente
+- **#20 Relación entre código y pruebas** · Disponible · En JavaScript y TypeScript enlaza las pruebas Node que importan el módulo y, desde una prueba, los módulos locales que importa. Distingue importaciones y coincidencias de nombre.
 
 ## Edición y revisión
 
