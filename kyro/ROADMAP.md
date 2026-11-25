@@ -1,8 +1,8 @@
 # Hoja de ruta de Kyro
 
-Estado de las 100 ideas originales en Kyro 0.4.5. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
+Estado de las 100 ideas originales en Kyro 0.4.6. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
 
-39 disponibles · 31 parciales · 30 pendientes.
+40 disponibles · 31 parciales · 29 pendientes.
 
 ## Tareas y trabajo en segundo plano
 
@@ -104,7 +104,7 @@ Estado de las 100 ideas originales en Kyro 0.4.5. **Disponible** indica que el f
 - **#75 Menú al seleccionar código** · Disponible · Permite editar exactamente las líneas seleccionadas, citar, pedir una explicación, añadir notas y buscar referencias.
 - **#76 Contexto visible en el editor** · Disponible · Cada mención de archivo o carpeta aparece como una ficha que se puede retirar antes de enviar.
 - **#77 Explorador de archivos por árbol** · Disponible · Carpetas desplegables que se recuerdan por proyecto, filtro por ruta y paginación.
-- **#78 Dos chats lado a lado** · Pendiente
+- **#78 Dos chats lado a lado** · Disponible · Abre una segunda conversación con su actividad en directo, filtra por chat o proyecto e intercambia ambas conservando los borradores.
 - **#79 Atajos configurables y navegación completa con teclado** · Parcial · Atajos documentados, tecla de envío configurable y controles de teclado en los selectores. Falta configuración completa.
 - **#80 Vistas Inicio y Desarrollo** · Parcial · El chat personal se abre con el compositor centrado y los proyectos mantienen el compositor al pie y el panel de trabajo opcional. Imágenes tiene su propio espacio.
 

@@ -2,6 +2,19 @@
   "schema_version": 1,
   "releases": [
     {
+      "version": "0.4.6",
+      "title": "Dos conversaciones en la misma ventana",
+      "notes": [
+        "Consulta otra conversación mientras sigues escribiendo en el chat principal.",
+        "Busca por nombre o proyecto, ve la actividad en directo e intercambia los chats con sus borradores."
+      ],
+      "pub_date": "2026-11-25T10:55:47.163Z",
+      "platform": "windows-x86_64",
+      "bytes": 5540111,
+      "sha256": "75bd7b316e72c6dcafe303ac20d83111cf2b37dd56c63a18e86662fd8968626d",
+      "url": "https://ivanb12.github.io/gema/downloads/Gema_0.4.6_x64-setup.exe"
+    },
+    {
       "version": "0.4.5",
       "title": "Prioridad en los trabajos en cola",
       "notes": [
