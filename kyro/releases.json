@@ -2,6 +2,21 @@
   "schema_version": 1,
   "releases": [
     {
+      "version": "0.4.21",
+      "title": "Qwen Imágenes más rápido",
+      "notes": [
+        "El modo Rápida reduce Qwen Imágenes a 12 pasos y baja la resolución con los modelos que ya tienes.",
+        "Elige Equilibrada con 20 pasos o Detallada con 32. Los tres modos se pueden combinar con los ajustes de memoria.",
+        "Durante la generación, Kyro muestra los pasos reales y el tiempo aproximado que indica el motor.",
+        "Kyro indica cuándo el motor se queda sin margen de RAM, incluso si el cálculo se está haciendo en la gráfica."
+      ],
+      "pub_date": "2026-11-25T21:08:35.907Z",
+      "platform": "windows-x86_64",
+      "bytes": 5690498,
+      "sha256": "41ddc91dab806bea33ea6c949454ed1fa05ee567dda43433870bc676163991af",
+      "url": "https://ivanb12.github.io/kyro/downloads/Kyro_0.4.21_x64-setup.exe"
+    },
+    {
       "version": "0.4.20",
       "title": "Menos memoria y nuevas herramientas de revisión",
       "notes": [

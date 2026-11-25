@@ -1,15 +1,15 @@
 {
-  "version": "0.4.20",
-  "title": "Menos memoria y nuevas herramientas de revisión",
+  "version": "0.4.21",
+  "title": "Qwen Imágenes más rápido",
   "notes": [
-    "Qwen Imágenes ofrece Ahorro de memoria y Solo CPU, con una resolución menor. Los chats pueden retomarse con contexto reducido.",
-    "Busca por significado, agrupa diferencias por función y organiza propuestas por propósito y versión.",
-    "Configura reglas por carpeta, prepara comprobaciones tras una tarea y delega un encargo en un chat independiente.",
-    "Activa el ahorro por batería y memoria o elige un modelo distinto para verificar informes de revisión."
+    "El modo Rápida reduce Qwen Imágenes a 12 pasos y baja la resolución con los modelos que ya tienes.",
+    "Elige Equilibrada con 20 pasos o Detallada con 32. Los tres modos se pueden combinar con los ajustes de memoria.",
+    "Durante la generación, Kyro muestra los pasos reales y el tiempo aproximado que indica el motor.",
+    "Kyro indica cuándo el motor se queda sin margen de RAM, incluso si el cálculo se está haciendo en la gráfica."
   ],
-  "pub_date": "2026-11-25T19:57:13.186Z",
+  "pub_date": "2026-11-25T21:08:35.907Z",
   "platform": "windows-x86_64",
-  "bytes": 5696712,
-  "sha256": "aa6ca93b5ac7399081f7c0def0f21872e27907b0fb13f3019c082e6e2d157b8f",
-  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.4.20_x64-setup.exe"
+  "bytes": 5690498,
+  "sha256": "41ddc91dab806bea33ea6c949454ed1fa05ee567dda43433870bc676163991af",
+  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.4.21_x64-setup.exe"
 }
