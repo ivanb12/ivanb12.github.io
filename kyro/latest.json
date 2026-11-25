@@ -1,14 +1,14 @@
 {
-  "version": "0.4.17",
-  "title": "Dependencias y conversaciones entre copias",
+  "version": "0.4.18",
+  "title": "Diez mejoras para tus conversaciones",
   "notes": [
-    "Vincula tareas del mismo proyecto y abre las conversaciones que bloquean el trabajo.",
-    "Copia mensajes y planes entre carpetas Git relacionadas y vuelve al chat de origen.",
-    "El instalador crea el acceso directo al escritorio durante la instalación, con su opción marcada desde la bienvenida."
+    "Archiva y fija conversaciones, añade etiquetas, guarda mensajes y filtra el historial por proyecto o modo.",
+    "Busca dentro de un chat con Ctrl + F, expórtalo a Markdown y recupera tus borradores al volver a abrir Kyro.",
+    "Resume conversaciones con un modelo local o compara dos modelos con la misma pregunta y el mismo contexto."
   ],
-  "pub_date": "2026-11-25T19:06:55.271Z",
+  "pub_date": "2026-11-25T19:20:21.542Z",
   "platform": "windows-x86_64",
-  "bytes": 5614437,
-  "sha256": "c35ccacf354e56915506c4173fdc7115bbf924f3d3d4e33657d9040fa9973e93",
-  "url": "https://ivanb12.github.io/kyro/downloads/Kyro_0.4.17_x64-setup.exe"
+  "bytes": 5632037,
+  "sha256": "9e3fbf427102ce46902bae8ad9b2aa65aa56f0cc014b3dc657f2590bd1f664f5",
+  "url": "https://ivanb12.github.io/kyro/downloads/Kyro_0.4.18_x64-setup.exe"
 }

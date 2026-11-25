@@ -1,8 +1,8 @@
 # Hoja de ruta de Kyro
 
-Estado de las 100 ideas originales en Kyro 0.4.17. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
+Estado de las 100 ideas originales en Kyro 0.4.18. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
 
-57 disponibles · 19 parciales · 24 pendientes.
+59 disponibles · 19 parciales · 22 pendientes.
 
 ## Tareas y trabajo en segundo plano
 
@@ -26,7 +26,7 @@ Estado de las 100 ideas originales en Kyro 0.4.17. **Disponible** indica que el 
 - **#15 Proyectos con varias carpetas** · Pendiente
 - **#16 Búsqueda por significado opcional** · Pendiente
 - **#17 Contexto visible** · Disponible · Cada ejecución muestra los fragmentos de archivo enviados al modelo, con enlace a su primera línea.
-- **#18 Resumen de chats largos** · Pendiente
+- **#18 Resumen de chats largos** · Disponible · Genera un resumen local de objetivos, decisiones y pendientes. Indica cuántos mensajes entraron en el contexto y permite copiar el resultado.
 - **#19 Citas desactualizadas** · Parcial · Las notas de código detectan fragmentos modificados y buscan coincidencias únicas en el mismo archivo. Falta llevar la comprobación a las citas del chat.
 - **#20 Relación entre código y pruebas** · Disponible · En JavaScript y TypeScript enlaza las pruebas Node que importan el módulo y, desde una prueba, los módulos locales que importa. Distingue importaciones y coincidencias de nombre.
 
@@ -86,7 +86,7 @@ Estado de las 100 ideas originales en Kyro 0.4.17. **Disponible** indica que el 
 
 - **#61 Pruebas de capacidad por modelo** · Parcial · Prueba fija de lectura y propuesta exacta. Falta una batería de proyectos con ejecución de pruebas.
 - **#62 Ficha de compatibilidad** · Disponible · Los modelos instalados muestran capacidades, familia, parámetros, cuantización y contexto declarado por Ollama, junto a las pruebas locales de Kyro.
-- **#63 Comparación en la misma tarea** · Pendiente
+- **#63 Comparación en la misma tarea** · Disponible · Dos modelos instalados reciben la misma pregunta y el mismo contexto de conversación. Muestra las respuestas y el tiempo, con alcance de texto.
 - **#64 Diagnóstico de lentitud** · Disponible · Cada ejecución distingue carga, procesamiento del contexto y generación según las métricas del motor.
 - **#65 Ajuste por batería y memoria** · Pendiente
 - **#66 Estimación antes de enviar** · Disponible · El compositor permite consultar antes de enviar el modelo elegido, su contexto y el reparto orientativo de memoria entre CPU y GPU.
@@ -133,4 +133,17 @@ Estado de las 100 ideas originales en Kyro 0.4.17. **Disponible** indica que el 
 - **#98 Aislamiento real para ejecutar pruebas** · Pendiente
 - **#99 Instalación probada en equipos limpios** · Parcial · Instalación y actualización probadas con perfiles Windows aislados. Faltan pruebas en otros equipos Windows limpios.
 - **#100 Asistente de primer arranque** · Disponible · Comprueba equipo y motor, permite descargar o reutilizar modelos, ajusta tema y movimiento y abre chat, proyectos o imágenes. Se puede recuperar desde Ajustes.
+
+## Mejoras del historial en 0.4.18
+
+Además de los puntos #18 y #63, Kyro incorpora ocho mejoras de uso diario.
+
+- Archivar y restaurar conversaciones.
+- Fijar conversaciones en la barra lateral.
+- Añadir, quitar y filtrar etiquetas.
+- Guardar mensajes y volver a su posición en el chat.
+- Buscar dentro de un chat y pasar entre coincidencias con Ctrl + F.
+- Exportar el texto de una conversación a Markdown con el modelo registrado.
+- Recuperar los borradores de chats y proyectos tras reiniciar.
+- Consultar un historial con filtros combinables de proyecto y modo y ordenar por nombre o actividad.
 
