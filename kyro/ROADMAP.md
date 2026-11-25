@@ -1,8 +1,8 @@
 # Hoja de ruta de Kyro
 
-Estado de las 100 ideas originales en Kyro 0.4.9. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
+Estado de las 100 ideas originales en Kyro 0.4.10. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
 
-43 disponibles · 30 parciales · 27 pendientes.
+44 disponibles · 29 parciales · 27 pendientes.
 
 ## Tareas y trabajo en segundo plano
 
@@ -92,7 +92,7 @@ Estado de las 100 ideas originales en Kyro 0.4.9. **Disponible** indica que el f
 - **#66 Estimación antes de enviar** · Parcial · Estima el ajuste a RAM/VRAM en biblioteca y el modelo automático previsto. Falta estimar el reparto CPU/GPU antes de cada envío.
 - **#67 Recuperación tras falta de memoria** · Pendiente
 - **#68 Asignación por fase** · Pendiente
-- **#69 Historial de mediciones** · Parcial · Hay mediciones y se indica si el modelo estaba cargado. Falta comparar su historial por contexto.
+- **#69 Historial de mediciones** · Disponible · Guarda pruebas por modelo y permite comparar contexto, estado de carga, velocidad, primer token y memoria.
 - **#70 Gestión del almacenamiento** · Parcial · Permite elegir la carpeta de descargas y consultar su espacio disponible. Falta trasladar los modelos existentes desde Kyro.
 
 ## Interfaz y uso diario

@@ -2,6 +2,19 @@
   "schema_version": 1,
   "releases": [
     {
+      "version": "0.4.10",
+      "title": "Historial de rendimiento por modelo",
+      "notes": [
+        "Elige el tamaño de contexto al medir un modelo desde la biblioteca.",
+        "Compara velocidad, primer token y memoria por contexto y estado de carga. Se conserva la medición anterior."
+      ],
+      "pub_date": "2026-11-25T12:54:26.571Z",
+      "platform": "windows-x86_64",
+      "bytes": 5563105,
+      "sha256": "b54ca23440af321f90799cb4129a6872a063e4fbb79eee2a77cbb9775226092b",
+      "url": "https://ivanb12.github.io/kyro/downloads/Kyro_0.4.10_x64-setup.exe"
+    },
+    {
       "version": "0.4.9",
       "title": "Código y pruebas conectados",
       "notes": [
