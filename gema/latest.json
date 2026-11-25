@@ -1,13 +1,13 @@
 {
-  "version": "0.4.6",
-  "title": "Dos conversaciones en la misma ventana",
+  "version": "0.4.7",
+  "title": "Comparación de cambios a tres bandas",
   "notes": [
-    "Consulta otra conversación mientras sigues escribiendo en el chat principal.",
-    "Busca por nombre o proyecto, ve la actividad en directo e intercambia los chats con sus borradores."
+    "Compara la base, el archivo en disco y la versión propuesta con las diferencias resaltadas.",
+    "Actualiza la lectura desde la comparación para detectar modificaciones externas o archivos ausentes."
   ],
-  "pub_date": "2026-11-25T10:55:47.163Z",
+  "pub_date": "2026-11-25T12:02:25.670Z",
   "platform": "windows-x86_64",
-  "bytes": 5540111,
-  "sha256": "75bd7b316e72c6dcafe303ac20d83111cf2b37dd56c63a18e86662fd8968626d",
-  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.4.6_x64-setup.exe"
+  "bytes": 5543938,
+  "sha256": "bd3fb5b67144502369090d7b7dbafedd6bb26fcbc14b748c222dd7ffbec44a46",
+  "url": "https://ivanb12.github.io/gema/downloads/Gema_0.4.7_x64-setup.exe"
 }

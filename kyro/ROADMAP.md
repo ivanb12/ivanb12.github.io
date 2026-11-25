@@ -1,8 +1,8 @@
 # Hoja de ruta de Kyro
 
-Estado de las 100 ideas originales en Kyro 0.4.6. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
+Estado de las 100 ideas originales en Kyro 0.4.7. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
 
-40 disponibles · 31 parciales · 29 pendientes.
+41 disponibles · 31 parciales · 28 pendientes.
 
 ## Tareas y trabajo en segundo plano
 
@@ -37,7 +37,7 @@ Estado de las 100 ideas originales en Kyro 0.4.6. **Disponible** indica que el f
 - **#23 Comentarios sobre líneas** · Disponible · Notas locales de una línea o rango, con búsqueda, estados y cambio de vínculo.
 - **#24 Editor lateral ligero** · Disponible · Edita archivos de texto desde el panel, guarda con copia previa y puede revisar el diff antes de escribir.
 - **#25 Cambios de nombre y eliminaciones revisables** · Pendiente
-- **#26 Comparación a tres bandas** · Pendiente
+- **#26 Comparación a tres bandas** · Disponible · Compara la base de una propuesta, el contenido actual en disco y el resultado propuesto. Resalta los cambios y permite volver a leer el archivo.
 - **#27 Agrupar por propósito** · Pendiente
 - **#28 Versiones de una propuesta** · Pendiente
 - **#29 Recuperación de tandas interrumpidas** · Parcial · Las tandas guardan copias y restauran cambios tras un fallo durante la aplicación. Falta recuperación específica tras un cierre durante la escritura.
