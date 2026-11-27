@@ -1,27 +1,27 @@
 # Hoja de ruta de Kyro
 
-Estado de las 100 ideas originales en Kyro 0.4.24. **Disponible** indica que el flujo principal ya existe, **parcial** que solo se ha implementado una parte y **pendiente** que todavía no se entrega.
+Estado de las 100 ideas originales en Kyro 0.4.28. **Disponible** indica que el flujo principal ya existe, **parcial** que queda trabajo o validación del criterio, y **pendiente** que todavía no se entrega.
 
-84 disponibles · 16 parciales · 0 pendientes.
+98 disponibles · 2 parciales · 0 pendientes.
 
 ## Tareas y trabajo en segundo plano
 
 - **#1 Ficha de tarea** · Disponible · Reúne objetivo, criterios, pasos, propuestas y comprobaciones con sus estados y accesos directos.
 - **#2 Criterios de aceptación** · Disponible · Objetivo y criterios editables en Preparar tarea.
 - **#3 Plan editable** · Disponible · El plan permite editar y reordenar sus pasos desde el chat.
-- **#4 Guardado por paso** · Parcial · Guarda puntos de control durante los tramos de herramientas.
+- **#4 Guardado por paso** · Disponible · Persiste el estado de cada paso del plan, su resultado y el punto de continuación tras cierres forzados.
 - **#5 Bandeja de decisiones** · Disponible · Bandeja Decisiones pendientes en Ctrl + K.
 - **#6 Cola visible** · Disponible · El panel muestra el orden de espera, permite cancelar y da el siguiente turno al trabajo que priorices.
-- **#7 Reintento de un paso** · Parcial · Reanuda tareas y prepara un nuevo intento para pruebas fallidas o solicitudes caducadas. Falta el reintento general de cada paso de un agente.
+- **#7 Reintento de un paso** · Disponible · Permite reintentar pasos del agente desde la ficha de tarea conservando intentos anteriores y comprobando dependencias, permisos y cambios en disco.
 - **#8 Continuar por otra vía** · Disponible · Retoma un mensaje como borrador, conserva el chat original y elige si quieres revertir los cambios posteriores de Kyro.
 - **#9 Dependencias entre tareas** · Disponible · Vincula conversaciones de un proyecto, sigue sus estados y marca su finalización. El envío y la reanudación esperan a que se completen las dependencias directas e indirectas. Los enlaces circulares se bloquean.
-- **#10 Avisos que llevan al sitio correcto** · Parcial · La bandeja y los avisos llevan al chat. Falta navegar desde una notificación del sistema.
+- **#10 Avisos que llevan al sitio correcto** · Disponible · La bandeja, los avisos internos y las notificaciones de Windows abren Kyro, seleccionan el chat y muestran la decisión o resultado correspondiente.
 
 ## Comprensión del código
 
 - **#11 Índice incremental** · Disponible · Índice incremental con exclusiones por proyecto.
 - **#12 Búsqueda por símbolos** · Disponible · Busca declaraciones de funciones, clases y otros símbolos en Ctrl + K.
-- **#13 Referencias de funciones** · Parcial · Busca el nombre completo en archivos de código y navega a sus coincidencias. Falta la resolución semántica del símbolo.
+- **#13 Referencias de funciones** · Disponible · Resolución semántica para JavaScript y TypeScript (importaciones, alias locales y de `tsconfig.json`/`jsconfig.json`, reexportaciones, ámbitos y símbolos homónimos), conservando la búsqueda literal para el resto de lenguajes.
 - **#14 Mapa de dependencias** · Disponible · Importaciones directas e indirectas hasta cuatro niveles en JavaScript y TypeScript. Resuelve alias locales declarados en el tsconfig.json o jsconfig.json de la raíz.
 - **#15 Proyectos con varias carpetas** · Disponible · Agrupa carpetas desde la configuración del proyecto y alterna entre ellas desde la barra lateral. Cada carpeta conserva sus permisos, sus chats y su contexto de trabajo.
 - **#16 Búsqueda por significado opcional** · Disponible · Alterna la búsqueda literal y la clasificación de fragmentos con EmbeddingGemma local. El modelo se descarga a petición y la búsqueda indica el alcance leído.
@@ -40,13 +40,13 @@ Estado de las 100 ideas originales en Kyro 0.4.24. **Disponible** indica que el 
 - **#26 Comparación a tres bandas** · Disponible · Compara la base de una propuesta, el contenido actual en disco y el resultado propuesto. Resalta los cambios y permite volver a leer el archivo.
 - **#27 Agrupar por propósito** · Disponible · Asigna un propósito a cada cambio y revisa la tanda agrupada por ese campo.
 - **#28 Versiones de una propuesta** · Disponible · Consulta versiones del mismo archivo y ubicación de proyecto, con su chat de origen y estado.
-- **#29 Recuperación de tandas interrumpidas** · Parcial · Las tandas guardan copias y restauran cambios tras un fallo durante la aplicación. Falta recuperación específica tras un cierre durante la escritura.
+- **#29 Recuperación de tandas interrumpidas** · Disponible · Guarda el estado de cada operación antes y después de escribir, detecta tandas incompletas al arrancar con vista previa y conserva conflictos externos al recuperar.
 - **#30 Exportar un parche** · Disponible · Git permite exportar el diff preparado como parche.
 
 ## Git y colaboración
 
 - **#31 Copia Git desde el chat** · Disponible · Al preparar una tarea puedes elegir una copia existente o crear una desde el commit actual. El plan se guarda como borrador en la copia.
-- **#32 Preparación de la copia** · Parcial · Puedes ejecutar comprobaciones autorizadas en la copia. Falta un flujo de aprovisionamiento.
+- **#32 Preparación de la copia** · Disponible · Detecta dependencias (`package.json`/lockfiles, `Cargo.toml`, `requirements.txt`) y plantillas `.env.example` dentro de la copia Git, permitiendo autorizar, seguir en directo y reintentar cada paso sin tocar el repositorio original.
 - **#33 Inventario de copias** · Disponible · El inventario reúne las copias registradas, muestra origen, base, rama y cambios, y permite abrirlas o revisar su ubicación.
 - **#34 Historial de un archivo** · Disponible · Historial de un archivo desde su visor.
 - **#35 Stage selectivo** · Disponible · Selecciona bloques de texto de un archivo modificado para prepararlos en el índice de Git. Kyro vuelve a comprobar el diff al aplicar.
@@ -62,7 +62,7 @@ Estado de las 100 ideas originales en Kyro 0.4.24. **Disponible** indica que el 
 - **#42 Comandos de verificación por proyecto** · Disponible · Guarda comprobaciones con programa, argumentos y carpeta.
 - **#43 Pruebas dirigidas** · Disponible · Desde el visor, Kyro localiza pruebas Node por archivo y permite ejecutar una sola con autorización.
 - **#44 Resultados navegables** · Disponible · Enlaza ubicaciones reconocidas en la salida de pruebas a archivos locales y a su línea.
-- **#45 Comparación antes y después** · Parcial · Compara dos ejecuciones de una rutina. Falta vincularlas automáticamente a los cambios y al commit de referencia.
+- **#45 Comparación antes y después** · Disponible · Compara dos ejecuciones de una rutina y vincula cada resultado con su commit, copia Git y cambios sin commit, manteniendo accesibles las ejecuciones antiguas.
 - **#46 Errores previos y nuevos** · Disponible · Compara casos individuales en las salidas TAP de Node, unittest y Cargo. Distingue fallos nuevos, persistentes y corregidos.
 - **#47 Vista web local** · Disponible · Guarda la dirección por proyecto, comprueba su puerto y abre una vista de Kyro limitada al origen local o el navegador externo.
 - **#48 Capturas comparables** · Disponible · Compara dos PNG, JPEG o WebP del proyecto en paralelo o superpuestas con un deslizador. La selección de las imágenes es manual.
@@ -73,18 +73,18 @@ Estado de las 100 ideas originales en Kyro 0.4.24. **Disponible** indica que el 
 
 - **#51 Reglas del proyecto** · Disponible · Importación de AGENTS.md con revisión previa en los ajustes del proyecto.
 - **#52 Reglas por carpeta** · Disponible · Guarda reglas relativas al proyecto y aplica la más específica a las rutas que correspondan.
-- **#53 Skills locales** · Parcial · Las rutinas manuales guardan un plan y comprobaciones del proyecto. Falta un formato de skills.
+- **#53 Skills locales** · Disponible · Formato local `SKILL.md` en `.kyro/skills/` o perfil global con nombre, alcance de agentes/rutas e instrucciones revisables, habilitable por proyecto y seleccionable desde el chat bajo los permisos de Kyro.
 - **#54 Selector `/`** · Disponible · Abre acciones de proyecto, biblioteca, ajustes y plantillas desde el compositor, con ratón o teclado.
 - **#55 Plantillas de tarea** · Disponible · Plantillas iniciales y personales para preparar tareas.
-- **#56 Revisor independiente** · Parcial · Las revisiones contrastan hallazgos con el código. Falta un agente aislado que revise el diff.
+- **#56 Revisor independiente** · Disponible · Revisa el diff desde la tarea original en un contexto separado y de solo lectura sin herramientas de escritura, con modelo configurable y hallazgos vinculados a líneas.
 - **#57 Delegación con contexto separado** · Disponible · Prepara un encargo independiente para otro agente y conserva el enlace de vuelta al chat. El usuario revisa y envía el nuevo encargo.
-- **#58 Permisos por perfil** · Parcial · Programar respeta los permisos de edición y la confirmación global o por proyecto. Falta una matriz editable por agente y proyecto.
+- **#58 Permisos por perfil** · Disponible · Matriz editable por agente y proyecto con visualización del permiso efectivo, aplicación coherente en chat, tareas en curso, reintentos y delegación, y migración de perfiles previos.
 - **#59 Hooks locales declarativos** · Disponible · Los modos Programar, Revisar y Planificar pueden preparar una comprobación guardada al completar una tarea. Cada ejecución requiere autorización.
 - **#60 Memoria con fuentes** · Disponible · Conserva notas generales y notas individuales. Una nota puede llevar de vuelta a su respuesta o a la línea del código que la originó.
 
 ## Modelos locales y rendimiento
 
-- **#61 Pruebas de capacidad por modelo** · Parcial · Prueba fija de lectura y propuesta exacta. Falta una batería de proyectos con ejecución de pruebas.
+- **#61 Pruebas de capacidad por modelo** · Disponible · Batería reproducible de 3 proyectos con lectura de contexto, edición exacta y ejecución real de `node --test`, guardando modelo, cuantización, contexto, tiempo y puntuación para comparar.
 - **#62 Ficha de compatibilidad** · Disponible · Los modelos instalados muestran capacidades, familia, parámetros, cuantización y contexto declarado por Ollama, junto a las pruebas locales de Kyro.
 - **#63 Comparación en la misma tarea** · Disponible · Dos modelos instalados reciben la misma pregunta y el mismo contexto de conversación. Muestra las respuestas y el tiempo, con alcance de texto.
 - **#64 Diagnóstico de lentitud** · Disponible · Cada ejecución distingue carga, procesamiento del contexto y generación según las métricas del motor.
@@ -93,7 +93,7 @@ Estado de las 100 ideas originales en Kyro 0.4.24. **Disponible** indica que el 
 - **#67 Recuperación tras falta de memoria** · Disponible · Prepara un reintento de chat con contexto reducido. Qwen Imágenes permite reducir la resolución, leer pesos desde disco o ejecutar en CPU.
 - **#68 Asignación por fase** · Disponible · Puede usarse un modelo diferente para contrastar el informe final con los archivos, y se identifica en la respuesta.
 - **#69 Historial de mediciones** · Disponible · Guarda pruebas por modelo y permite comparar contexto, estado de carga, velocidad, primer token y memoria.
-- **#70 Gestión del almacenamiento** · Parcial · Permite elegir la carpeta de descargas y consultar su espacio disponible. Falta trasladar los modelos existentes desde Kyro.
+- **#70 Gestión del almacenamiento** · Disponible · Permite cambiar la carpeta, consultar espacio libre y trasladar modelos descargados entre carpetas o unidades con verificación SHA-256, progreso, cancelación segura y comprobación posterior en Ollama.
 
 ## Interfaz y uso diario
 
@@ -116,22 +116,22 @@ Estado de las 100 ideas originales en Kyro 0.4.24. **Disponible** indica que el 
 - **#84 MCP de lectura** · Disponible · `kyro-cli.exe mcp <id>` expone dos herramientas de lectura por stdio, limitadas a un único proyecto vinculado.
 - **#85 Permisos por integración** · Disponible · Ajustes reúne las autorizaciones revocables de GitHub por proyecto y los accesos a la configuración de los motores locales.
 - **#86 Importar una incidencia** · Disponible · Importa una incidencia de GitHub como borrador de tarea editable.
-- **#87 Automatizaciones locales optativas** · Parcial · Las rutinas se inician manualmente. Falta la programación.
-- **#88 Historial de ejecuciones programadas** · Parcial · Historial de rutinas manuales. Falta registrar ejecuciones programadas y su próxima fecha.
+- **#87 Automatizaciones locales optativas** · Disponible · Activa, edita, pausa y desactiva horarios por rutina y proyecto con políticas para equipo cerrado/suspendido y solapamientos, manteniendo la autorización de comprobaciones.
+- **#88 Historial de ejecuciones programadas** · Disponible · Muestra la próxima fecha con zona horaria y guarda programación, estado ejecutado/omitido, duración, resultado y chat generado.
 - **#89 Paquetes de configuración** · Disponible · Guarda e importa un paquete JSON con apariencia, atajos, modelos por agente y plantillas personales.
 - **#90 Visores para salidas habituales** · Disponible · Vista previa de PNG, JPEG y WebP con dimensiones. Markdown y JSON alternan entre vista previa y código numerado. El panel de pruebas mantiene sus resultados navegables.
 
 ## Instalación, privacidad y fiabilidad
 
 - **#91 Base de datos local con migración** · Disponible · Migración de JSON a SQLite y búsqueda en el historial.
-- **#92 Actualizaciones firmadas** · Parcial · Kyro descarga la actualización y verifica tamaño y SHA-256 desde la app. Falta firma Authenticode y verificación del publicador.
+- **#92 Actualizaciones firmadas** · Parcial · El empaquetado puede firmar con Authenticode. El actualizador verifica la firma con Windows y contrasta el certificado con una huella configurada al compilar. Falta el certificado del proyecto y una publicación firmada de principio a fin.
 - **#93 Volver a la versión anterior** · Disponible · El instalador guarda la versión reemplazada compatible. Ajustes permite restaurar la aplicación y conservar el perfil. Las versiones previas al cifrado requieren un historial sin protección.
 - **#94 Canal estable y beta** · Disponible · Ajustes permite elegir el canal. Beta incluye la versión estable si no se ha publicado una beta más reciente.
 - **#95 Diagnóstico exportable** · Disponible · Exporta versión, hardware y estado de Ollama a JSON desde Datos y privacidad. El informe omite chats, ubicaciones y nombres de proyectos o modelos.
 - **#96 Copias de seguridad configurables** · Disponible · Selección de contenido y vista previa para restaurar perfiles portátiles. Los proyectos se vinculan a sus carpetas desde Ajustes. También se puede guardar una copia SQLite del perfil.
 - **#97 Protección del historial local** · Disponible · Cifrado opcional de chats guardados y puntos de control con la cuenta de Windows. La búsqueda del historial protegido se hace en memoria.
 - **#98 Aislamiento real para ejecutar pruebas** · Disponible · En equipos con Windows Sandbox, las pruebas integradas de Node se ejecutan con una copia del proyecto y sin red. La salida aparece en la ventana aislada.
-- **#99 Instalación probada en equipos limpios** · Parcial · Instalación y actualización probadas con perfiles Windows aislados. Faltan pruebas en otros equipos Windows limpios.
+- **#99 Instalación probada en equipos limpios** · Parcial · Probada con perfiles aislados limpios y migración Gema/Kyro → SQLite en el Windows x64 de pruebas. Queda pendiente probar en otro Windows limpio, incluida una instalación sin WebView2.
 - **#100 Asistente de primer arranque** · Disponible · Comprueba equipo y motor, permite descargar o reutilizar modelos, ajusta tema y movimiento y abre chat, proyectos o imágenes. Se puede recuperar desde Ajustes.
 
 ## Mejoras del historial en 0.4.20
