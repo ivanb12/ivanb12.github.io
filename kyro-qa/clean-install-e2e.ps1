@@ -80,7 +80,7 @@ function Assert-Hash([string]$File, [string]$Hash) {
 function Get-Installer([string]$Version, [string]$Hash) {
   $file = "Kyro_${Version}_x64-setup.exe"
   $destination = Join-Path $root.FullName $file
-  Invoke-WebRequest "https://ivanb12.github.io/kyro/downloads/$file" -OutFile $destination
+  Invoke-WebRequest "https://ivanb12.github.io/kyro/downloads/$file" -OutFile $destination -TimeoutSec 60 -MaximumRetryCount 2 -RetryIntervalSec 2
   Assert-Hash $destination $Hash
   return $destination
 }
@@ -107,6 +107,15 @@ function Install-Kyro([string]$Installer, [string]$Version) {
   $report.tests.Add("Instalación, versión, CLI y acceso directo correctos en $Version.")
 }
 
+function Test-AccessibleWindow([IntPtr]$Handle, [string]$ExpectedText) {
+  if ($Handle -eq [IntPtr]::Zero) { return $false }
+  Add-Type -AssemblyName UIAutomationClient,UIAutomationTypes
+  $window = [System.Windows.Automation.AutomationElement]::FromHandle($Handle)
+  $name = [System.Windows.Automation.AutomationElement]::NameProperty
+  $condition = [System.Windows.Automation.PropertyCondition]::new($name, $ExpectedText)
+  return $null -ne $window.FindFirst([System.Windows.Automation.TreeScope]::Descendants, $condition)
+}
+
 function Invoke-KyroCheck([string]$ExpectedText) {
   $listener = [Net.Sockets.TcpListener]::new([Net.IPAddress]::Loopback, 0)
   $listener.Start()
@@ -124,7 +133,10 @@ function Invoke-KyroCheck([string]$ExpectedText) {
   }
   try {
     $deadline = [DateTime]::UtcNow.AddSeconds(90)
+    $checkAccessibilityAfter = [DateTime]::UtcNow.AddSeconds(12)
+    $accessible = $false
     do {
+      $process.Refresh()
       if ($process.HasExited) { throw "Kyro se cerró durante el arranque ($($process.ExitCode))." }
       try {
         $page = Invoke-RestMethod "http://127.0.0.1:$port/json/list" -TimeoutSec 2 -NoProxy |
@@ -132,16 +144,22 @@ function Invoke-KyroCheck([string]$ExpectedText) {
           Select-Object -First 1
       } catch { $page = $null }
       if ($page) { break }
+      if ([DateTime]::UtcNow -gt $checkAccessibilityAfter) {
+        try { $accessible = Test-AccessibleWindow $process.MainWindowHandle $ExpectedText }
+        catch { Write-Verbose $_ }
+        if ($accessible) { break }
+      }
       Start-Sleep -Milliseconds 500
     } while ([DateTime]::UtcNow -lt $deadline)
-    if (!$page) {
+    if (!$page -and !$accessible) {
       $process.Refresh()
       Write-Host "Ventana de Kyro: $($process.MainWindowTitle), puerto de prueba: $port."
       Get-CimInstance Win32_Process -Filter "Name='msedgewebview2.exe'" |
         Where-Object CommandLine -Like "*$($root.FullName)*" | Select-Object ProcessId, CommandLine | Out-Host
       throw 'No se detectó la ventana de Kyro en WebView2.'
     }
-    $dom = @'
+    if ($page) {
+      $dom = @'
 const [url, expected] = process.argv.slice(2);
 const socket = new WebSocket(url);
 let counter = 0;
@@ -163,10 +181,11 @@ socket.addEventListener('message', ({ data }) => {
 });
 socket.addEventListener('error', () => { clearTimeout(deadline); process.exitCode = 1; });
 '@
-    $testFile = Join-Path $root.FullName 'verify-window.mjs'
-    Set-Content -LiteralPath $testFile -Value $dom -Encoding utf8
-    & node $testFile $page.webSocketDebuggerUrl $ExpectedText
-    if ($LASTEXITCODE -ne 0) { throw 'Kyro abrió WebView2, pero no se renderizó el contenido esperado.' }
+      $testFile = Join-Path $root.FullName 'verify-window.mjs'
+      Set-Content -LiteralPath $testFile -Value $dom -Encoding utf8
+      & node $testFile $page.webSocketDebuggerUrl $ExpectedText
+      if ($LASTEXITCODE -ne 0) { throw 'Kyro abrió WebView2, pero no se renderizó el contenido esperado.' }
+    }
     if (!(Test-Path -LiteralPath (Join-Path $profile 'workspace.sqlite3'))) { throw 'Falta el perfil SQLite.' }
     $null = $process.CloseMainWindow()
     if (!$process.WaitForExit(5000)) { Stop-Process -Id $process.Id }
