@@ -1,0 +1,39 @@
+name: Kyro installation QA
+
+on:
+  push:
+    branches: ['qa/kyro-installation-0428']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  installation:
+    name: ${{ matrix.os }} / ${{ matrix.scenario }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-2022, windows-2025]
+        scenario: [fresh, upgrade]
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+          sparse-checkout: kyro-qa
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24'
+      - name: Install and verify the published Kyro build
+        shell: pwsh
+        env:
+          SCENARIO: ${{ matrix.scenario }}
+          QA_OS: ${{ matrix.os }}
+        run: |
+          $argsForCheck = @{ Scenario = $env:SCENARIO }
+          if ($env:QA_OS -eq 'windows-2025' -and $env:SCENARIO -eq 'fresh') {
+            $argsForCheck.TestSigning = $true
+          }
+          & ./kyro-qa/clean-install-e2e.ps1 @argsForCheck
