@@ -16,8 +16,15 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [windows-2022, windows-2025]
-        scenario: [fresh, upgrade]
+        include:
+          - os: windows-2022
+            scenario: fresh
+            sign: 'true'
+          - os: windows-2022
+            scenario: fresh
+            clean_webview: 'true'
+          - os: windows-2025
+            scenario: upgrade
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
@@ -30,10 +37,10 @@ jobs:
         shell: pwsh
         env:
           SCENARIO: ${{ matrix.scenario }}
-          QA_OS: ${{ matrix.os }}
+          SIGN_FIXTURE: ${{ matrix.sign }}
+          CLEAN_WEBVIEW: ${{ matrix.clean_webview }}
         run: |
           $argsForCheck = @{ Scenario = $env:SCENARIO }
-          if ($env:QA_OS -eq 'windows-2025' -and $env:SCENARIO -eq 'fresh') {
-            $argsForCheck.TestSigning = $true
-          }
+          if ($env:SIGN_FIXTURE -eq 'true') { $argsForCheck.TestSigning = $true }
+          if ($env:CLEAN_WEBVIEW -eq 'true') { $argsForCheck.RemoveRunnerWebView2 = $true }
           & ./kyro-qa/clean-install-e2e.ps1 @argsForCheck

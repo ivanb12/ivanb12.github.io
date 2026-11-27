@@ -4,6 +4,7 @@ param(
   [string]$Scenario = 'fresh',
   [string]$Output = (Join-Path ([IO.Path]::GetTempPath()) ('kyro-clean-' + [Guid]::NewGuid().ToString('N'))),
   [switch]$RequireMissingWebView2,
+  [switch]$RemoveRunnerWebView2,
   [switch]$TestSigning
 )
 
@@ -15,8 +16,8 @@ if ((Test-Path -LiteralPath $profile) -or (Test-Path -LiteralPath $registryKey) 
     (Test-Path -LiteralPath 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\Kyro')) {
   throw 'Ejecuta esta prueba en un Windows de pruebas sin instalaciones ni datos de Kyro/Gema.'
 }
-if ($TestSigning -and ($env:GITHUB_ACTIONS -ne 'true' -or $env:RUNNER_ENVIRONMENT -ne 'github-hosted')) {
-  throw 'La prueba de confianza con una clave desechable requiere un runner virtual de GitHub.'
+if (($TestSigning -or $RemoveRunnerWebView2) -and ($env:GITHUB_ACTIONS -ne 'true' -or $env:RUNNER_ENVIRONMENT -ne 'github-hosted')) {
+  throw 'Los cambios temporales de certificado o de WebView2 requieren un runner virtual de GitHub.'
 }
 
 $root = New-Item -ItemType Directory -Path $Output -Force
@@ -50,6 +51,24 @@ function Get-WebView2Version {
     if ($value -and $value -ne '0.0.0.0') { return $value }
   }
   return $null
+}
+
+function Remove-TestWebView2 {
+  $version = Get-WebView2Version
+  if (!$version) { return }
+  if ($version -notmatch '^\d+\.\d+\.\d+\.\d+$') { throw 'Versión de WebView2 inesperada.' }
+  $runtime = Join-Path ${env:ProgramFiles(x86)} 'Microsoft\EdgeWebView\Application'
+  $setup = Join-Path $runtime "$version\Installer\setup.exe"
+  if (!(Test-Path -LiteralPath $setup -PathType Leaf)) { throw 'No se encontró el desinstalador del WebView2 preinstalado.' }
+  $signature = Get-AuthenticodeSignature -LiteralPath $setup
+  if ($signature.Status -ne 'Valid' -or $signature.SignerCertificate.Subject -notmatch '(^|, )O=Microsoft Corporation(,|$)') {
+    throw 'No se pudo verificar el desinstalador de Microsoft WebView2.'
+  }
+  $remove = Start-Process -FilePath $setup -ArgumentList @('--uninstall', '--msedgewebview', '--system-level', '--verbose-logging', '--force-uninstall') -WindowStyle Hidden -PassThru
+  if (!$remove.WaitForExit(120000)) { throw 'Terminó el tiempo de espera del desinstalador WebView2.' }
+  if ((Get-WebView2Version) -or (Test-Path -LiteralPath (Join-Path $runtime "$version\msedgewebview2.exe"))) {
+    throw "El invitado conserva WebView2 tras la desinstalación (código $($remove.ExitCode))."
+  }
 }
 
 function Assert-Hash([string]$File, [string]$Hash) {
@@ -94,25 +113,34 @@ function Invoke-KyroCheck([string]$ExpectedText) {
   $port = ([Net.IPEndPoint]$listener.LocalEndpoint).Port
   $listener.Stop()
   $previousArguments = $env:WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS
+  $previousUserData = $env:WEBVIEW2_USER_DATA_FOLDER
+  $env:WEBVIEW2_USER_DATA_FOLDER = Join-Path $root.FullName ('webview-' + $port)
   $env:WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS = "--remote-debugging-address=127.0.0.1 --remote-debugging-port=$port"
   try {
-    $process = Start-Process -FilePath (Join-Path $installDir 'gema.exe') -PassThru
+    $process = Start-Process -FilePath (Join-Path $installDir 'gema.exe') -WorkingDirectory $installDir -PassThru
   } finally {
     $env:WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS = $previousArguments
+    $env:WEBVIEW2_USER_DATA_FOLDER = $previousUserData
   }
   try {
     $deadline = [DateTime]::UtcNow.AddSeconds(90)
     do {
       if ($process.HasExited) { throw "Kyro se cerró durante el arranque ($($process.ExitCode))." }
       try {
-        $page = Invoke-RestMethod "http://127.0.0.1:$port/json/list" -TimeoutSec 2 |
+        $page = Invoke-RestMethod "http://127.0.0.1:$port/json/list" -TimeoutSec 2 -NoProxy |
           Where-Object { $_.type -eq 'page' -and $_.url -match '^https?://tauri\.localhost' } |
           Select-Object -First 1
       } catch { $page = $null }
       if ($page) { break }
       Start-Sleep -Milliseconds 500
     } while ([DateTime]::UtcNow -lt $deadline)
-    if (!$page) { throw 'No se detectó la ventana de Kyro en WebView2.' }
+    if (!$page) {
+      $process.Refresh()
+      Write-Host "Ventana de Kyro: $($process.MainWindowTitle), puerto de prueba: $port."
+      Get-CimInstance Win32_Process -Filter "Name='msedgewebview2.exe'" |
+        Where-Object CommandLine -Like "*$($root.FullName)*" | Select-Object ProcessId, CommandLine | Out-Host
+      throw 'No se detectó la ventana de Kyro en WebView2.'
+    }
     $dom = @'
 const [url, expected] = process.argv.slice(2);
 const socket = new WebSocket(url);
@@ -179,8 +207,9 @@ function New-DevSignedCopy([string]$Installer) {
 }
 
 try {
+  if ($RemoveRunnerWebView2) { Remove-TestWebView2 }
   $report.webview2Before = Get-WebView2Version
-  if ($RequireMissingWebView2 -and $report.webview2Before) {
+  if (($RequireMissingWebView2 -or $RemoveRunnerWebView2) -and $report.webview2Before) {
     throw "El invitado ya tiene WebView2 $($report.webview2Before). La prueba requiere un invitado sin ese componente."
   }
   $newInstaller = Get-Installer $latest $latestHash
