@@ -124,14 +124,22 @@ function Invoke-KyroCheck([string]$ExpectedText) {
   $previousArguments = $env:WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS
   $previousUserData = $env:WEBVIEW2_USER_DATA_FOLDER
   $env:WEBVIEW2_USER_DATA_FOLDER = Join-Path $root.FullName ('webview-' + $port)
-  $env:WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS = "--remote-debugging-address=127.0.0.1 --remote-debugging-port=$port"
-  try {
-    $process = Start-Process -FilePath (Join-Path $installDir 'gema.exe') -WorkingDirectory $installDir -PassThru
-  } finally {
-    $env:WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS = $previousArguments
-    $env:WEBVIEW2_USER_DATA_FOLDER = $previousUserData
+  $env:WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS = "--remote-debugging-address=127.0.0.1 --remote-debugging-port=$port --force-renderer-accessibility"
+  $policy = $null
+  if ($env:GITHUB_ACTIONS -eq 'true' -and $env:RUNNER_ENVIRONMENT -eq 'github-hosted') {
+    $policy = 'HKCU:\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments'
+    New-Item -Path $policy -Force | Out-Null
+    if ((Get-Item -LiteralPath $policy).GetValueNames() -contains 'gema.exe') { throw 'Existe una política de depuración para Kyro en el perfil de QA.' }
+    New-ItemProperty -LiteralPath $policy -Name 'gema.exe' -PropertyType String -Value $env:WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS | Out-Null
   }
+  $process = $null
   try {
+    try {
+      $process = Start-Process -FilePath (Join-Path $installDir 'gema.exe') -WorkingDirectory $installDir -PassThru
+    } finally {
+      $env:WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS = $previousArguments
+      $env:WEBVIEW2_USER_DATA_FOLDER = $previousUserData
+    }
     $deadline = [DateTime]::UtcNow.AddSeconds(90)
     $checkAccessibilityAfter = [DateTime]::UtcNow.AddSeconds(12)
     $accessible = $false
@@ -190,7 +198,8 @@ socket.addEventListener('error', () => { clearTimeout(deadline); process.exitCod
     $null = $process.CloseMainWindow()
     if (!$process.WaitForExit(5000)) { Stop-Process -Id $process.Id }
   } finally {
-    if (!$process.HasExited) { Stop-Process -Id $process.Id -ErrorAction SilentlyContinue }
+    if ($process -and !$process.HasExited) { Stop-Process -Id $process.Id -ErrorAction SilentlyContinue }
+    if ($policy) { Remove-ItemProperty -LiteralPath $policy -Name 'gema.exe' -ErrorAction SilentlyContinue }
   }
   $report.tests.Add("Interfaz renderizada y perfil SQLite comprobado ($ExpectedText).")
 }
